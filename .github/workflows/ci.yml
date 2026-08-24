@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: Unit, data integrity and locator contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # No install step and no package manager: the portal has no dependencies,
+      # and the tests run on Node's built-in test runner. If this job ever needs
+      # an install, a dependency has crept in.
+      - name: Run tests
+        run: node --test 'tests/**/*.test.mjs'

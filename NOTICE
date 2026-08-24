@@ -1,0 +1,82 @@
+NOTICE — Third-party content and attribution
+============================================
+
+This project contains material derived from official ISTQB® publications.
+
+Source
+------
+The content in `data/ctfl-v4/` was derived from the following official ISTQB
+documents, published by the ISTQB at https://istqb.org/ :
+
+  * ISTQB® Certified Tester Foundation Level Syllabus, v4.0.1
+    https://istqb.org/sdm_downloads/istqb-certified-tester-foundation-level-syllabus-v4-0/
+
+  * ISTQB® CTFL v4.0 Sample Exam Set A — Questions and Answers, v1.7 (2025-04-01)
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-a-questions_v1-6/
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-a-answers_v1-6/
+
+  * ISTQB® CTFL v4.0 Sample Exam Set B — Questions and Answers, v1.7 (2025-04-01)
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-b-questions_v1-6/
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-b-answers_v1-6/
+
+  * ISTQB® CTFL v4.0 Sample Exam Set C — Questions and Answers, v1.6 (2025-03-25)
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-c-questions_v1-5/
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-c-answers_v1-5/
+
+  * ISTQB® CTFL v4.0 Sample Exam Set D — Questions and Answers, v1.5 (2025-05-02)
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-d-questions_v1-4/
+    https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-d-answers_v1-4/
+
+The exact document name, version and release date behind each file is recorded in
+the `source` block of every JSON file under `data/ctfl-v4/`, so the provenance of
+the content travels with the data itself.
+
+What is contained here
+----------------------
+The files under `data/ctfl-v4/` contain extracts of ISTQB copyrighted material,
+including question text, answer options, answer keys, per-option rationales,
+learning objectives and syllabus keywords.
+
+Copyright
+---------
+Copyright © International Software Testing Qualifications Board (ISTQB®).
+All rights reserved. ISTQB® is a registered trademark of the International
+Software Testing Qualifications Board.
+
+The ISTQB copyright notice published in the source documents states:
+
+    "Extracts, for non-commercial use, from this document may be copied if the
+     source is acknowledged."
+
+    "Any individual or group of individuals may use this sample exam in articles
+     and books, if the authors and the ISTQB® are acknowledged as the source and
+     copyright owners of the sample exam."
+
+    "Any other use of this sample exam is prohibited without first obtaining the
+     approval in writing of the ISTQB®."
+
+Terms of use for this project
+-----------------------------
+This portal is provided for NON-COMMERCIAL study use only, and acknowledges the
+ISTQB® as the source and copyright owner of the material. The acknowledgement is
+displayed in the footer of every page of the portal.
+
+If you fork, host, or redistribute this project you MUST:
+
+  1. Keep the ISTQB attribution visible in the user interface.
+  2. Keep this NOTICE file intact.
+  3. Not use the ISTQB-derived content for commercial purposes without written
+     approval from the ISTQB.
+
+Anyone intending commercial use, or use beyond the terms quoted above, must
+obtain written permission from the ISTQB first.
+
+No affiliation
+--------------
+This project is not affiliated with, endorsed by, accredited by, or connected to
+the ISTQB or any ISTQB member board or accredited training provider. It is an
+independent, community-maintained study aid. Passing exams here is not a
+qualification of any kind; only an ISTQB-accredited exam provider can certify you.
+
+Authors and reviewers of the source material are credited within the official
+ISTQB documents themselves.

@@ -1,0 +1,1142 @@
+{
+  "certification": {
+    "code": "CTFL",
+    "version": "4.0",
+    "name": "ISTQB Certified Tester Foundation Level"
+  },
+  "source": {
+    "publisher": "International Software Testing Qualifications Board (ISTQB®)",
+    "document": "ISTQB_CTFL_Syllabus_v4.0",
+    "documentVersion": "4.0.1",
+    "url": "https://istqb.org/sdm_downloads/istqb-certified-tester-foundation-level-syllabus-v4-0/",
+    "copyright": "© International Software Testing Qualifications Board (ISTQB®). Reproduced for non-commercial study use with acknowledgement of the source."
+  },
+  "totals": {
+    "chapters": 6,
+    "learningObjectives": 64
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Fundamentals of Testing",
+      "minutes": 180,
+      "keywords": [
+        "coverage",
+        "debugging",
+        "defect",
+        "error",
+        "failure",
+        "quality",
+        "quality assurance",
+        "root cause",
+        "test analysis",
+        "test basis",
+        "test case",
+        "test completion",
+        "test condition",
+        "test control",
+        "test data",
+        "test design",
+        "test execution",
+        "test implementation",
+        "test monitoring",
+        "test object",
+        "test objective",
+        "test planning",
+        "test procedure",
+        "test process",
+        "test result",
+        "testing",
+        "testware",
+        "traceability",
+        "validation",
+        "verification"
+      ],
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "What is Testing?",
+          "learningObjectives": [
+            {
+              "id": "FL-1.1.1",
+              "kLevel": "K1",
+              "text": "Identify typical test objectives"
+            },
+            {
+              "id": "FL-1.1.2",
+              "kLevel": "K2",
+              "text": "Differentiate testing from debugging"
+            }
+          ]
+        },
+        {
+          "number": "1.2",
+          "title": "Why is Testing Necessary?",
+          "learningObjectives": [
+            {
+              "id": "FL-1.2.1",
+              "kLevel": "K2",
+              "text": "Exemplify why testing is necessary"
+            },
+            {
+              "id": "FL-1.2.2",
+              "kLevel": "K1",
+              "text": "Recall the relation between testing and quality assurance"
+            },
+            {
+              "id": "FL-1.2.3",
+              "kLevel": "K2",
+              "text": "Distinguish between root cause, error, defect, and failure"
+            }
+          ]
+        },
+        {
+          "number": "1.3",
+          "title": "Testing Principles",
+          "learningObjectives": [
+            {
+              "id": "FL-1.3.1",
+              "kLevel": "K2",
+              "text": "Explain the seven testing principles"
+            }
+          ]
+        },
+        {
+          "number": "1.4",
+          "title": "Test Activities, Testware and Test Roles",
+          "learningObjectives": [
+            {
+              "id": "FL-1.4.1",
+              "kLevel": "K2",
+              "text": "Explain the different test activities and related tasks"
+            },
+            {
+              "id": "FL-1.4.2",
+              "kLevel": "K2",
+              "text": "Explain the impact of context on the test process"
+            },
+            {
+              "id": "FL-1.4.3",
+              "kLevel": "K2",
+              "text": "Differentiate the testware that supports the test activities"
+            },
+            {
+              "id": "FL-1.4.4",
+              "kLevel": "K2",
+              "text": "Explain the value of maintaining traceability"
+            },
+            {
+              "id": "FL-1.4.5",
+              "kLevel": "K2",
+              "text": "Compare the different roles in testing"
+            }
+          ]
+        },
+        {
+          "number": "1.5",
+          "title": "Essential Skills and Good Practices in Testing",
+          "learningObjectives": [
+            {
+              "id": "FL-1.5.1",
+              "kLevel": "K2",
+              "text": "Give examples of the generic skills required for testing"
+            },
+            {
+              "id": "FL-1.5.2",
+              "kLevel": "K1",
+              "text": "Recall the advantages of the whole team approach"
+            },
+            {
+              "id": "FL-1.5.3",
+              "kLevel": "K2",
+              "text": "Distinguish the benefits and drawbacks of independence of testing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Testing Throughout the Software Development Lifecycle",
+      "minutes": 130,
+      "keywords": [
+        "acceptance testing",
+        "black-box testing",
+        "component integration testing",
+        "component testing",
+        "confirmation testing",
+        "functional testing",
+        "integration testing",
+        "maintenance testing",
+        "non-functional testing",
+        "regression testing",
+        "shift left",
+        "system integration testing",
+        "system testing",
+        "test level",
+        "test object",
+        "test type",
+        "white-box testing"
+      ],
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "Testing in the Context of a Software Development Lifecycle",
+          "learningObjectives": [
+            {
+              "id": "FL-2.1.1",
+              "kLevel": "K2",
+              "text": "Explain the impact of the chosen software development lifecycle on testing"
+            },
+            {
+              "id": "FL-2.1.2",
+              "kLevel": "K1",
+              "text": "Recall good testing practices that apply to all software development lifecycles"
+            },
+            {
+              "id": "FL-2.1.3",
+              "kLevel": "K1",
+              "text": "Recall the examples of test-first approaches to development"
+            },
+            {
+              "id": "FL-2.1.4",
+              "kLevel": "K2",
+              "text": "Summarize how DevOps might have an impact on testing"
+            },
+            {
+              "id": "FL-2.1.5",
+              "kLevel": "K2",
+              "text": "Explain shift left"
+            },
+            {
+              "id": "FL-2.1.6",
+              "kLevel": "K2",
+              "text": "Explain how retrospectives can be used as a mechanism for process improvement"
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Test Levels and Test Types",
+          "learningObjectives": [
+            {
+              "id": "FL-2.2.1",
+              "kLevel": "K2",
+              "text": "Distinguish the different test levels"
+            },
+            {
+              "id": "FL-2.2.2",
+              "kLevel": "K2",
+              "text": "Distinguish the different test types"
+            },
+            {
+              "id": "FL-2.2.3",
+              "kLevel": "K2",
+              "text": "Distinguish confirmation testing from regression testing"
+            }
+          ]
+        },
+        {
+          "number": "2.3",
+          "title": "Maintenance Testing",
+          "learningObjectives": [
+            {
+              "id": "FL-2.3.1",
+              "kLevel": "K2",
+              "text": "Summarize maintenance testing and its triggers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Static Testing",
+      "minutes": 80,
+      "keywords": [
+        "anomaly",
+        "dynamic testing",
+        "formal review",
+        "informal review",
+        "inspection",
+        "review",
+        "static analysis",
+        "static testing",
+        "technical review",
+        "walkthrough"
+      ],
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "Static Testing Basics",
+          "learningObjectives": [
+            {
+              "id": "FL-3.1.1",
+              "kLevel": "K1",
+              "text": "Recognize types of work products that can be examined by static testing"
+            },
+            {
+              "id": "FL-3.1.2",
+              "kLevel": "K2",
+              "text": "Explain the value of static testing"
+            },
+            {
+              "id": "FL-3.1.3",
+              "kLevel": "K2",
+              "text": "Compare and contrast static testing and dynamic testing"
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Feedback and Review Process",
+          "learningObjectives": [
+            {
+              "id": "FL-3.2.1",
+              "kLevel": "K1",
+              "text": "Identify the benefits of early and frequent stakeholder feedback"
+            },
+            {
+              "id": "FL-3.2.2",
+              "kLevel": "K2",
+              "text": "Summarize the activities of the review process"
+            },
+            {
+              "id": "FL-3.2.3",
+              "kLevel": "K1",
+              "text": "Recall which responsibilities are assigned to the principal roles when performing reviews"
+            },
+            {
+              "id": "FL-3.2.4",
+              "kLevel": "K2",
+              "text": "Compare and contrast the different review types"
+            },
+            {
+              "id": "FL-3.2.5",
+              "kLevel": "K1",
+              "text": "Recall the factors that contribute to a successful review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Test Analysis and Design",
+      "minutes": 390,
+      "keywords": [
+        "acceptance criteria",
+        "acceptance test-driven development",
+        "black-box test technique",
+        "boundary value analysis",
+        "branch coverage",
+        "checklist-based testing",
+        "collaboration-based test approach",
+        "coverage",
+        "coverage item",
+        "decision table testing",
+        "equivalence partitioning",
+        "error guessing",
+        "experience-based test technique",
+        "exploratory testing",
+        "state transition testing",
+        "statement coverage",
+        "test technique",
+        "white-box test technique"
+      ],
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "Test Techniques Overview",
+          "learningObjectives": [
+            {
+              "id": "FL-4.1.1",
+              "kLevel": "K2",
+              "text": "Distinguish black-box test techniques, white-box test techniques and experience-based"
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Black-box Test Techniques",
+          "learningObjectives": [
+            {
+              "id": "FL-4.2.1",
+              "kLevel": "K3",
+              "text": "Use equivalence partitioning to derive test cases"
+            },
+            {
+              "id": "FL-4.2.2",
+              "kLevel": "K3",
+              "text": "Use boundary value analysis to derive test cases"
+            },
+            {
+              "id": "FL-4.2.3",
+              "kLevel": "K3",
+              "text": "Use decision table testing to derive test cases"
+            },
+            {
+              "id": "FL-4.2.4",
+              "kLevel": "K3",
+              "text": "Use state transition testing to derive test cases"
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "White-box Test Techniques",
+          "learningObjectives": [
+            {
+              "id": "FL-4.3.1",
+              "kLevel": "K2",
+              "text": "Explain statement testing"
+            },
+            {
+              "id": "FL-4.3.2",
+              "kLevel": "K2",
+              "text": "Explain branch testing"
+            },
+            {
+              "id": "FL-4.3.3",
+              "kLevel": "K2",
+              "text": "Explain the value of white-box testing"
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Experience-based Test Techniques",
+          "learningObjectives": [
+            {
+              "id": "FL-4.4.1",
+              "kLevel": "K2",
+              "text": "Explain error guessing"
+            },
+            {
+              "id": "FL-4.4.2",
+              "kLevel": "K2",
+              "text": "Explain exploratory testing"
+            },
+            {
+              "id": "FL-4.4.3",
+              "kLevel": "K2",
+              "text": "Explain checklist-based testing"
+            }
+          ]
+        },
+        {
+          "number": "4.5",
+          "title": "Collaboration-based Test Approaches",
+          "learningObjectives": [
+            {
+              "id": "FL-4.5.1",
+              "kLevel": "K2",
+              "text": "Explain how to write user stories in collaboration with developers and business"
+            },
+            {
+              "id": "FL-4.5.2",
+              "kLevel": "K2",
+              "text": "Classify the different options for writing acceptance criteria"
+            },
+            {
+              "id": "FL-4.5.3",
+              "kLevel": "K3",
+              "text": "Use acceptance test-driven development (ATDD) to derive test cases"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Managing the Test Activities",
+      "minutes": 335,
+      "keywords": [
+        "defect management",
+        "defect report",
+        "entry criteria",
+        "exit criteria",
+        "product risk",
+        "project risk",
+        "risk",
+        "risk analysis",
+        "risk assessment",
+        "risk control",
+        "risk identification",
+        "risk level",
+        "risk management",
+        "risk mitigation",
+        "risk monitoring",
+        "risk-based testing",
+        "test approach",
+        "test completion report",
+        "test control",
+        "test monitoring",
+        "test plan",
+        "test planning",
+        "test progress report",
+        "test pyramid",
+        "test strategy",
+        "testing quadrants"
+      ],
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "Test Planning",
+          "learningObjectives": [
+            {
+              "id": "FL-5.1.1",
+              "kLevel": "K2",
+              "text": "Exemplify the purpose and content of a test plan"
+            },
+            {
+              "id": "FL-5.1.2",
+              "kLevel": "K1",
+              "text": "Recognize how a tester adds value to iteration and release planning"
+            },
+            {
+              "id": "FL-5.1.3",
+              "kLevel": "K2",
+              "text": "Compare and contrast entry criteria and exit criteria"
+            },
+            {
+              "id": "FL-5.1.4",
+              "kLevel": "K3",
+              "text": "Use estimation techniques to calculate the required test effort"
+            },
+            {
+              "id": "FL-5.1.5",
+              "kLevel": "K3",
+              "text": "Apply test case prioritization"
+            },
+            {
+              "id": "FL-5.1.6",
+              "kLevel": "K1",
+              "text": "Recall the concepts of the test pyramid"
+            },
+            {
+              "id": "FL-5.1.7",
+              "kLevel": "K2",
+              "text": "Summarize the testing quadrants and their relationships with test levels and test types"
+            }
+          ]
+        },
+        {
+          "number": "5.2",
+          "title": "Risk Management",
+          "learningObjectives": [
+            {
+              "id": "FL-5.2.1",
+              "kLevel": "K1",
+              "text": "Identify risk level by using risk likelihood and risk impact"
+            },
+            {
+              "id": "FL-5.2.2",
+              "kLevel": "K2",
+              "text": "Distinguish between project risks and product risks"
+            },
+            {
+              "id": "FL-5.2.3",
+              "kLevel": "K2",
+              "text": "Explain how product risk analysis may influence thoroughness and test scope"
+            },
+            {
+              "id": "FL-5.2.4",
+              "kLevel": "K2",
+              "text": "Explain what measures can be taken in response to analyzed product risks"
+            }
+          ]
+        },
+        {
+          "number": "5.3",
+          "title": "Test Monitoring, Test Control and Test Completion",
+          "learningObjectives": [
+            {
+              "id": "FL-5.3.1",
+              "kLevel": "K1",
+              "text": "Recall metrics used for testing"
+            },
+            {
+              "id": "FL-5.3.2",
+              "kLevel": "K2",
+              "text": "Summarize the purposes, content, and audiences for test reports"
+            },
+            {
+              "id": "FL-5.3.3",
+              "kLevel": "K2",
+              "text": "Exemplify how to communicate the status of testing"
+            }
+          ]
+        },
+        {
+          "number": "5.4",
+          "title": "Configuration Management",
+          "learningObjectives": [
+            {
+              "id": "FL-5.4.1",
+              "kLevel": "K2",
+              "text": "Summarize how configuration management supports testing"
+            }
+          ]
+        },
+        {
+          "number": "5.5",
+          "title": "Defect Management",
+          "learningObjectives": [
+            {
+              "id": "FL-5.5.1",
+              "kLevel": "K3",
+              "text": "Prepare a defect report"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Test Tools",
+      "minutes": 20,
+      "keywords": [
+        "test automation"
+      ],
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "Tool Support for Testing",
+          "learningObjectives": [
+            {
+              "id": "FL-6.1.1",
+              "kLevel": "K2",
+              "text": "Explain how different types of test tools support testing"
+            }
+          ]
+        },
+        {
+          "number": "6.2",
+          "title": "Benefits and Risks of Test Automation",
+          "learningObjectives": [
+            {
+              "id": "FL-6.2.1",
+              "kLevel": "K1",
+              "text": "Recall the benefits and risks of test automation"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "learningObjectives": [
+    {
+      "id": "FL-1.1.1",
+      "number": "1.1.1",
+      "chapter": 1,
+      "section": "1.1",
+      "kLevel": "K1",
+      "text": "Identify typical test objectives"
+    },
+    {
+      "id": "FL-1.1.2",
+      "number": "1.1.2",
+      "chapter": 1,
+      "section": "1.1",
+      "kLevel": "K2",
+      "text": "Differentiate testing from debugging"
+    },
+    {
+      "id": "FL-1.2.1",
+      "number": "1.2.1",
+      "chapter": 1,
+      "section": "1.2",
+      "kLevel": "K2",
+      "text": "Exemplify why testing is necessary"
+    },
+    {
+      "id": "FL-1.2.2",
+      "number": "1.2.2",
+      "chapter": 1,
+      "section": "1.2",
+      "kLevel": "K1",
+      "text": "Recall the relation between testing and quality assurance"
+    },
+    {
+      "id": "FL-1.2.3",
+      "number": "1.2.3",
+      "chapter": 1,
+      "section": "1.2",
+      "kLevel": "K2",
+      "text": "Distinguish between root cause, error, defect, and failure"
+    },
+    {
+      "id": "FL-1.3.1",
+      "number": "1.3.1",
+      "chapter": 1,
+      "section": "1.3",
+      "kLevel": "K2",
+      "text": "Explain the seven testing principles"
+    },
+    {
+      "id": "FL-1.4.1",
+      "number": "1.4.1",
+      "chapter": 1,
+      "section": "1.4",
+      "kLevel": "K2",
+      "text": "Explain the different test activities and related tasks"
+    },
+    {
+      "id": "FL-1.4.2",
+      "number": "1.4.2",
+      "chapter": 1,
+      "section": "1.4",
+      "kLevel": "K2",
+      "text": "Explain the impact of context on the test process"
+    },
+    {
+      "id": "FL-1.4.3",
+      "number": "1.4.3",
+      "chapter": 1,
+      "section": "1.4",
+      "kLevel": "K2",
+      "text": "Differentiate the testware that supports the test activities"
+    },
+    {
+      "id": "FL-1.4.4",
+      "number": "1.4.4",
+      "chapter": 1,
+      "section": "1.4",
+      "kLevel": "K2",
+      "text": "Explain the value of maintaining traceability"
+    },
+    {
+      "id": "FL-1.4.5",
+      "number": "1.4.5",
+      "chapter": 1,
+      "section": "1.4",
+      "kLevel": "K2",
+      "text": "Compare the different roles in testing"
+    },
+    {
+      "id": "FL-1.5.1",
+      "number": "1.5.1",
+      "chapter": 1,
+      "section": "1.5",
+      "kLevel": "K2",
+      "text": "Give examples of the generic skills required for testing"
+    },
+    {
+      "id": "FL-1.5.2",
+      "number": "1.5.2",
+      "chapter": 1,
+      "section": "1.5",
+      "kLevel": "K1",
+      "text": "Recall the advantages of the whole team approach"
+    },
+    {
+      "id": "FL-1.5.3",
+      "number": "1.5.3",
+      "chapter": 1,
+      "section": "1.5",
+      "kLevel": "K2",
+      "text": "Distinguish the benefits and drawbacks of independence of testing"
+    },
+    {
+      "id": "FL-2.1.1",
+      "number": "2.1.1",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Explain the impact of the chosen software development lifecycle on testing"
+    },
+    {
+      "id": "FL-2.1.2",
+      "number": "2.1.2",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K1",
+      "text": "Recall good testing practices that apply to all software development lifecycles"
+    },
+    {
+      "id": "FL-2.1.3",
+      "number": "2.1.3",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K1",
+      "text": "Recall the examples of test-first approaches to development"
+    },
+    {
+      "id": "FL-2.1.4",
+      "number": "2.1.4",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Summarize how DevOps might have an impact on testing"
+    },
+    {
+      "id": "FL-2.1.5",
+      "number": "2.1.5",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Explain shift left"
+    },
+    {
+      "id": "FL-2.1.6",
+      "number": "2.1.6",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Explain how retrospectives can be used as a mechanism for process improvement"
+    },
+    {
+      "id": "FL-2.2.1",
+      "number": "2.2.1",
+      "chapter": 2,
+      "section": "2.2",
+      "kLevel": "K2",
+      "text": "Distinguish the different test levels"
+    },
+    {
+      "id": "FL-2.2.2",
+      "number": "2.2.2",
+      "chapter": 2,
+      "section": "2.2",
+      "kLevel": "K2",
+      "text": "Distinguish the different test types"
+    },
+    {
+      "id": "FL-2.2.3",
+      "number": "2.2.3",
+      "chapter": 2,
+      "section": "2.2",
+      "kLevel": "K2",
+      "text": "Distinguish confirmation testing from regression testing"
+    },
+    {
+      "id": "FL-2.3.1",
+      "number": "2.3.1",
+      "chapter": 2,
+      "section": "2.3",
+      "kLevel": "K2",
+      "text": "Summarize maintenance testing and its triggers"
+    },
+    {
+      "id": "FL-3.1.1",
+      "number": "3.1.1",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K1",
+      "text": "Recognize types of work products that can be examined by static testing"
+    },
+    {
+      "id": "FL-3.1.2",
+      "number": "3.1.2",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K2",
+      "text": "Explain the value of static testing"
+    },
+    {
+      "id": "FL-3.1.3",
+      "number": "3.1.3",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K2",
+      "text": "Compare and contrast static testing and dynamic testing"
+    },
+    {
+      "id": "FL-3.2.1",
+      "number": "3.2.1",
+      "chapter": 3,
+      "section": "3.2",
+      "kLevel": "K1",
+      "text": "Identify the benefits of early and frequent stakeholder feedback"
+    },
+    {
+      "id": "FL-3.2.2",
+      "number": "3.2.2",
+      "chapter": 3,
+      "section": "3.2",
+      "kLevel": "K2",
+      "text": "Summarize the activities of the review process"
+    },
+    {
+      "id": "FL-3.2.3",
+      "number": "3.2.3",
+      "chapter": 3,
+      "section": "3.2",
+      "kLevel": "K1",
+      "text": "Recall which responsibilities are assigned to the principal roles when performing reviews"
+    },
+    {
+      "id": "FL-3.2.4",
+      "number": "3.2.4",
+      "chapter": 3,
+      "section": "3.2",
+      "kLevel": "K2",
+      "text": "Compare and contrast the different review types"
+    },
+    {
+      "id": "FL-3.2.5",
+      "number": "3.2.5",
+      "chapter": 3,
+      "section": "3.2",
+      "kLevel": "K1",
+      "text": "Recall the factors that contribute to a successful review"
+    },
+    {
+      "id": "FL-4.1.1",
+      "number": "4.1.1",
+      "chapter": 4,
+      "section": "4.1",
+      "kLevel": "K2",
+      "text": "Distinguish black-box test techniques, white-box test techniques and experience-based"
+    },
+    {
+      "id": "FL-4.2.1",
+      "number": "4.2.1",
+      "chapter": 4,
+      "section": "4.2",
+      "kLevel": "K3",
+      "text": "Use equivalence partitioning to derive test cases"
+    },
+    {
+      "id": "FL-4.2.2",
+      "number": "4.2.2",
+      "chapter": 4,
+      "section": "4.2",
+      "kLevel": "K3",
+      "text": "Use boundary value analysis to derive test cases"
+    },
+    {
+      "id": "FL-4.2.3",
+      "number": "4.2.3",
+      "chapter": 4,
+      "section": "4.2",
+      "kLevel": "K3",
+      "text": "Use decision table testing to derive test cases"
+    },
+    {
+      "id": "FL-4.2.4",
+      "number": "4.2.4",
+      "chapter": 4,
+      "section": "4.2",
+      "kLevel": "K3",
+      "text": "Use state transition testing to derive test cases"
+    },
+    {
+      "id": "FL-4.3.1",
+      "number": "4.3.1",
+      "chapter": 4,
+      "section": "4.3",
+      "kLevel": "K2",
+      "text": "Explain statement testing"
+    },
+    {
+      "id": "FL-4.3.2",
+      "number": "4.3.2",
+      "chapter": 4,
+      "section": "4.3",
+      "kLevel": "K2",
+      "text": "Explain branch testing"
+    },
+    {
+      "id": "FL-4.3.3",
+      "number": "4.3.3",
+      "chapter": 4,
+      "section": "4.3",
+      "kLevel": "K2",
+      "text": "Explain the value of white-box testing"
+    },
+    {
+      "id": "FL-4.4.1",
+      "number": "4.4.1",
+      "chapter": 4,
+      "section": "4.4",
+      "kLevel": "K2",
+      "text": "Explain error guessing"
+    },
+    {
+      "id": "FL-4.4.2",
+      "number": "4.4.2",
+      "chapter": 4,
+      "section": "4.4",
+      "kLevel": "K2",
+      "text": "Explain exploratory testing"
+    },
+    {
+      "id": "FL-4.4.3",
+      "number": "4.4.3",
+      "chapter": 4,
+      "section": "4.4",
+      "kLevel": "K2",
+      "text": "Explain checklist-based testing"
+    },
+    {
+      "id": "FL-4.5.1",
+      "number": "4.5.1",
+      "chapter": 4,
+      "section": "4.5",
+      "kLevel": "K2",
+      "text": "Explain how to write user stories in collaboration with developers and business"
+    },
+    {
+      "id": "FL-4.5.2",
+      "number": "4.5.2",
+      "chapter": 4,
+      "section": "4.5",
+      "kLevel": "K2",
+      "text": "Classify the different options for writing acceptance criteria"
+    },
+    {
+      "id": "FL-4.5.3",
+      "number": "4.5.3",
+      "chapter": 4,
+      "section": "4.5",
+      "kLevel": "K3",
+      "text": "Use acceptance test-driven development (ATDD) to derive test cases"
+    },
+    {
+      "id": "FL-5.1.1",
+      "number": "5.1.1",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K2",
+      "text": "Exemplify the purpose and content of a test plan"
+    },
+    {
+      "id": "FL-5.1.2",
+      "number": "5.1.2",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K1",
+      "text": "Recognize how a tester adds value to iteration and release planning"
+    },
+    {
+      "id": "FL-5.1.3",
+      "number": "5.1.3",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K2",
+      "text": "Compare and contrast entry criteria and exit criteria"
+    },
+    {
+      "id": "FL-5.1.4",
+      "number": "5.1.4",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K3",
+      "text": "Use estimation techniques to calculate the required test effort"
+    },
+    {
+      "id": "FL-5.1.5",
+      "number": "5.1.5",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K3",
+      "text": "Apply test case prioritization"
+    },
+    {
+      "id": "FL-5.1.6",
+      "number": "5.1.6",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K1",
+      "text": "Recall the concepts of the test pyramid"
+    },
+    {
+      "id": "FL-5.1.7",
+      "number": "5.1.7",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K2",
+      "text": "Summarize the testing quadrants and their relationships with test levels and test types"
+    },
+    {
+      "id": "FL-5.2.1",
+      "number": "5.2.1",
+      "chapter": 5,
+      "section": "5.2",
+      "kLevel": "K1",
+      "text": "Identify risk level by using risk likelihood and risk impact"
+    },
+    {
+      "id": "FL-5.2.2",
+      "number": "5.2.2",
+      "chapter": 5,
+      "section": "5.2",
+      "kLevel": "K2",
+      "text": "Distinguish between project risks and product risks"
+    },
+    {
+      "id": "FL-5.2.3",
+      "number": "5.2.3",
+      "chapter": 5,
+      "section": "5.2",
+      "kLevel": "K2",
+      "text": "Explain how product risk analysis may influence thoroughness and test scope"
+    },
+    {
+      "id": "FL-5.2.4",
+      "number": "5.2.4",
+      "chapter": 5,
+      "section": "5.2",
+      "kLevel": "K2",
+      "text": "Explain what measures can be taken in response to analyzed product risks"
+    },
+    {
+      "id": "FL-5.3.1",
+      "number": "5.3.1",
+      "chapter": 5,
+      "section": "5.3",
+      "kLevel": "K1",
+      "text": "Recall metrics used for testing"
+    },
+    {
+      "id": "FL-5.3.2",
+      "number": "5.3.2",
+      "chapter": 5,
+      "section": "5.3",
+      "kLevel": "K2",
+      "text": "Summarize the purposes, content, and audiences for test reports"
+    },
+    {
+      "id": "FL-5.3.3",
+      "number": "5.3.3",
+      "chapter": 5,
+      "section": "5.3",
+      "kLevel": "K2",
+      "text": "Exemplify how to communicate the status of testing"
+    },
+    {
+      "id": "FL-5.4.1",
+      "number": "5.4.1",
+      "chapter": 5,
+      "section": "5.4",
+      "kLevel": "K2",
+      "text": "Summarize how configuration management supports testing"
+    },
+    {
+      "id": "FL-5.5.1",
+      "number": "5.5.1",
+      "chapter": 5,
+      "section": "5.5",
+      "kLevel": "K3",
+      "text": "Prepare a defect report"
+    },
+    {
+      "id": "FL-6.1.1",
+      "number": "6.1.1",
+      "chapter": 6,
+      "section": "6.1",
+      "kLevel": "K2",
+      "text": "Explain how different types of test tools support testing"
+    },
+    {
+      "id": "FL-6.2.1",
+      "number": "6.2.1",
+      "chapter": 6,
+      "section": "6.2",
+      "kLevel": "K1",
+      "text": "Recall the benefits and risks of test automation"
+    }
+  ]
+}

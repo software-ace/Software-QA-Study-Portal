@@ -1,0 +1,108 @@
+{
+  "certification": {
+    "code": "CTFL",
+    "version": "4.0",
+    "name": "ISTQB Certified Tester Foundation Level",
+    "syllabus": "CTFL v4.0"
+  },
+  "generatedFrom": "Official ISTQB CTFL v4.0 sample exams (sets A-D)",
+  "rules": {
+    "questionCount": 40,
+    "totalPoints": 40,
+    "passPoints": 26,
+    "passPercent": 65,
+    "durationMinutes": 60,
+    "extendedDurationMinutes": 75
+  },
+  "exams": [
+    {
+      "id": "ctfl-v4-set-a",
+      "set": "A",
+      "title": "ISTQB CTFL v4.0 — Sample Exam Set A",
+      "file": "exam-a.json",
+      "counts": {
+        "exam": 40,
+        "additional": 26
+      },
+      "rules": {
+        "questionCount": 40,
+        "totalPoints": 40,
+        "passPoints": 26,
+        "passPercent": 65,
+        "durationMinutes": 60,
+        "extendedDurationMinutes": 75
+      },
+      "documentVersion": "1.7"
+    },
+    {
+      "id": "ctfl-v4-set-b",
+      "set": "B",
+      "title": "ISTQB CTFL v4.0 — Sample Exam Set B",
+      "file": "exam-b.json",
+      "counts": {
+        "exam": 40,
+        "additional": 0
+      },
+      "rules": {
+        "questionCount": 40,
+        "totalPoints": 40,
+        "passPoints": 26,
+        "passPercent": 65,
+        "durationMinutes": 60,
+        "extendedDurationMinutes": 75
+      },
+      "documentVersion": "1.7"
+    },
+    {
+      "id": "ctfl-v4-set-c",
+      "set": "C",
+      "title": "ISTQB CTFL v4.0 — Sample Exam Set C",
+      "file": "exam-c.json",
+      "counts": {
+        "exam": 40,
+        "additional": 0
+      },
+      "rules": {
+        "questionCount": 40,
+        "totalPoints": 40,
+        "passPoints": 26,
+        "passPercent": 65,
+        "durationMinutes": 60,
+        "extendedDurationMinutes": 75
+      },
+      "documentVersion": "1.6"
+    },
+    {
+      "id": "ctfl-v4-set-d",
+      "set": "D",
+      "title": "ISTQB CTFL v4.0 — Sample Exam Set D",
+      "file": "exam-d.json",
+      "counts": {
+        "exam": 40,
+        "additional": 0
+      },
+      "rules": {
+        "questionCount": 40,
+        "totalPoints": 40,
+        "passPoints": 26,
+        "passPercent": 65,
+        "durationMinutes": 60,
+        "extendedDurationMinutes": 75
+      },
+      "documentVersion": "1.5"
+    }
+  ],
+  "syllabus": {
+    "file": "syllabus.json",
+    "chapters": 6,
+    "learningObjectives": 64
+  },
+  "glossary": {
+    "file": "glossary.json",
+    "terms": 97
+  },
+  "totals": {
+    "examQuestions": 160,
+    "additionalQuestions": 26
+  }
+}

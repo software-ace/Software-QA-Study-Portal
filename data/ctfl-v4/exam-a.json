@@ -1,0 +1,3632 @@
+{
+  "id": "ctfl-v4-set-a",
+  "set": "A",
+  "title": "ISTQB CTFL v4.0 — Sample Exam Set A",
+  "certification": {
+    "code": "CTFL",
+    "version": "4.0",
+    "name": "ISTQB Certified Tester Foundation Level"
+  },
+  "source": {
+    "publisher": "International Software Testing Qualifications Board (ISTQB®)",
+    "questionsDocument": "ISTQB_CTFL_v4.0_Sample-Exam-A-Questions",
+    "answersDocument": "ISTQB_CTFL_v4.0_Sample-Exam-A-Answers",
+    "documentVersion": "1.7",
+    "release": "April 1, 2025",
+    "syllabusVersion": "4.0.1",
+    "url": "https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-a-questions_v1-6/",
+    "copyright": "© International Software Testing Qualifications Board (ISTQB®). Reproduced for non-commercial study use with acknowledgement of the source."
+  },
+  "rules": {
+    "questionCount": 40,
+    "totalPoints": 40,
+    "passPoints": 26,
+    "passPercent": 65,
+    "durationMinutes": 60,
+    "extendedDurationMinutes": 75
+  },
+  "counts": {
+    "exam": 40,
+    "additional": 26
+  },
+  "questions": [
+    {
+      "id": "ctfl-v4-a-1",
+      "ref": "1",
+      "label": "#1",
+      "number": 1,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.1.1",
+      "kLevel": "K1",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following statements describe a valid test objective?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "To prove that there are no unfixed defects in the system under test",
+          "correct": false,
+          "rationale": "Is not correct. It is impossible to prove that there are no defects anymore in the system under test. See testing principle 1"
+        },
+        {
+          "key": "b",
+          "text": "To prove that there will be no failures after the implementation of the system into production",
+          "correct": false,
+          "rationale": "Is not correct. See testing principle 7"
+        },
+        {
+          "key": "c",
+          "text": "To reduce the risk level of the test object and to build confidence in the quality level",
+          "correct": true,
+          "rationale": "Is correct. Testing finds defects and failures which reduces the level of risk and at the same time gives more confidence in the quality level of the test object"
+        },
+        {
+          "key": "d",
+          "text": "To verify that there are no untested combinations of inputs",
+          "correct": false,
+          "rationale": "Is not correct. It is impossible to test all combinations of inputs (see testing principle 2)"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-2",
+      "ref": "2",
+      "label": "#2",
+      "number": 2,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.2.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following options shows an example of test activities that contribute to success?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products",
+          "correct": true,
+          "rationale": "Is correct. It is important that testers are involved from the beginning of the software development lifecycle (SDLC). It will increase understanding of design decisions and will detect defects early."
+        },
+        {
+          "key": "b",
+          "text": "Testers try not to disturb the developers while coding, so that the developers write better code",
+          "correct": false,
+          "rationale": "Is not correct. Both developers and testers will have more understanding of each other's work products and how to test the code"
+        },
+        {
+          "key": "c",
+          "text": "Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing",
+          "correct": false,
+          "rationale": "Is not correct. End users will not help the testers in increasing the quality of defect reports; also, users usually do not participate in low-level testing levels like integration testing"
+        },
+        {
+          "key": "d",
+          "text": "Certified testers will design much better test cases than non-certified testers",
+          "correct": false,
+          "rationale": "Is not correct. Being certified does not automatically mean that the tester will be better in test design"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-3",
+      "ref": "3",
+      "label": "#3",
+      "number": 3,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.3.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. Which testing principle explains your skepticism?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Tests wear out",
+          "correct": true,
+          "rationale": "Is correct. This principle means that if the same tests are repeated over and over again, eventually these tests no longer find any new defects. This is probably why the tests all passed in this release as well"
+        },
+        {
+          "key": "b",
+          "text": "Absence-of-defects fallacy",
+          "correct": false,
+          "rationale": "Is not correct. This principle says about the mistaken belief that just finding and fixing a large number of defects will ensure the success of a system"
+        },
+        {
+          "key": "c",
+          "text": "Defects cluster together",
+          "correct": false,
+          "rationale": "Is not correct. This principle says that a small number of components usually contain most of the defects"
+        },
+        {
+          "key": "d",
+          "text": "Exhaustive testing is impossible",
+          "correct": false,
+          "rationale": "Is not correct. This principle states that testing all combinations of inputs and preconditions is not feasible"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-4",
+      "ref": "4",
+      "label": "#4",
+      "number": 4,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.4.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following activities is a part of test analysis?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Estimating that testing the integration with the payment service will take 8 person-days",
+          "correct": false,
+          "rationale": "Is not correct. Estimating the test effort is part of test planning"
+        },
+        {
+          "key": "b",
+          "text": "Deciding that the team should test if it is possible to properly share payment between many users",
+          "correct": true,
+          "rationale": "Is correct. This is an example of defining test conditions which is a part of test analysis"
+        },
+        {
+          "key": "c",
+          "text": "Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be paid",
+          "correct": false,
+          "rationale": "Is not correct. Using test techniques to derive coverage items is a part of test design"
+        },
+        {
+          "key": "d",
+          "text": "Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect",
+          "correct": false,
+          "rationale": "Is not correct. Reporting defects found during dynamic testing is a part of test execution"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-5",
+      "ref": "5",
+      "label": "#5",
+      "number": 5,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.4.2",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following factors have a SIGNIFICANT influence on the test approach?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       The SDLC",
+            " ii.       The number of defects detected in previous projects",
+            "iii.       The identified product risks",
+            "iv.        New regulatory requirements forcing formal white-box testing",
+            " v.        The test environment setup"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, ii have significant influence",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "i, iii, iv have significant influence",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "c",
+          "text": "ii, iv, v have significant influence",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "iii, v have significant influence",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "i. Is true. The SDLC has an influence on the test approach ii. Is false. The number of defects detected in previous projects may have some influence, but this is not as significant as i, iii and iv iii. Is true. The identified product risks are one of the most important factors influencing the test approach iv. Is true. Regulatory requirements are important factors influencing the test approach v. Is false. The test environment has no significant influence on the test approach Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-6",
+      "ref": "6",
+      "label": "#6",
+      "number": 6,
+      "additional": false,
+      "points": 1,
+      "selectCount": 2,
+      "learningObjective": "FL-1.4.5",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which TWO of the following tasks belong MAINLY to a testing role?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Configure test environments",
+          "correct": true,
+          "rationale": "Is correct. This is done by the testers"
+        },
+        {
+          "key": "b",
+          "text": "Maintain the product backlog",
+          "correct": false,
+          "rationale": "Is not correct. The product backlog is built and maintained by the product owner"
+        },
+        {
+          "key": "c",
+          "text": "Design solutions to new requirements",
+          "correct": false,
+          "rationale": "Is not correct. This is done by the development team"
+        },
+        {
+          "key": "d",
+          "text": "Create the test plan",
+          "correct": false,
+          "rationale": "Is not correct. This is a managerial role"
+        },
+        {
+          "key": "e",
+          "text": "Analyze the test basis",
+          "correct": true,
+          "rationale": "Is correct. This is done by the testers since its technical task done as part of a test analysis."
+        }
+      ],
+      "correct": [
+        "a",
+        "e"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-7",
+      "ref": "7",
+      "label": "#7",
+      "number": 7,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.5.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following skills (i-v) are the MOST important skills of a tester?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Having domain knowledge",
+            " ii.       Creating a product vision",
+            "iii.       Being a good team player",
+            "iv.        Planning and organizing the work of the team",
+            " v.        Critical thinking"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "ii and iv are important",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "i, iii and v are important",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "c",
+          "text": "i, ii and v are important",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "iii and iv are important",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "i. Is true. Having domain knowledge is an important tester skill ii. Is false. This is a task of the business analyst together with the business representative iii. Is true. Being a good team player is an important skill iv. Is false. Planning and organizing the work of the team is a task of the test manager or, mostly in an Agile software development project, the whole team and not just the tester v. Is true. Critical thinking is one of the most important skills of testers Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-8",
+      "ref": "8",
+      "label": "#8",
+      "number": 8,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.5.2",
+      "kLevel": "K1",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "How is the whole team approach present in the interactions between testers and business representatives?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Business representatives decide on test automation approaches",
+          "correct": false,
+          "rationale": "Is not correct. The test automation approach is defined by testers with the help of developers and business representatives"
+        },
+        {
+          "key": "b",
+          "text": "Testers help business representatives to define a test strategy",
+          "correct": false,
+          "rationale": "Is not correct. The test strategy is decided in collaboration with the developers"
+        },
+        {
+          "key": "c",
+          "text": "Business representatives are not part of the whole team approach",
+          "correct": false,
+          "rationale": "Is not correct. Testers, developers, and business representatives are part of the whole team approach"
+        },
+        {
+          "key": "d",
+          "text": "Testers help business representatives to create suitable acceptance tests",
+          "correct": true,
+          "rationale": "Is correct. Testers will work closely with business representatives to ensure that the desired quality levels are achieved. This includes supporting and collaborating with them to help them create suitable acceptance tests"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-9",
+      "ref": "9",
+      "label": "#9",
+      "number": 9,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.1.2",
+      "kLevel": "K1",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Consider the following rule: “for every SDLC activity there is a corresponding test activity”. In which SDLC models does this rule hold?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Only in sequential development models",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "Only in iterative development models",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "Only in iterative and incremental development models",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "In sequential, incremental, and iterative development models",
+          "correct": true,
+          "rationale": "Is correct. This rule holds for all SDLC models"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-10",
+      "ref": "10",
+      "label": "#10",
+      "number": 10,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.1.3",
+      "kLevel": "K1",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following statements BEST describes the acceptance test-driven development (ATDD) approach?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "In ATDD, acceptance criteria are typically created based on the given/when/then format",
+          "correct": false,
+          "rationale": "Is not correct. It is more often used in behavior-driven development (BDD)"
+        },
+        {
+          "key": "b",
+          "text": "In ATDD, test cases are mainly created at component testing and are code-oriented",
+          "correct": false,
+          "rationale": "Is not correct. It is the description of test-driven development (TDD)"
+        },
+        {
+          "key": "c",
+          "text": "In ATDD, tests are created, based on acceptance criteria to drive the development of the related software",
+          "correct": true,
+          "rationale": "Is correct. In acceptance test-driven development (ATDD) tests are written from acceptance criteria as part of the design process"
+        },
+        {
+          "key": "d",
+          "text": "in ATDD, tests are based on the desired behavior of the software, which makes it easier for team members to understand them",
+          "correct": false,
+          "rationale": "Is not correct. It is used in BDD"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-11",
+      "ref": "11",
+      "label": "#11",
+      "number": 11,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.1.5",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is NOT an example of the shift-left approach?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Reviewing the user requirements before they are formally accepted by the stakeholders",
+          "correct": false,
+          "rationale": "Is not correct. Early review is an example of the shift-left approach"
+        },
+        {
+          "key": "b",
+          "text": "Writing a component test before the corresponding code is written",
+          "correct": false,
+          "rationale": "Is not correct. TDD is an example of the shift-left approach"
+        },
+        {
+          "key": "c",
+          "text": "Executing a performance efficiency test for a component during component testing",
+          "correct": false,
+          "rationale": "Is not correct. Early non-functional testing is an example of the shift-left approach"
+        },
+        {
+          "key": "d",
+          "text": "Writing a test script before setting up the configuration management process",
+          "correct": true,
+          "rationale": "Is correct. Test scripts should be subject to configuration management, so it makes no sense to create the test scripts before this process is set up"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-12",
+      "ref": "12",
+      "label": "#12",
+      "number": 12,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.1.6",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the arguments below would you use to convince your manager to organize retrospectives at the end of each release cycle?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Retrospectives are very popular these days and clients would appreciate it if we added them to our processes",
+          "correct": false,
+          "rationale": "Is not correct. Retrospectives are more useful for identifying improvement opportunities and have little importance for clients"
+        },
+        {
+          "key": "b",
+          "text": "Organizing retrospectives will save the organization money because without them end user representatives do not provide immediate feedback about the product",
+          "correct": false,
+          "rationale": "Is not correct. Retrospectives are not aimed to collect feedback about the product, but about the process. Additionally, retrospectives are internal activity for the team and should not include end user representatives"
+        },
+        {
+          "key": "c",
+          "text": "Process weaknesses identified during the retrospective can be analyzed and serve as a to do list for the organization’s continuous process improvement program",
+          "correct": true,
+          "rationale": "Is correct. Regularly conducted retrospectives, when appropriate follow up activities occur, are critical to continual improvement of development and testing"
+        },
+        {
+          "key": "d",
+          "text": "Retrospectives embrace five values including courage and respect, which are crucial to maintain continuous improvement in the organization",
+          "correct": false,
+          "rationale": "Is not correct. Courage and respect are values of Extreme Programming and are not closely related to retrospectives"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-13",
+      "ref": "13",
+      "label": "#13",
+      "number": 13,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.2.1",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which types of failures (1-4) fit which test levels (A-D) BEST?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "1.     Failures in system behavior as it deviates from the user’s business needs",
+            "2.     Failures in communication between components",
+            "3.     Failures in logic in the code",
+            "4.     Failures in not correctly implemented business rules"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "A. Component testing B. Component integration testing C. System testing D. Acceptance testing"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "1D, 2B, 3A, 4C",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "b",
+          "text": "1D, 2B, 3C, 4A",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "1B, 2A, 3D, 4C",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "1C, 2B, 3A, 4D",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Considering: • The test basis for acceptance testing is the user’s business needs (1D) • Communication between components is tested during component integration testing (2B) • Failures in logic can be found during component testing (3A) • Business rules are the test basis for system testing (4C) Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-14",
+      "ref": "14",
+      "label": "#14",
+      "number": 14,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.2.3",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are testing a user story with three acceptance criteria: AC1, AC2 and AC3. AC1 is covered by test case TC1, AC2 by TC2, and AC3 by TC3. The test execution history had three test runs on three consecutive versions of the software as follows:"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "                  Execution 1    Execution 2    Execution 3",
+            "TC1                 (1) Failed    (4) Passed     (7) Passed",
+            "TC2                (2) Passed      (5) Failed    (8) Passed",
+            "TC3                 (3) Failed     (6) Failed    (9) Passed"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Tests are repeated once you are informed that all defects found in the test run are corrected and a new version of the software is available. Which of the above tests are executed as regression tests?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Only 4, 7, 8, 9",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "Only 5, 7",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "c",
+          "text": "Only 4, 6, 8, 9",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "Only 5, 6",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Because TC1 and TC3 failed in Execution 1 (i.e., test (1) and test (3)), test (4) and test (6) are confirmation tests. Because TC2 and TC3 failed in Execution 2 (i.e., tests (5) and (6)), test (8) and test (9) are also confirmation tests. TC2 passed in Execution 1 (i.e., test (2)), so test (5) is a regression test. TC1 passed in the Execution 2 (i.e., test (4)), so test (7) is also a regression test. Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-15",
+      "ref": "15",
+      "label": "#15",
+      "number": 15,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.1.2",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is NOT a benefit of static testing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Having less expensive defect management due to the ease of detecting defects later in the SDLC",
+          "correct": true,
+          "rationale": "Is correct. Defect management is no less expensive. Finding and fixing defects later in the SDLC is more costly"
+        },
+        {
+          "key": "b",
+          "text": "Fixing defects found during static testing is generally much less expensive than fixing defects found during dynamic testing",
+          "correct": false,
+          "rationale": "Is not correct. This is a benefit of static testing"
+        },
+        {
+          "key": "c",
+          "text": "Finding coding defects that might not have been found by only performing dynamic testing",
+          "correct": false,
+          "rationale": "Is not correct. This is a benefit of static testing"
+        },
+        {
+          "key": "d",
+          "text": "Detecting gaps and inconsistencies in requirements",
+          "correct": false,
+          "rationale": "Is not correct. This is a benefit of static testing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-16",
+      "ref": "16",
+      "label": "#16",
+      "number": 16,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.2.1",
+      "kLevel": "K1",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is a benefit of early and frequent feedback?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It improves the test process for future projects",
+          "correct": false,
+          "rationale": "Is not correct. Feedback can improve the test process, but if one only wants to improve future projects, the feedback does not need to come early or frequently"
+        },
+        {
+          "key": "b",
+          "text": "It forces customers to prioritize their requirements based on agreed risks",
+          "correct": false,
+          "rationale": "Is not correct. Feedback is not used to prioritize requirements"
+        },
+        {
+          "key": "c",
+          "text": "It provides a measure for the quality of changes",
+          "correct": false,
+          "rationale": "Is not correct. There is no one, recommended way to measure quality of changes. Also, this is not one of the benefits of early feedback that are mentioned in section 3.2.1"
+        },
+        {
+          "key": "d",
+          "text": "It helps avoid requirements misunderstandings",
+          "correct": true,
+          "rationale": "Is correct. Early and frequent feedback can prevent misunderstandings about requirements"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-17",
+      "ref": "17",
+      "label": "#17",
+      "number": 17,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.2.4",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "The reviews being used in your organization have the following attributes:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "There is the role of a scribe",
+            "The main purpose is to evaluate quality",
+            "The meeting is led by the author of the work product",
+            "There is individual preparation",
+            "A review report is produced"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of the following review types is MOST likely being used?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Informal review",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "Walkthrough",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "c",
+          "text": "Technical review",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "Inspection",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Considering the attributes: • Specified for walkthroughs, technical reviews, and inspections; thus, the reviews being performed cannot be informal reviews • The purpose of evaluating quality is one of the most important objectives of a walkthrough • This is not allowed for inspections and is typically not done in technical reviews. A moderator is needed in walkthroughs and is allowed for informal reviews • All types of reviews can include individual preparation (even informal reviews) • All types of reviews can produce a review report, although informal reviews do not require documentation Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-18",
+      "ref": "18",
+      "label": "#18",
+      "number": 18,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.2.5",
+      "kLevel": "K1",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of these statements is NOT a factor that contributes to successful reviews?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Participants should dedicate adequate time for the review",
+          "correct": false,
+          "rationale": "Is not correct. Adequate time for individuals is a success factor"
+        },
+        {
+          "key": "b",
+          "text": "Splitting large work products into small parts to make the required effort less intense",
+          "correct": false,
+          "rationale": "Is not correct. Splitting work products into small adequate parts is a success factor"
+        },
+        {
+          "key": "c",
+          "text": "Participants should avoid behaviors that might indicate boredom, exasperation, or hostility to other participants",
+          "correct": false,
+          "rationale": "Is not correct. Avoiding behaviors that might indicate boredom, exasperation, etc. is a success factor"
+        },
+        {
+          "key": "d",
+          "text": "Failures found should be acknowledged, appreciated, and handled objectively",
+          "correct": true,
+          "rationale": "Is correct. During reviews one can find defects, not failures"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-19",
+      "ref": "19",
+      "label": "#19",
+      "number": 19,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.1.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is a characteristic of experience-based test techniques?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Test cases are created based on detailed design information",
+          "correct": false,
+          "rationale": "Is not correct. This is a common characteristic of white-box test techniques. Test conditions, test cases, and test data are derived from a test basis that may include code, software architecture, detailed design, or any other source of information regarding the structure of the software."
+        },
+        {
+          "key": "b",
+          "text": "Items tested within the interface code section are used to measure coverage",
+          "correct": false,
+          "rationale": "Is not correct. This is a common characteristic of white-box test techniques. Coverage is measured based on the items tested within a selected structure and the test technique applied to the test basis"
+        },
+        {
+          "key": "c",
+          "text": "The test techniques heavily rely on the tester’s knowledge of the software and the business domain",
+          "correct": true,
+          "rationale": "Is correct. This is a common characteristic of experience-based test techniques. This knowledge and experience include expected use of the software, its environment, likely defects, and the distribution of those defects is used to define tests"
+        },
+        {
+          "key": "d",
+          "text": "The test cases are used to identify deviations from the requirements",
+          "correct": false,
+          "rationale": "Is not correct. This is a common characteristic of black-box test techniques. Test cases may be used to detect gaps within requirements and the implementation of the requirements, as well as deviations from the requirements"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-20",
+      "ref": "20",
+      "label": "#20",
+      "number": 20,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.2.1",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are testing a simplified apartment search form which has only two search criteria:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "floor (with three possible options: ground floor; first floor; second or higher floor)",
+            "garden type (with three possible options: no garden; small garden; large garden)"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Each of the apartment on the ground floor has a garden, apartments on higher floors don’t. The form has a built-in validation mechanism that will not allow you to use the search criteria which violate this rule."
+        },
+        {
+          "type": "para",
+          "text": "Each test has two input values: floor and garden type. You want to apply equivalence partitioning (EP) to cover each floor and each garden type in your tests."
+        },
+        {
+          "type": "para",
+          "text": "What is the minimal number of test cases to achieve 100% EP coverage for valid partitions?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "3",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "4",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "c",
+          "text": "5",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "6",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "The situation presented in the question is described in the syllabus as “each choice” coverage. “Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. We need two more test cases to cover the two other “floor” partitions. The remaining ”garden type” partition of “no garden” is covered by these tests. We need a total of four test cases: TC1 (ground floor, small garden) TC2 (ground floor, large garden) TC3 (first floor, no garden) TC4 (second or higher floor, no garden) Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-21",
+      "ref": "21",
+      "label": "#21",
+      "number": 21,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.2.2",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are testing a system that calculates the final course grade for a given student."
+        },
+        {
+          "type": "para",
+          "text": "The final grade is assigned based on the final result, according to the following rules:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "0 – 50 points: failed",
+            "51 – 60 points: fair",
+            "61 – 70 points: satisfactory",
+            "71 – 80 points: good",
+            "81 – 90 points: very good",
+            "91 – 100 points: excellent"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "You have prepared the following set of test cases:"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "                   Final                  Final",
+            "                  result                  grade",
+            "TC1                 91                  excellent",
+            "TC2                 50                    failed",
+            "TC3                 81                  very good",
+            "TC4                 60                      fair",
+            "TC5                 70                 satisfactory",
+            "TC6                 80                    good"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "What is the 2-value boundary value analysis (BVA) coverage for the final result that is achieved with the existing test cases?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "50%",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "b",
+          "text": "60%",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "33.3%",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "100%",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "There are 12 boundary values for the final result values: 0, 50, 51, 60, 61, 70, 71, 80, 81, 90, 91, and 100. The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). Therefore, the test cases cover 6/12 = 50%. Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-22",
+      "ref": "22",
+      "label": "#22",
+      "number": 22,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.2.3",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your favorite bicycle daily rental store has just introduced a new Customer Relationship Management system and asked you, one of their most loyal members, to test it."
+        },
+        {
+          "type": "para",
+          "text": "The implemented features are as follows:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Anyone can rent a bicycle, but members receive a 20% discount",
+            "However, if the return deadline is missed, the discount is no longer available",
+            "After 15 rentals, members get a gift: a T-Shirt"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Decision table describing the implemented features looks as follows:"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "Conditions                   R1   R2    R3   R4   R5   R6   R7    R8",
+            " Being a member              T    T     T    T    F    F    F     F",
+            " Missed deadline             T    F     T    F    T    F    F     T",
+            "      15th rental            F    F     T    T    F    F    T     T"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Actions"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "20% discount                   X          X",
+            "  Gift T-Shirt                      X     X                    X"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Based ONLY on the feature description of the Customer Relationship Management system, which of the above rules describes an impossible situation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "R4",
+          "correct": false,
+          "rationale": "Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals"
+        },
+        {
+          "key": "b",
+          "text": "R2",
+          "correct": false,
+          "rationale": "Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times"
+        },
+        {
+          "key": "c",
+          "text": "R6",
+          "correct": false,
+          "rationale": "Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet"
+        },
+        {
+          "key": "d",
+          "text": "R8",
+          "correct": true,
+          "rationale": "Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-23",
+      "ref": "23",
+      "label": "#23",
+      "number": 23,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.2.4",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You test a system whose lifecycle is modeled by the state transition diagram shown below. The system starts in the INIT state and ends its operation in the OFF state."
+        },
+        {
+          "type": "para",
+          "text": "What is the MINIMAL number of test cases to achieve valid transitions coverage?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "4",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "2",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "7",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "3",
+          "correct": true,
+          "rationale": "Is correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "“test” and “error” transitions cannot occur in one test case. Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: TC1: test, done TC2: run, error, done TC3: run, pause, resume, pause, done Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-24",
+      "ref": "24",
+      "label": "#24",
+      "number": 24,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.3.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your test suite achieved 100% statement coverage. What is the consequence of this fact?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Each instruction in the code that contains a defect has been executed at least once",
+          "correct": true,
+          "rationale": "Is correct. Since 100% statement coverage is achieved, every statement, including the ones with defects, must have been executed and evaluated at least once"
+        },
+        {
+          "key": "b",
+          "text": "Any test suite containing more test cases than your test suite will also achieve 100% statement coverage",
+          "correct": false,
+          "rationale": "Is not correct. Coverage depends on what is tested, not on the number of test cases. For example, for code “if (x==0) y=1”, one test case (x=0) achieves 100% statement coverage, but two test cases (x=1) and (x=2) together achieve only 50% statement coverage"
+        },
+        {
+          "key": "c",
+          "text": "Each path in the code has been executed at least once",
+          "correct": false,
+          "rationale": "Is not correct. If there is a loop in the code there may be an infinite number of possible paths, so it is not possible to execute all the possible paths in the code"
+        },
+        {
+          "key": "d",
+          "text": "Every combination of input values has been tested at least once",
+          "correct": false,
+          "rationale": "Is not correct. Exhaustive testing is not possible (see the seven testing principles section in the syllabus). For example, for code “input x; print x” any single test with arbitrary x achieves 100% statement coverage, but covers one input value"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-25",
+      "ref": "25",
+      "label": "#25",
+      "number": 25,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.3.3",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is NOT true for white-box testing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "During white-box testing the entire software implementation is considered",
+          "correct": false,
+          "rationale": "Is not correct. The fundamental strength of white-box test techniques is that the entire software implementation is taken into account during testing"
+        },
+        {
+          "key": "b",
+          "text": "White-box coverage metrics can help identify additional tests to increase code coverage",
+          "correct": false,
+          "rationale": "Is not correct. White-box coverage measures provide an objective measure of coverage and provide the necessary information to allow additional tests to be generated to increase this coverage"
+        },
+        {
+          "key": "c",
+          "text": "White-box test techniques can be used in static testing",
+          "correct": false,
+          "rationale": "Is not correct. White-box test techniques can be used to perform reviews (static testing)"
+        },
+        {
+          "key": "d",
+          "text": "White-box testing can help identify gaps in requirements implementation",
+          "correct": true,
+          "rationale": "Is correct. This is the weakness of the white-box test techniques. They are not able to identify the missing implementation, because they are based solely on the test object structure, not on the requirements specification"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-26",
+      "ref": "26",
+      "label": "#26",
+      "number": 26,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.4.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following BEST describes the concept behind error guessing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers",
+          "correct": true,
+          "rationale": "Is correct. The basic concept behind error guessing is that the tester tries to guess what errors may have been made by the developer and what defects may be in the test object based on past experience (and sometimes checklists)"
+        },
+        {
+          "key": "b",
+          "text": "Error guessing involves using your personal experience of development and the errors you made as a developer",
+          "correct": false,
+          "rationale": "Is not correct. Although a tester who used to be a developer may use their personal experience to help them when performing error guessing, the test technique is not based on prior knowledge of development"
+        },
+        {
+          "key": "c",
+          "text": "Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it",
+          "correct": false,
+          "rationale": "Is not correct. Error guessing is not a usability technique for guessing how users may fail to interact with the test object"
+        },
+        {
+          "key": "d",
+          "text": "Error guessing requires you to rapidly duplicate the development task to identify the sort of errors a developer might make",
+          "correct": false,
+          "rationale": "Is not correct. Duplicating the development task has several flaws that make it impractical, such as the tester having equivalent skills to the developer and the time involved to perform the development. It is not error guessing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-27",
+      "ref": "27",
+      "label": "#27",
+      "number": 27,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.4.2",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "In your project there has been a delay in the release of a brand-new application and test execution started late, but you have very detailed domain knowledge and good analytical skills. The full list of requirements has not yet been shared with the team, but management is asking for some test results to be presented."
+        },
+        {
+          "type": "para",
+          "text": "Which test technique fits BEST in this situation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Checklist-based testing",
+          "correct": false,
+          "rationale": "Is not correct. This is a new product. You probably do not have a checklist yet and test conditions might not be known due to missing requirements"
+        },
+        {
+          "key": "b",
+          "text": "Error guessing",
+          "correct": false,
+          "rationale": "Is not correct. This is a new product. You probably do not have enough information to make correct error guesses"
+        },
+        {
+          "key": "c",
+          "text": "Exploratory testing",
+          "correct": true,
+          "rationale": "Is correct. Exploratory testing is most useful when there are few known specifications and/or there is a pressing timeline for testing"
+        },
+        {
+          "key": "d",
+          "text": "Branch testing",
+          "correct": false,
+          "rationale": "Is not correct. Branch testing is time-consuming, and your management is asking about some test results now. Also, branch testing does not involve domain knowledge"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-28",
+      "ref": "28",
+      "label": "#28",
+      "number": 28,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.5.2",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following BEST describes the way acceptance criteria can be documented?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Performing retrospectives to determine the actual needs of the stakeholders regarding a given user story",
+          "correct": false,
+          "rationale": "Is not correct. Retrospectives are used to capture lessons learned and to improve the development and testing process, not to document the acceptance criteria"
+        },
+        {
+          "key": "b",
+          "text": "Using the given/when/then format to describe an example test condition related to a given user story",
+          "correct": true,
+          "rationale": "Is correct. This is the standard way to document acceptance criteria"
+        },
+        {
+          "key": "c",
+          "text": "Using verbal communication to reduce the risk of misunderstanding the acceptance criteria by others",
+          "correct": false,
+          "rationale": "Is not correct. Verbal communication does not allow to physically document the acceptance criteria as part of a user story (”card” aspect in the 3C’s model)"
+        },
+        {
+          "key": "d",
+          "text": "Documenting risks related to a given user story in a test plan to facilitate the risk-based testing of a given user story",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance criteria are related to a user story, not a test plan. Also, acceptance criteria are the conditions that have to be fulfilled to decide if the user story is complete. Risks are not such conditions"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-29",
+      "ref": "29",
+      "label": "#29",
+      "number": 29,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.5.3",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Consider the following user story:"
+        },
+        {
+          "type": "para",
+          "text": "As an Editor I want to review content before it is published so that I can ensure the grammar is correct"
+        },
+        {
+          "type": "para",
+          "text": "and its acceptance criteria:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The user can log in to the content management system with \"Editor\" role",
+            "The editor can view existing content pages",
+            "The editor can edit the page content",
+            "The editor can add markup comments",
+            "The editor can save changes",
+            "The editor can reassign to the \"content owner\" role to make updates"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of the following is the BEST example of an ATDD test for this user story?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Test if the editor can save the document after edit the page content",
+          "correct": true,
+          "rationale": "Is correct. This test covers two acceptance criteria: one about editing the document and one about saving changes"
+        },
+        {
+          "key": "b",
+          "text": "Test if the content owner can log in and make updates to the content",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance criteria cover the editor activities, not the content owner activities"
+        },
+        {
+          "key": "c",
+          "text": "Test if the editor can schedule the edited content for publication",
+          "correct": false,
+          "rationale": "Is not correct. Scheduling the edited content for publication may be a nice feature, but it is not covered by the acceptance criteria"
+        },
+        {
+          "key": "d",
+          "text": "Test if the editor can reassign to another editor to make updates",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance criteria state about reassigning from an editor to the content owner, not to another editor"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-30",
+      "ref": "30",
+      "label": "#30",
+      "number": 30,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.2",
+      "kLevel": "K1",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "How do testers add value to iteration and release planning?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Testers determine the priority of the user stories to be developed",
+          "correct": false,
+          "rationale": "Is not correct. Priorities for user stories are determined by the business representative together with the development team"
+        },
+        {
+          "key": "b",
+          "text": "Testers focus only on the functional aspects of the system to be tested",
+          "correct": false,
+          "rationale": "Is not correct. Testers focus on both functional and non-functional aspects of the system to be tested"
+        },
+        {
+          "key": "c",
+          "text": "Testers participate in the detailed risk identification and risk assessment of user stories",
+          "correct": true,
+          "rationale": "Is correct. According to the syllabus, this is one of the ways testers add value to iteration and release planning"
+        },
+        {
+          "key": "d",
+          "text": "Testers guarantee the release of high-quality software through early test design during the release planning",
+          "correct": false,
+          "rationale": "Is not correct. Early test design is not part of release planning. Early test design does not automatically guarantee the release of quality software"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-31",
+      "ref": "31",
+      "label": "#31",
+      "number": 31,
+      "additional": false,
+      "points": 1,
+      "selectCount": 2,
+      "learningObjective": "FL-5.1.3",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which TWO of the following options are the exit criteria for testing a system?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Test environment readiness",
+          "correct": false,
+          "rationale": "Is not correct. Test environment readiness is a resource availability criterion; hence it belongs to the entry criteria"
+        },
+        {
+          "key": "b",
+          "text": "The ability to log in to the test object by the tester",
+          "correct": false,
+          "rationale": "Is not correct. This is a resource availability criterion; hence it belongs to the entry criteria"
+        },
+        {
+          "key": "c",
+          "text": "Estimated defect density is reached",
+          "correct": true,
+          "rationale": "Is correct. Estimated defect density is a measure of diligence; hence it belongs to the exit criteria."
+        },
+        {
+          "key": "d",
+          "text": "Requirements are translated into given/when/then format",
+          "correct": false,
+          "rationale": "Is not correct. Requirements translated into a given format result in testable requirements; hence it belongs to the entry criteria"
+        },
+        {
+          "key": "e",
+          "text": "Regression tests are automated",
+          "correct": true,
+          "rationale": "Is correct. Automation of regression tests is a completion criterion; hence it belongs to the exit criteria"
+        }
+      ],
+      "correct": [
+        "c",
+        "e"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-32",
+      "ref": "32",
+      "label": "#32",
+      "number": 32,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.4",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your team uses the three-point estimation technique to estimate the test effort for a new high-risk feature. The following estimates were made:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Most optimistic estimation: 2 person-hours",
+            "Most likely estimation: 11 person-hours",
+            "Most pessimistic estimation: 14 person-hours"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "What is the final estimate?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "9 person-hours",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "14 person-hours",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "11 person-hours",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "10 person-hours",
+          "correct": true,
+          "rationale": "Is correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "In the three-point estimation technique: E = (optimistic + 4*most likely + pessimistic)/6 E = (2+(4*11)+14)/6 = 10 Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-33",
+      "ref": "33",
+      "label": "#33",
+      "number": 33,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.5",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities (i.e., a smaller number means a higher priority), and dependencies:"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "Test case                                                             Logical",
+            "                          Test condition covered         Priority",
+            " number                                                             dependency",
+            " TC 001                        Select type of food          3          none",
+            " TC 002                         Select restaurant           2         TC 001",
+            " TC 003                           Get direction             1         TC 002",
+            " TC 004                          Call restaurant            2         TC 002",
+            " TC 005                        Make reservation             3         TC 002"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of the following test cases should be executed as the third one?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "TC 003",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "b",
+          "text": "TC 005",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "TC 002",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "TC 001",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Test TC 001 must come first, followed by TC 002, to satisfy dependencies. Afterwards, TC 003 to satisfy priority and then TC 004, followed by TC 005. Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-34",
+      "ref": "34",
+      "label": "#34",
+      "number": 34,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.7",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Consider the following test categories (1-4) and agile testing quadrants (A-D):"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "1.     Usability testing",
+            "2.     Component testing",
+            "3.     Functional testing",
+            "4.     Reliability testing"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "A. Agile testing quadrant Q1: technology facing, supporting the development team B. Agile testing quadrant Q2: business facing, supporting the development team C. Agile testing quadrant Q3: business facing, critique the product D. Agile testing quadrant Q4: technology facing, critique the product"
+        },
+        {
+          "type": "para",
+          "text": "How do the following test categories map onto the agile testing quadrants?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "1C, 2A, 3B, 4D",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "b",
+          "text": "1D, 2A, 3C, 4B",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "1C, 2B, 3D, 4A",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "1D, 2B, 3C, 4A",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Considering: • Usability testing is in Q3 (1 – C) • Component testing is in Q1 (2 – A) • Functional testing is in Q2 (3 – B) • Reliability testing is in Q4 (4 – D) Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-35",
+      "ref": "35",
+      "label": "#35",
+      "number": 35,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.2.4",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "During a risk analysis the following risk was identified and assessed:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Risk: Response time is too long to generate a report",
+            "Risk likelihood: medium; risk impact: high",
+            "Response to risk:",
+            "An independent test team performs performance efficiency testing during system testing",
+            "A selected sample of end users performs alpha testing and beta testing before the release"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "What measure is proposed to be taken in response to this analyzed risk?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Risk acceptance",
+          "correct": false,
+          "rationale": "Is not correct. We do not accept the risk; concrete actions are proposed"
+        },
+        {
+          "key": "b",
+          "text": "Contingency plan",
+          "correct": false,
+          "rationale": "Is not correct. No contingency plans are proposed"
+        },
+        {
+          "key": "c",
+          "text": "Risk mitigation",
+          "correct": true,
+          "rationale": "Is correct. The proposed actions are related to testing, which is a form of risk mitigation"
+        },
+        {
+          "key": "d",
+          "text": "Risk transfer",
+          "correct": false,
+          "rationale": "Is not correct. Risk is not transferred but mitigated"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-36",
+      "ref": "36",
+      "label": "#36",
+      "number": 36,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.3.3",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which work product can be used by an agile team to show the amount of work that has been completed and the amount of total work remaining for a given iteration?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Acceptance criteria",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance criteria are the conditions used to decide whether the user story is ready. They cannot show work progress"
+        },
+        {
+          "key": "b",
+          "text": "Defect report",
+          "correct": false,
+          "rationale": "Is not correct. Defect reports inform about the defects. They do not show work progress"
+        },
+        {
+          "key": "c",
+          "text": "Test completion report",
+          "correct": false,
+          "rationale": "Is not correct. Test completion report can be created after the iteration is finished, so it will not show the progress continuously within an iteration"
+        },
+        {
+          "key": "d",
+          "text": "Burndown chart",
+          "correct": true,
+          "rationale": "Is correct. Burndown charts are a graphical representation of work left to do versus time remaining. They are updated daily, so they can continuously show the work progress"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-37",
+      "ref": "37",
+      "label": "#37",
+      "number": 37,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.4.1",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You need to update one of the automated test scripts to be in line with a new requirement. Which process indicates that you create a new version of the test script in the test repository?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Traceability management",
+          "correct": false,
+          "rationale": "Is not correct. Traceability is the relationship between two or more work products, not between different versions of the same work product"
+        },
+        {
+          "key": "b",
+          "text": "Maintenance testing",
+          "correct": false,
+          "rationale": "Is not correct. Maintenance testing is about testing changes; it is not related closely to versioning"
+        },
+        {
+          "key": "c",
+          "text": "Configuration management",
+          "correct": true,
+          "rationale": "Is correct. To support testing, configuration management may involve the version control of all test items"
+        },
+        {
+          "key": "d",
+          "text": "Requirements engineering",
+          "correct": false,
+          "rationale": "Is not correct. Requirements engineering is the elicitation, documentation, and management of requirements; it is not closely related to test script versioning"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-38",
+      "ref": "38",
+      "label": "#38",
+      "number": 38,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.5.1",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You received the following defect report from the developers stating that the anomaly described in this test report is not reproducible."
+        },
+        {
+          "type": "para",
+          "text": "Application hangs up"
+        },
+        {
+          "type": "para",
+          "text": "2022-May-03 – John Doe – Rejected"
+        },
+        {
+          "type": "para",
+          "text": "The application hangs up after entering “Test input: $ä” in the Name field on the new user creation screen. Tried to log off, log in with test_admin01 account, same issue. Tried with other test admin accounts, same issue. No error message received; log (see attached) contains fatal error notification. Based on the test case TC-1305, the application should accept the provided input and create the user. Please fix with high priority, this feature is related to REQ-0012, which is a critical new business requirement."
+        },
+        {
+          "type": "para",
+          "text": "What critical information is MISSING from this test report that would have been useful for the developers?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Expected result and actual result",
+          "correct": false,
+          "rationale": "Is not correct. The expected result is “the application should accept the provided input and create the user”. The actual result is “The application hangs up after entering “Test input. $ä””."
+        },
+        {
+          "key": "b",
+          "text": "References and defect status",
+          "correct": false,
+          "rationale": "Is not correct. There is a reference to the test case and to the related requirement and it states that the defect is rejected. Also, the defect status would not be very helpful for the developers"
+        },
+        {
+          "key": "c",
+          "text": "Test environment and test item",
+          "correct": true,
+          "rationale": "Is correct. We do not know in which test environment the anomaly was detected, and we also do not know which application (and its version) is affected"
+        },
+        {
+          "key": "d",
+          "text": "Priority and severity",
+          "correct": false,
+          "rationale": "Is not correct. The defect report states that the anomaly is urgent, that it is a global issue (i.e., many, if not all, test administration accounts are affected) and states the impact is high for business stakeholders"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-39",
+      "ref": "39",
+      "label": "#39",
+      "number": 39,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-6.1.1",
+      "kLevel": "K2",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which test activity does a data preparation tool support?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Test monitoring and test control",
+          "correct": false,
+          "rationale": "Is not correct. Test monitoring involves the ongoing checking of all activities and comparison of actual progress against the test plan. Test control involves taking the actions necessary to meet the test objectives of the test plan. No test data are prepared during these activities."
+        },
+        {
+          "key": "b",
+          "text": "Test analysis",
+          "correct": false,
+          "rationale": "Is not correct. Test analysis includes analysis of the test basis to identify test conditions and prioritize them. Test data are not prepared during this activity."
+        },
+        {
+          "key": "c",
+          "text": "Test design and test implementation",
+          "correct": true,
+          "rationale": "Is correct. Test design and implementation can both include the identification, creation or acquisition of the testware necessary for test execution (e.g., test data)."
+        },
+        {
+          "key": "d",
+          "text": "Test completion",
+          "correct": false,
+          "rationale": "Is not correct. Test completion activities occur at project milestones (e.g., release, end of iteration, test level completion), so it is too late for preparing test data."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-40",
+      "ref": "40",
+      "label": "#40",
+      "number": 40,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-6.2.1",
+      "kLevel": "K1",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which item correctly identifies a potential risk of performing test automation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It may introduce unknown regressions in production",
+          "correct": false,
+          "rationale": "Is not correct. Test automation does not introduce unknown regressions in production"
+        },
+        {
+          "key": "b",
+          "text": "Sufficient efforts to maintain testware may not be properly allocated",
+          "correct": true,
+          "rationale": "Is correct. Wrong allocation of effort to maintain testware is a risk"
+        },
+        {
+          "key": "c",
+          "text": "Testing tools and associated testware may not be sufficiently relied upon",
+          "correct": false,
+          "rationale": "Is not correct. Test tools must be selected so that they and their testware can be relied upon"
+        },
+        {
+          "key": "d",
+          "text": "It may reduce the time allocated for manual testing",
+          "correct": false,
+          "rationale": "Is not correct. The primary goal of test automation is to reduce manual testing. So, this is a benefit, not a risk Appendix: Answer Key for Additional Sample Questions Number (#) Number (#) A1 a FL-1.1.2 K2 1 A14 b A2 d FL-1.2.2 K1 1 A15 c A3 d FL-1.2.3 K2 1 A16 d A4 d FL-1.4.3 K2 1 A17 c A5 c FL-1.4.4 K2 1 A18 b A6 d FL-1.5.3 K2 1 A19 d A7 b, c FL-2.1.1 K2 1 A20 b A8 c FL-2.1.4 K2 1 A21 a A9 b FL-2.2.2 K2 1 A22 c A10 a FL-2.3.1 K2 1 A23 a A11 c FL-3.1.1 K1 1 A24 d A12 d FL-3.1.3 K2 1 A25 a, d A13 b FL-3.2.2 K2 1 A26 b Appendix: Answers to Additional Sample Questions"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A1",
+      "ref": "A1",
+      "label": "#A1",
+      "number": 1,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.1.2",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You were given a task to analyze and fix causes of failures in a new system to be released."
+        },
+        {
+          "type": "para",
+          "text": "Which activity are you performing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Debugging",
+          "correct": true,
+          "rationale": "Is correct. Debugging is the process of finding, analyzing, and removing the causes of failures in a component or system"
+        },
+        {
+          "key": "b",
+          "text": "Software testing",
+          "correct": false,
+          "rationale": "Is not correct. Testing is the process concerned with planning, preparation and evaluation of a component or system and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. It is not related to fixing causes of failures"
+        },
+        {
+          "key": "c",
+          "text": "Requirement elicitation",
+          "correct": false,
+          "rationale": "Is not correct. Requirement elicitation is the process of gathering, capturing, and consolidating requirements from available sources. It is not related to fixing causes of failures"
+        },
+        {
+          "key": "d",
+          "text": "Defect management",
+          "correct": false,
+          "rationale": "Is not correct. Defect management is the process of recognizing, recording, classifying, investigating, resolving, and disposing of defects. It is not related to fixing causes of failures"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A2",
+      "ref": "A2",
+      "label": "#A2",
+      "number": 2,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.2.2",
+      "kLevel": "K1",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "In many software organizations the test department is called the Quality Assurance (QA) department. Is this sentence correct or not and why?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It is correct. Testing and QA mean exactly the same thing",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "It is correct. These names can be used interchangeably because both testing and QA focus their activities on the same quality issues",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "It is not correct. Testing is something more; testing includes all activities with regard to quality. QA focuses on quality-related processes",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "It is not correct. QA is focused on quality-related processes while testing concentrates on demonstrating that a component or system is fit for purpose and to detect defects",
+          "correct": true,
+          "rationale": "Is correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Considering: Testing and quality assurance are not the same. Testing is the process consisting of all software development lifecycle (SDLC) activities, both static and dynamic, concerned with planning, preparation and evaluation of a component or system and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. Quality assurance is focused on establishing, introducing, monitoring, improving, and adhering to the quality-related processes. Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A3",
+      "ref": "A3",
+      "label": "#A3",
+      "number": 3,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.2.3",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "A phone ringing in a neighboring cubicle distracts a programmer causing him to improperly program the logic that checks the upper boundary of an input variable. Later, during system testing, a tester notices that this input field accepts invalid input values."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following correctly describes an incorrectly coded upper bound?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "The root cause",
+          "correct": false,
+          "rationale": "Is not correct. The root cause is the distraction that the programmer experienced while programming"
+        },
+        {
+          "key": "b",
+          "text": "A failure",
+          "correct": false,
+          "rationale": "Is not correct. Accepting invalid inputs is a failure"
+        },
+        {
+          "key": "c",
+          "text": "An error",
+          "correct": false,
+          "rationale": "Is not correct. The error in thinking that put the defect in the code"
+        },
+        {
+          "key": "d",
+          "text": "A defect",
+          "correct": true,
+          "rationale": "Is correct. The problem in the code is a defect"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A4",
+      "ref": "A4",
+      "label": "#A4",
+      "number": 4,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.4.3",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Consider the following testware."
+        },
+        {
+          "type": "table",
+          "lines": [
+            "Test Charter #04.018                    Session time: 1h",
+            "Explore:                     Registration page",
+            "With:                        Different sets of incorrect input data"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Defects related to accepting the registration process with the To discover: incorrect input"
+        },
+        {
+          "type": "para",
+          "text": "Which test activity produces this testware as an output?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Test planning",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "Test monitoring and test control",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "Test analysis",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "Test design",
+          "correct": true,
+          "rationale": "Is correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "The testware under consideration is a test charter Test charters are the output from test design Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A5",
+      "ref": "A5",
+      "label": "#A5",
+      "number": 5,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.4.4",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is the BEST example of how traceability supports testing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Performing the impact analysis of a change will give information about the completion of the tests",
+          "correct": false,
+          "rationale": "Is not correct. Performing the impact analysis will not give information about completeness of tests. Analyzing the impact analysis of changes will help to select the right test cases for execution"
+        },
+        {
+          "key": "b",
+          "text": "Analyzing the traceability between test cases and test results will give information about the estimated level of residual risk",
+          "correct": false,
+          "rationale": "Is not correct. Traceability does not give information about the estimated level of residual risk if the test cases are not traced back to risks"
+        },
+        {
+          "key": "c",
+          "text": "Performing the impact analysis of a change will help selecting the right test cases for regression testing",
+          "correct": true,
+          "rationale": "Is correct. Performing the impact analysis of the changes helps in selecting the test cases for the regression test"
+        },
+        {
+          "key": "d",
+          "text": "Analyzing the traceability between the test basis, the test objects and the test cases will help in selecting test data to achieve the assumed coverage of the test object",
+          "correct": false,
+          "rationale": "Is not correct. Analyzing the traceability between the test basis, test objects and test cases does not help in selecting test data to achieve the assumed coverage of the test object. Selecting test data is more related to test analysis and test implementation, not traceability"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A6",
+      "ref": "A6",
+      "label": "#A6",
+      "number": 6,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-1.5.3",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following BEST explains a benefit of independence of testing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "The use of an independent test team allows project management to assign responsibility for the quality of the final deliverable to the test team",
+          "correct": false,
+          "rationale": "Is not correct. Quality should be the responsibility of everyone working on the project and not the sole responsibility of the test team"
+        },
+        {
+          "key": "b",
+          "text": "If a test team external to the organization can be afforded, then there are distinct benefits in terms of this external team not being so easily swayed by the delivery concerns of project management and the need to meet strict delivery deadlines",
+          "correct": false,
+          "rationale": "Is not correct. First, it is not a benefit if an external test team does not meet delivery deadlines, and second, there is no reason to believe that external test teams will feel they do not have to meet strict delivery deadlines"
+        },
+        {
+          "key": "c",
+          "text": "An independent test team can work separately from the developers, need not be distracted with project requirement changes, and can restrict communication with the developers to defect reporting through the defect management system",
+          "correct": false,
+          "rationale": "Is not correct. It is bad practice for the test team to work in complete isolation, and we would expect an external test team to be concerned with changing project requirements and communicating well with developers"
+        },
+        {
+          "key": "d",
+          "text": "When specifications contain ambiguities and inconsistencies, assumptions are made on their interpretation, and an independent tester can be useful in questioning those assumptions and the interpretation made by the developer",
+          "correct": true,
+          "rationale": "Is correct. Specifications are never perfect, meaning that assumptions will have to be made by the developer. An independent tester is useful in that they can challenge and verify the assumptions and subsequent interpretation made by the developer"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A7",
+      "ref": "A7",
+      "label": "#A7",
+      "number": 7,
+      "additional": true,
+      "points": 1,
+      "selectCount": 2,
+      "learningObjective": "FL-2.1.1",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working as a tester in the team that follows the V-model. Which of the following activities CAN be performed in the initial phases of the SDLC?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Dynamic test execution",
+          "correct": false,
+          "rationale": "Is not correct. The executable code is usually created in the later phases, so dynamic test execution cannot be performed early in the SDLC"
+        },
+        {
+          "key": "b",
+          "text": "Static testing",
+          "correct": true,
+          "rationale": "Is correct. In sequential development models, in the initial phases, testers participate in requirement reviews, which is a form of static testing."
+        },
+        {
+          "key": "c",
+          "text": "Test planning",
+          "correct": true,
+          "rationale": "Is correct. Test planning could be performed early in the SDLC before the test project begins together with test analysis and test design."
+        },
+        {
+          "key": "d",
+          "text": "Acceptance test execution",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance test execution can be performed when there is a working product. In sequential SDLC models the working product is usually delivered later in the SDLC"
+        },
+        {
+          "key": "e",
+          "text": "Maintenance testing",
+          "correct": false,
+          "rationale": "Is not correct. Maintenance testing when there is a working and deployed product, which is not done in the early phases of any SDLC."
+        }
+      ],
+      "correct": [
+        "b",
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A8",
+      "ref": "A8",
+      "label": "#A8",
+      "number": 8,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.1.4",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following are advantages of DevOps?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Faster product release and faster time to market",
+            " ii.       Increases the need for repetitive manual testing",
+            "iii.       Constant availability of executable software",
+            "iv.        Reduction in the number of regression tests associated with code refactoring",
+            " v.        Setting up the test automation framework is inexpensive since everything is"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "automated"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, ii, iv are advantages",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "iii, v are advantages",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "i, iii are advantages",
+          "correct": true,
+          "rationale": "It is correct"
+        },
+        {
+          "key": "d",
+          "text": "ii, iv, v are advantages",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Consider: i. Is true. Faster product release and faster time to market is an advantage of DevOps ii. Is false. Typically, we need less effort for manual tests because of the use of test automation iii. Is true. Constant availability of executable software is an advantage iv. Is false. More regression tests are needed v. Is false. Not everything is automated and setting up a test automation framework is expensive Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A9",
+      "ref": "A9",
+      "label": "#A9",
+      "number": 9,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.2.2",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You work as a tester on a project on a mobile application for food ordering for one of your clients. The client sent you a list of requirements. One of them, with high priority, says"
+        },
+        {
+          "type": "para",
+          "text": "“The order must be processed in less than 10 seconds in 95% of the cases”."
+        },
+        {
+          "type": "para",
+          "text": "You created a set of test cases in which a number of random orders were made, the processing time measured, and the test results were checked against the requirements."
+        },
+        {
+          "type": "para",
+          "text": "What test type did you perform?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Functional, because the test cases cover the user’s business requirement for the system",
+          "correct": false,
+          "rationale": "Is not correct. The fact that the requirement about the system’s performance comes directly from the client and that the performance is important from the business point of view (i.e., high priority) does not make these tests functional, because they do not check “what” the system does, but “how” (i.e., how fast the orders are processed)"
+        },
+        {
+          "key": "b",
+          "text": "Non-functional, because they measure the system’s performance",
+          "correct": true,
+          "rationale": "Is correct. This is an example of testing for performance efficiency, a type of non-functional testing"
+        },
+        {
+          "key": "c",
+          "text": "Functional, because the test cases interact with the user interface",
+          "correct": false,
+          "rationale": "Is not correct. From the scenario, we do not know if interacting with the user interface is a part of the test conditions. But even if we did, the main test objective of these tests is to check the performance, not the usability"
+        },
+        {
+          "key": "d",
+          "text": "White-box, because we need to know the internal structure of the program to measure the order processing time",
+          "correct": false,
+          "rationale": "Is not correct. We do not need to know the internal structure of the code to perform the performance efficiency testing. One can execute performance efficiency tests without structural knowledge"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A10",
+      "ref": "A10",
+      "label": "#A10",
+      "number": 10,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-2.3.1",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your organization’s test strategy suggests that once a system is going to be retired, data migration shall be tested. As part of what test type is this testing MOST likely to be performed?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Maintenance testing",
+          "correct": true,
+          "rationale": "Is correct. When a system is retired, this can require testing of data migration, which is a form of maintenance testing"
+        },
+        {
+          "key": "b",
+          "text": "Regression testing",
+          "correct": false,
+          "rationale": "Is not correct. Regression testing verifies whether a fix accidentally affected the behavior of other parts of the code, but now we are talking about data migration to a new system"
+        },
+        {
+          "key": "c",
+          "text": "Reliability testing",
+          "correct": false,
+          "rationale": "Is not correct. Portability testing focuses on transferring the system to another environment"
+        },
+        {
+          "key": "d",
+          "text": "Integration testing",
+          "correct": false,
+          "rationale": "Is not correct. Integration testing focuses on interactions between components and/or systems, not on data migration. Also, it is not a test type, but a test level."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A11",
+      "ref": "A11",
+      "label": "#A11",
+      "number": 11,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.1.1",
+      "kLevel": "K1",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "The following is a list of the work products produced in the SDLC."
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Business requirements",
+            " ii.       Schedule",
+            "iii.       Test budget",
+            "iv.        Third-party executable code",
+            " v.        User stories and their acceptance criteria"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of them can be reviewed?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i and iv can be reviewed",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "i, ii, iii and iv can be reviewed",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "i, ii, iii, and v can be reviewed",
+          "correct": true,
+          "rationale": "It is correct"
+        },
+        {
+          "key": "d",
+          "text": "iii, iv, v can be reviewed",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Only third-party executable code cannot be reviewed. Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A12",
+      "ref": "A12",
+      "label": "#A12",
+      "number": 12,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.1.3",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Decide which of the following statements (i-v) are true for static testing."
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Abnormal external behaviors are easier to identify with this testing",
+            " ii.       Discrepancies from a coding standard are easier to find with this testing",
+            "iii.       It identifies failures caused by defects when the software is run",
+            "iv.        Its test objective is to identify defects as early as possible",
+            " v.        Missing coverage for critical security requirements is easier to find and fix"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, iv, v are true for static testing",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "i, iii, iv are true for static testing",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "ii, iii are true for static testing",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "ii, iv, v are true for static testing",
+          "correct": true,
+          "rationale": "Is correct"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Consider: i. These behaviors are easily detectable while the software is running. Hence, dynamic testing shall be used to identify them ii. This is an example of deviations from standards, which is a typical defect that is easier found with static testing iii. If the software is executed during the test, it is dynamic testing iv. Identifying defects as early as possible is the test objective of both static testing and dynamic testing v. This is an example of gaps in the test basis traceability or coverage, which is a typical defect that is easier found with static testing Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A13",
+      "ref": "A13",
+      "label": "#A13",
+      "number": 13,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.2.2",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following statements about formal reviews is TRUE?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Some reviews do not require more than one role",
+          "correct": false,
+          "rationale": "Is not correct. In all types of reviews there is more than one role, even in informal ones"
+        },
+        {
+          "key": "b",
+          "text": "The review process has several activities",
+          "correct": true,
+          "rationale": "Is correct. There are several activities during the formal review process"
+        },
+        {
+          "key": "c",
+          "text": "Documentation to be reviewed is not distributed before the review meeting, with the exception of the work product for specific review types",
+          "correct": false,
+          "rationale": "Is not correct. Documentation to be reviewed should be distributed as early as possible"
+        },
+        {
+          "key": "d",
+          "text": "Defects found during the review are not reported since they are not found by dynamic testing",
+          "correct": false,
+          "rationale": "Is not correct. Defects found during the review should be reported"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A14",
+      "ref": "A14",
+      "label": "#A14",
+      "number": 14,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-3.2.3",
+      "kLevel": "K1",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "What task may management take on during a formal review?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Taking overall responsibility for the review",
+          "correct": false,
+          "rationale": "Is not correct. This is the task of the review leader"
+        },
+        {
+          "key": "b",
+          "text": "Deciding what is to be reviewed",
+          "correct": true,
+          "rationale": "Is correct. This is the task of the management in a formal review"
+        },
+        {
+          "key": "c",
+          "text": "Ensuring the effective running of review meetings, and moderating, if necessary",
+          "correct": false,
+          "rationale": "Is not correct. This is the task of the moderator"
+        },
+        {
+          "key": "d",
+          "text": "Recording review information such as review decisions",
+          "correct": false,
+          "rationale": "Is not correct. This is the task of the scribe"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A15",
+      "ref": "A15",
+      "label": "#A15",
+      "number": 15,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.2.2",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "A wine storage system uses a control device that measures the wine cell temperature T (measured in °C, rounded to the nearest degree) and alarms the user if it deviates from the optimal value of 12, according to the following rules:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "if T = 12, the system says, “optimal temperature”",
+            "if T < 12, the system says, “temperature is too low!”",
+            "if T > 12, the system says, “temperature is too high!”"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "You want to use the 3-point boundary value analysis (BVA) to verify the behavior of the control device. A test input is a temperature in °C provided by the device."
+        },
+        {
+          "type": "para",
+          "text": "What is the MINIMAL set of test inputs that achieves 100% of the desired coverage?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "11, 12, 13",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "b",
+          "text": "10, 12, 14",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "10, 11, 12, 13, 14",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "d",
+          "text": "10, 11, 13, 14",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "There are three equivalence partitions: {..., 10, 11}, {12}, and {13, 14, ...}. The boundary values are 11, 12 and 13. In the three-point boundary value analysis for each boundary, we need to test the boundary and both its neighbors, so: • for 11 we test 10, 11, 12 • for 12 we test 11, 12, 13 • for 13 we test 12, 13, 14 Altogether we need to test 10, 11, 12, 13, and 14 Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A16",
+      "ref": "A16",
+      "label": "#A16",
+      "number": 16,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.3.2",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following statements about branch testing is CORRECT?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "If a program includes only unconditional branches, then 100% branch coverage can be achieved without executing any test cases",
+          "correct": false,
+          "rationale": "Is not correct. In this case one test case is still needed since there is at least one (unconditional) branch to be covered"
+        },
+        {
+          "key": "b",
+          "text": "If the test cases exercise all unconditional branches in the code, then 100% branch coverage is achieved",
+          "correct": false,
+          "rationale": "Is not correct. Covering only unconditional branches does not imply covering all conditional branches"
+        },
+        {
+          "key": "c",
+          "text": "If 100% statement coverage is achieved, then 100% branch coverage is also achieved",
+          "correct": false,
+          "rationale": "Is not correct. 100% branch coverage implies 100% statement coverage, not otherwise. For example, for an IF decision without the ELSE, one test is enough to achieve 100% statement coverage, but it only achieves 50% branch coverage"
+        },
+        {
+          "key": "d",
+          "text": "If 100% branch coverage is achieved, then all decision outcomes in each decision statement in the code are exercised",
+          "correct": true,
+          "rationale": "Is correct. Each decision outcome corresponds to a conditional branch, so 100% branch coverage implies 100% coverage of the decision outcomes"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A17",
+      "ref": "A17",
+      "label": "#A17",
+      "number": 17,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.4.3",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are testing a mobile application that allows customers to access and manage their bank accounts. You are running a test suite that involves evaluating each screen, and each field on each screen, against a general list of user interface best practices derived from a popular book on the topic that maximizes usability for such applications. Which of the following options BEST categorizes the test technique you are using?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Black-box",
+          "correct": false,
+          "rationale": "Is not correct. The book provides general guidance, and is not a formal requirements document, a specification, or a set of use cases, user stories, or business processes"
+        },
+        {
+          "key": "b",
+          "text": "Exploratory",
+          "correct": false,
+          "rationale": "Is not correct. While you could consider the list as a set of test charters, it more closely resembles the list of test conditions to be checked"
+        },
+        {
+          "key": "c",
+          "text": "Checklist-based",
+          "correct": true,
+          "rationale": "Is correct. The list of user interface best practices is the list of test conditions to be systematically checked"
+        },
+        {
+          "key": "d",
+          "text": "Error guessing",
+          "correct": false,
+          "rationale": "Is not correct. The tests are not focused on failures that could occur, but rather on knowledge about what is important for the user, in terms of usability"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A18",
+      "ref": "A18",
+      "label": "#A18",
+      "number": 18,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-4.5.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following BEST describe the collaborative approach to user story writing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "User stories are created by testers and developers and then accepted by business representatives",
+          "correct": false,
+          "rationale": "Is not correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision"
+        },
+        {
+          "key": "b",
+          "text": "User stories are created by business representatives, developers, and testers together",
+          "correct": true,
+          "rationale": "Is correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision"
+        },
+        {
+          "key": "c",
+          "text": "User stories are created by business representatives and verified by developers and testers",
+          "correct": false,
+          "rationale": "Is not correct. Collaborative user story writing means that all stakeholders create the user stories collaboratively, to obtain the shared vision"
+        },
+        {
+          "key": "d",
+          "text": "User stories are created in a way that they are independent, negotiable, valuable, estimable, small, and testable",
+          "correct": false,
+          "rationale": "Is not correct. This is the list of properties that each user story should have, not the description of the collaboration-based approach"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A19",
+      "ref": "A19",
+      "label": "#A19",
+      "number": 19,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.1",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Consider the following part of a test plan."
+        },
+        {
+          "type": "para",
+          "text": "Testing will be performed using component testing and component integration testing. The regulations require to demonstrate that 100% branch coverage is achieved for each component classified as critical."
+        },
+        {
+          "type": "para",
+          "text": "Which part of the test plan does this part belong to?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Communication",
+          "correct": false,
+          "rationale": "Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach"
+        },
+        {
+          "key": "b",
+          "text": "Risk register",
+          "correct": false,
+          "rationale": "Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach"
+        },
+        {
+          "key": "c",
+          "text": "Context of testing",
+          "correct": false,
+          "rationale": "Is not correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach"
+        },
+        {
+          "key": "d",
+          "text": "Test approach",
+          "correct": true,
+          "rationale": "Is correct. The paragraph contains information on test levels and exit criteria, which are part of the test approach"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A20",
+      "ref": "A20",
+      "label": "#A20",
+      "number": 20,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.4",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your team uses planning poker to estimate the test effort for a newly required feature. There is a rule in your team that if there is no time to reach full agreement and the variation in the results is small, rules like “accept the number with the most votes” can be applied."
+        },
+        {
+          "type": "para",
+          "text": "After two rounds, the consensus was not reached, so the third round was initiated. You can see the test estimation results in the table below."
+        },
+        {
+          "type": "para",
+          "text": "Team members' estimations"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "Round 1        21    2    5  34     13     8    2",
+            "Round 2        13    8    8  34     13     8    5",
+            "Round 3        13    8   13  13     13    13    8"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of the following is the BEST example of the next step?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "The product owner has to step in and make a final decision",
+          "correct": false,
+          "rationale": "Is not correct. This should be a team activity and not overruled by one team member"
+        },
+        {
+          "key": "b",
+          "text": "Accept 13 as the final test estimate as this has most of the votes",
+          "correct": true,
+          "rationale": "Is correct. If test estimates are not the same, but the variation in the results is small, applying rules like “accept the number with the most votes” can be applied"
+        },
+        {
+          "key": "c",
+          "text": "No further action is needed. Consensus has been reached",
+          "correct": false,
+          "rationale": "Is not correct. There is no consensus yet as some say 13, others say 8"
+        },
+        {
+          "key": "d",
+          "text": "Remove the new feature from the current release because consensus has not been reached",
+          "correct": false,
+          "rationale": "Is not correct. A feature should not be removed only because the team cannot agree on the test estimates"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A21",
+      "ref": "A21",
+      "label": "#A21",
+      "number": 21,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.1.6",
+      "kLevel": "K1",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is TRUE regarding the test pyramid?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It emphasizes having far more tests at the lower test levels",
+          "correct": true,
+          "rationale": "Is correct. The test pyramid emphasizes having a larger number of tests at the lower test levels"
+        },
+        {
+          "key": "b",
+          "text": "It suggests that each low-level test checks a large part of the functionality",
+          "correct": false,
+          "rationale": "Is not correct. It is not true that a test on a lower level tests a larger piece of functionality. Tests are more atomic and oriented on a specific logic, so it is the opposite"
+        },
+        {
+          "key": "c",
+          "text": "It describes distribution of test types across the SDLC",
+          "correct": false,
+          "rationale": "Is not correct. Test pyramid shows how the number of tests is distributed across test levels"
+        },
+        {
+          "key": "d",
+          "text": "It has no impact on the construction of automated tests",
+          "correct": false,
+          "rationale": "Is not correct. The test pyramid model supports the team in test automation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A22",
+      "ref": "A22",
+      "label": "#A22",
+      "number": 22,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.2.1",
+      "kLevel": "K1",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "During risk analysis the team considered the following risk: “The system allows too high a discount for a customer”. The team estimated the risk impact to be very high."
+        },
+        {
+          "type": "para",
+          "text": "What can one say about the risk likelihood?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It is also very high. High risk impact always implies high risk likelihood",
+          "correct": false,
+          "rationale": "Is not correct. Risk impact and risk likelihood are independent"
+        },
+        {
+          "key": "b",
+          "text": "It is very low. High risk impact always implies low risk likelihood",
+          "correct": false,
+          "rationale": "Is not correct. Risk impact and risk likelihood are independent"
+        },
+        {
+          "key": "c",
+          "text": "One cannot say anything about risk likelihood. Risk impact and risk likelihood are independent.",
+          "correct": true,
+          "rationale": "Is correct. Risk impact and risk likelihood are independent"
+        },
+        {
+          "key": "d",
+          "text": "Risk likelihood is not important with such a high-risk impact. One does not need to define it.",
+          "correct": false,
+          "rationale": "Is not correct. We need both factors to calculate risk level"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A23",
+      "ref": "A23",
+      "label": "#A23",
+      "number": 23,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.2.2",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "The following list contains risks that have been identified for a new software product to be developed:"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Management moves two experienced testers to another project",
+            " ii.       The system does not comply with security standards",
+            "iii.       System response time exceeds user requirements",
+            "iv.        Stakeholders have inaccurate expectations",
+            " v.        Disabled people have problems when using the system"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "Which of them are project risks?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, iv are project risks",
+          "correct": true,
+          "rationale": "Is correct"
+        },
+        {
+          "key": "b",
+          "text": "iv, v are project risks",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "c",
+          "text": "i, iii are project risks",
+          "correct": false,
+          "rationale": "Is not correct"
+        },
+        {
+          "key": "d",
+          "text": "ii, v are project risks",
+          "correct": false,
+          "rationale": "Is not correct"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consider: i. It is a Project risk ii. It is a Product risk iii. It is a Product risk iv. It is a Project risk v. It is a Product risk Thus:"
+    },
+    {
+      "id": "ctfl-v4-a-A24",
+      "ref": "A24",
+      "label": "#A24",
+      "number": 24,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.2.3",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is an example of how product risk analysis influences thoroughness and scope of testing?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "The test manager monitors and reports the level of all known risks on a daily basis so the stakeholders can make an informed decision on the release date",
+          "correct": false,
+          "rationale": "Is not correct. This is an example of a risk monitoring activity, not risk analysis"
+        },
+        {
+          "key": "b",
+          "text": "One of the identified risks was \"Lack of support of open-source databases\", so the team decided to integrate the system with an open-source database",
+          "correct": false,
+          "rationale": "Is not correct. This is an example of an architectural decision, not related with testing"
+        },
+        {
+          "key": "c",
+          "text": "During the quantitative risk analysis, the team estimated the total level of all identified risks and reported it as the total residual risk before testing",
+          "correct": false,
+          "rationale": "Is not correct. This is an example of performing a quantitative risk analysis and is not related to thoroughness or scope of testing"
+        },
+        {
+          "key": "d",
+          "text": "Risk assessment revealed a very high level of performance risks, so it was decided to perform detailed performance efficiency testing early in the SDLC",
+          "correct": true,
+          "rationale": "Is correct. This shows how risk analysis impacts the thoroughness of testing (i.e., the level of detail)"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A25",
+      "ref": "A25",
+      "label": "#A25",
+      "number": 25,
+      "additional": true,
+      "points": 1,
+      "selectCount": 2,
+      "learningObjective": "FL-5.3.1",
+      "kLevel": "K1",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which TWO of the following options are common metrics used for reporting on the quality level of the test object?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Number of defects found during system testing",
+          "correct": true,
+          "rationale": "Is correct. The number of defects found is related to the test object quality"
+        },
+        {
+          "key": "b",
+          "text": "Total effort on test design divided by the number of designed test cases",
+          "correct": false,
+          "rationale": "Is not correct. This is the measure of the test efficiency not the test object quality"
+        },
+        {
+          "key": "c",
+          "text": "Number of executed test procedures",
+          "correct": false,
+          "rationale": "Is not correct. The number of test cases executed does not tell us anything about the quality; test results might do"
+        },
+        {
+          "key": "d",
+          "text": "Number of defects found divided by the size of a work product",
+          "correct": true,
+          "rationale": "Is correct. defect density is related to the test object quality"
+        },
+        {
+          "key": "e",
+          "text": "Time needed to repair a defect",
+          "correct": false,
+          "rationale": "Is not correct. Time to repair is a process metric. It does not tell us anything about the product quality"
+        }
+      ],
+      "correct": [
+        "a",
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctfl-v4-a-A26",
+      "ref": "A26",
+      "label": "#A26",
+      "number": 26,
+      "additional": true,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "FL-5.3.2",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following pieces of information contained in a test progress report is the LEAST useful for business representatives?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Impediments to testing",
+          "correct": false,
+          "rationale": "Is not correct. Impediments to testing can be high-level and business- related, so this is an important piece of information for business stakeholders"
+        },
+        {
+          "key": "b",
+          "text": "Branch coverage achieved",
+          "correct": true,
+          "rationale": "Is correct. Branch testing is a technical metric used by developers and technical test analysts. This information is of no interest to business representatives"
+        },
+        {
+          "key": "c",
+          "text": "Test progress",
+          "correct": false,
+          "rationale": "Is not correct. Test progress is project related, so it may be useful for business representatives"
+        },
+        {
+          "key": "d",
+          "text": "New risks within the test cycle",
+          "correct": false,
+          "rationale": "Is not correct. Risks impact product quality, so it may be useful for business representatives"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    }
+  ]
+}
