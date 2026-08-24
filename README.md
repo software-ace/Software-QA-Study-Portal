@@ -31,7 +31,7 @@ or wrong.
 
 ## Quick start
 
-Requires **Node.js 18+**. The portal has **no dependencies at all** — no bundler,
+Requires **Node.js 20+**. The portal has **no dependencies at all** — no bundler,
 no framework, nothing to install.
 
 ```bash
@@ -49,7 +49,7 @@ node scripts/serve.mjs
 Run the tests:
 
 ```bash
-node --test 'tests/**/*.test.mjs'
+node --test
 ```
 
 Both are also wired up as `npm start` / `npm test` if you prefer, but no package

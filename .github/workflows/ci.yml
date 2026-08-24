@@ -13,9 +13,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '24'
       # No install step and no package manager: the portal has no dependencies,
       # and the tests run on Node's built-in test runner. If this job ever needs
       # an install, a dependency has crept in.
+      #
+      # `node --test` takes no path argument on purpose: it discovers
+      # tests/*.test.mjs by itself, and it is the one form that behaves the same
+      # on every supported Node version. A bare directory argument fails on 22+,
+      # and glob patterns fail before 21.
       - name: Run tests
-        run: node --test 'tests/**/*.test.mjs'
+        run: node --test

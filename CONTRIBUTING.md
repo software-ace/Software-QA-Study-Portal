@@ -21,12 +21,16 @@ certifications for free.
 
 ## Setup
 
-Requires **Node.js 18+** and nothing else — there is nothing to install.
+Requires **Node.js 20+** and nothing else — there is nothing to install.
 
 ```bash
-node scripts/serve.mjs              # serve at http://127.0.0.1:8080
-node --test 'tests/**/*.test.mjs'   # unit, data-integrity and locator-contract tests
+node scripts/serve.mjs   # serve at http://127.0.0.1:8080
+node --test              # unit, data-integrity and locator-contract tests
 ```
+
+Pass no path to `node --test`: it discovers `tests/*.test.mjs` on its own, and it
+is the only invocation that behaves the same on every supported Node version.
+CI runs the suite on Node 24 (Active LTS).
 
 ## Changing the question bank
 
