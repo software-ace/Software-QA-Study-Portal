@@ -3,6 +3,8 @@
 [![CI](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/ci.yml)
 [![Deploy static content to Pages](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/pages.yml)
 
+**▶ [Open the portal](https://software-ace.github.io/Software-QA-Study-Portal/)** — no install, runs entirely in your browser.
+
 An open-source, offline-friendly study portal for **software QA and test
 automation certifications**, starting with **ISTQB® CTFL v4.0** (Certified Tester
 Foundation Level).
@@ -146,9 +148,9 @@ The portal is fully static — no build step, no server-side code, no dependenci
 Any static host works: GitHub Pages, Netlify, Cloudflare Pages, S3. Serve the
 repository root.
 
-**GitHub Pages** is wired up already. In *Settings → Pages*, set the source to
-**GitHub Actions**; [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
-then publishes the repository root on every push to `main`.
+**GitHub Pages** is live at **<https://software-ace.github.io/Software-QA-Study-Portal/>**.
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) publishes the
+repository root on every push to `main`.
 
 Project sites are served from a subpath (`https://<user>.github.io/<repo>/`), which
 breaks a lot of static sites. This one resolves every path relative to the module
