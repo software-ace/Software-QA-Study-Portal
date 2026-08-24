@@ -63,7 +63,6 @@ export function certPaths(cert) {
     results: `${d}/results.html`,
     practice: `${d}/practice.html`,
     study: `${d}/study.html`,
-    glossary: `${d}/glossary.html`,
     progress: `${d}/progress.html`,
   };
 }
@@ -90,13 +89,6 @@ export const SECTIONS = {
     heading: 'Practice questions',
     lede: 'Untimed drilling with instant feedback and the official rationale for every option. Which certification?',
     page: 'practice.html',
-  },
-  glossary: {
-    key: 'glossary',
-    label: 'Glossary',
-    heading: 'Glossary',
-    lede: 'Syllabus keywords with context and links to the official ISTQB glossary. Which certification?',
-    page: 'glossary.html',
   },
   progress: {
     key: 'progress',

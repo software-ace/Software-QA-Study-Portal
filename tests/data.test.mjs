@@ -37,7 +37,6 @@ for (const cert of CERT_IDS) {
   const manifest = read(cert, 'manifest.json');
   const exams = manifest.exams.map((e) => read(cert, e.file));
   const syllabus = read(cert, 'syllabus.json');
-  const glossary = read(cert, 'glossary.json');
 
   test(`${cert}: exam rules match the published structure`, () => {
     assert.equal(manifest.rules.questionCount, spec.questions);
@@ -133,15 +132,6 @@ for (const cert of CERT_IDS) {
     }
   });
 
-  test(`${cert}: glossary terms are unique and link to the official glossary`, () => {
-    const terms = glossary.terms.map((t) => t.term);
-    assert.equal(new Set(terms).size, terms.length, 'duplicate glossary terms');
-    for (const t of glossary.terms) {
-      assert.ok(t.chapters.length > 0, `${t.term}: no chapter`);
-      assert.match(t.glossaryUrl, /^https:\/\/glossary\.istqb\.org\//);
-    }
-  });
-
   test(`${cert}: ISTQB attribution is present on every data file`, () => {
     for (const exam of exams) {
       assert.match(exam.source.publisher, /International Software Testing Qualifications Board/);
@@ -151,8 +141,8 @@ for (const cert of CERT_IDS) {
     assert.match(syllabus.source.publisher, /International Software Testing Qualifications Board/);
   });
 
-  test(`${cert}: has a page directory with all seven shells`, () => {
-    for (const p of ['index', 'exam', 'results', 'practice', 'study', 'glossary', 'progress']) {
+  test(`${cert}: has a page directory with all six shells`, () => {
+    for (const p of ['index', 'exam', 'results', 'practice', 'study', 'progress']) {
       const html = readFileSync(join(ROOT, cert, `${p}.html`), 'utf8');
       assert.match(html, new RegExp(`data-cert="${cert}"`), `${cert}/${p}.html must declare its certification`);
     }

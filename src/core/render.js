@@ -16,7 +16,7 @@ export const href = (p) => `${ROOT}${p}`.replace(/\/{2,}/g, '/');
 /**
  * Navigation for the certification the current page belongs to.
  *
- * The study/practice/glossary/progress links are certification-scoped, so a
+ * The study/practice/progress links are certification-scoped, so a
  * learner working through one certification never lands on another's content by
  * accident. Every available certification also gets a top-level link, so
  * switching is one click from anywhere.
@@ -26,7 +26,6 @@ function navItems() {
   const testids = {
     study: TID.studyLink,
     practice: TID.practiceLink,
-    glossary: TID.glossaryLink,
     progress: TID.progressLink,
   };
   return [

@@ -54,10 +54,10 @@ A page discovers which certification it belongs to from `body[data-cert]`.
 
 1. Add an entry to [`src/core/certs.js`](src/core/certs.js) — the registry is the
    only place that names a certification.
-2. Add `data/<cert>/` with `manifest.json`, `exam-*.json`, `syllabus.json` and
-   `glossary.json`, in the same shape as the existing ones, each with a `source`
-   block recording where the content came from.
-3. Copy the seven HTML shells into `<cert>/`, changing only `data-cert`. The
+2. Add `data/<cert>/` with `manifest.json`, `exam-*.json` and `syllabus.json`,
+   in the same shape as the existing ones, each with a `source` block recording
+   where the content came from.
+3. Copy the six HTML shells into `<cert>/`, changing only `data-cert`. The
    root-level choosers pick it up automatically from the registry.
 4. Add the certification's published exam structure to the `OFFICIAL` table in
    `tests/data.test.mjs`. Everything else is tested automatically — the suite is
@@ -80,9 +80,9 @@ Promising content that does not exist wastes people's study time.
 
 - **Progress is per-browser.** No accounts, so history does not follow you across
   devices, and clearing site data erases it. This is a deliberate privacy trade-off.
-- **Glossary entries are context, not definitions.** The syllabus publishes keyword
-  *lists*, not definitions; entries show a verbatim syllabus excerpt and link to the
-  official ISTQB glossary. We do not invent definitions.
+- **No glossary.** Term definitions live in the
+  [official ISTQB Glossary](https://glossary.istqb.org/), which is the
+  authoritative source and is kept current there.
 - **Only sample-exam questions.** These are the official practice papers, not the
   live exam bank. ISTQB states real exams may be harder or easier.
 - **One in-flight session at a time.** Starting a new exam replaces any unsubmitted one.

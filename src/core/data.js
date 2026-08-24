@@ -32,7 +32,6 @@ async function loadJson(name) {
 
 export const getManifest = () => loadJson('manifest.json');
 export const getSyllabus = () => loadJson('syllabus.json');
-export const getGlossary = () => loadJson('glossary.json');
 export const getExam = (file) => loadJson(file);
 
 /** Load every exam set at once — used by practice mode and progress stats. */

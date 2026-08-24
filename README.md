@@ -30,7 +30,6 @@ level, and a per-option rationale explaining *why* each answer is right or wrong
 | **Answer review** | Every question shows **the answer you chose**, the official answer, and the official rationale for all options. Filter by correct/incorrect/unanswered. |
 | **Practice mode** | Untimed drilling over the whole question bank (including CTFL's 26 appendix questions), filtered by chapter, K-level, exam set or pool. |
 | **Syllabus browser** | Every chapter and learning objective, with how many official questions test each one. |
-| **Glossary** | Syllabus keywords with context and links to the official ISTQB glossary. |
 | **Progress** | Attempt history and weakest chapters, tracked separately per certification. |
 | **Private by design** | No backend, no accounts, no telemetry. Everything is `localStorage`. |
 
@@ -107,15 +106,13 @@ then re-run the tests.
 index.html                 Portal home — certifications and role tracks
 study.html                 Certification choosers: the nav asks which
 practice.html                certification you mean before showing any
-glossary.html                certification-specific content
-progress.html
+progress.html                certification-specific content
 ctfl-v4/                   One directory of page shells per certification
   index.html               Certification hub
   exam.html                Timed exam runner (name gate -> paper -> submit)
   results.html             Score, chapter breakdown, full answer review
   practice.html            Untimed practice with instant feedback
   study.html               Syllabus + learning-objective browser
-  glossary.html            Searchable keyword index
   progress.html            Attempt history and weak areas
 ctal-tae-v2/               Same seven shells, same page modules
 src/
@@ -129,7 +126,7 @@ src/
     rng.js                 Seedable shuffle for reproducible runs
     dom.js                 Tiny DOM helpers
   pages/                   One module per page (choose.js backs all four choosers)
-data/<cert>/               The question bank, syllabus and glossary (JSON)
+data/<cert>/               The question bank and syllabus (JSON)
 scripts/serve.mjs          Zero-dependency static server
 tests/
   engine.test.mjs          Scoring logic

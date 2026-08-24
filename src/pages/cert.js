@@ -87,10 +87,6 @@ async function main() {
         el('h3', { text: 'Practice mode' }),
         el('p', { class: 'muted', text: 'Untimed drilling with instant feedback. Filter by chapter, K-level or exam set.' }),
       ]),
-      el('a', { class: 'card', href: href(certPaths(activeCert()).glossary), testid: tid.hubCard('glossary') }, [
-        el('h3', { text: 'Glossary' }),
-        el('p', { class: 'muted', text: `${manifest.glossary?.terms ?? 0} syllabus keywords with context and official definitions.` }),
-      ]),
       el('a', { class: 'card', href: href(certPaths(activeCert()).progress), testid: tid.hubCard('progress') }, [
         el('h3', { text: 'Progress' }),
         el('p', { class: 'muted', text: attempts.length ? `${attempts.length} recorded attempt${attempts.length === 1 ? '' : 's'}.` : 'No attempts yet — sit an exam to start tracking.' }),

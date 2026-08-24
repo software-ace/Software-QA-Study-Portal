@@ -42,7 +42,6 @@ export const TID = {
   examList: 'exams-panel',
   practiceLink: 'practice-link',
   studyLink: 'study-link',
-  glossaryLink: 'glossary-link',
   progressLink: 'progress-link',
 
   // Candidate gate ----------------------------------------------------------
@@ -115,12 +114,6 @@ export const TID = {
   chapterList: 'chapters-panel',
   studySearch: 'study-search',
 
-  // Glossary ----------------------------------------------------------------
-  glossaryRoot: 'glossary-root',
-  glossarySearch: 'glossary-search',
-  glossaryList: 'glossary-terms-panel',
-  glossaryCount: 'glossary-count',
-
   // Progress ----------------------------------------------------------------
   progressRoot: 'progress-root',
   attemptList: 'attempts-table',
@@ -163,7 +156,6 @@ export const tid = {
   chapterToggle: (n) => `chapter-${n}-toggle`,
   section: (num) => `section-${String(num).replace(/\./g, '-')}`,
   lo: (id) => `lo-${String(id).toLowerCase()}`,
-  term: (slug) => `term-${slug}`,
   attempt: (id) => `attempt-${id}`,
   weakArea: (n) => `weak-area-${n}`,
 };

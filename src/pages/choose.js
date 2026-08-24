@@ -1,7 +1,7 @@
 /**
  * choose.js — Certification chooser.
  *
- * Backs the root-level study/practice/glossary/progress pages. Each nav link
+ * Backs the root-level study/practice/progress pages. Each nav link
  * lands here first so the learner picks a certification explicitly, instead of
  * the portal quietly defaulting to one and showing content they never asked for.
  *
@@ -24,9 +24,6 @@ function summarise(section, manifest, certId) {
   }
   if (section.key === 'practice') {
     return `${q} official questions to drill`;
-  }
-  if (section.key === 'glossary') {
-    return `${manifest.glossary?.terms ?? 0} syllabus keywords`;
   }
   // Progress is per-certification, so read that certification's own history.
   const n = listAttempts(certId).length;

@@ -18,7 +18,7 @@
     {
       "id": "ctfl-v4-set-a",
       "set": "A",
-      "title": "ISTQB CTFL v4.0 — Sample Exam Set A",
+      "title": "ISTQB CTFL v4.0 \u2014 Sample Exam Set A",
       "file": "exam-a.json",
       "counts": {
         "exam": 40,
@@ -37,7 +37,7 @@
     {
       "id": "ctfl-v4-set-b",
       "set": "B",
-      "title": "ISTQB CTFL v4.0 — Sample Exam Set B",
+      "title": "ISTQB CTFL v4.0 \u2014 Sample Exam Set B",
       "file": "exam-b.json",
       "counts": {
         "exam": 40,
@@ -56,7 +56,7 @@
     {
       "id": "ctfl-v4-set-c",
       "set": "C",
-      "title": "ISTQB CTFL v4.0 — Sample Exam Set C",
+      "title": "ISTQB CTFL v4.0 \u2014 Sample Exam Set C",
       "file": "exam-c.json",
       "counts": {
         "exam": 40,
@@ -75,7 +75,7 @@
     {
       "id": "ctfl-v4-set-d",
       "set": "D",
-      "title": "ISTQB CTFL v4.0 — Sample Exam Set D",
+      "title": "ISTQB CTFL v4.0 \u2014 Sample Exam Set D",
       "file": "exam-d.json",
       "counts": {
         "exam": 40,
@@ -96,10 +96,6 @@
     "file": "syllabus.json",
     "chapters": 6,
     "learningObjectives": 64
-  },
-  "glossary": {
-    "file": "glossary.json",
-    "terms": 97
   },
   "totals": {
     "examQuestions": 160,

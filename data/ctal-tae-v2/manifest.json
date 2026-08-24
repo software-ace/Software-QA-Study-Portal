@@ -18,7 +18,7 @@
     {
       "id": "ctal-tae-v2-set-a",
       "set": "A",
-      "title": "ISTQB CTAL-TAE v2.0 — Sample Exam Set A",
+      "title": "ISTQB CTAL-TAE v2.0 \u2014 Sample Exam Set A",
       "file": "exam-a.json",
       "counts": {
         "exam": 40,
@@ -39,10 +39,6 @@
     "file": "syllabus.json",
     "chapters": 8,
     "learningObjectives": 29
-  },
-  "glossary": {
-    "file": "glossary.json",
-    "terms": 32
   },
   "totals": {
     "examQuestions": 40,
