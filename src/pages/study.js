@@ -6,6 +6,7 @@
  */
 import { el, mount, markReady, markError, byTestId } from '../core/dom.js';
 import { renderShell, renderError, href } from '../core/render.js';
+import { activeCert, certPaths } from '../core/certs.js';
 import { TID, tid } from '../core/testids.js';
 import { getSyllabus, getQuestionPool } from '../core/data.js';
 
@@ -68,7 +69,7 @@ async function main() {
                         el('span', { class: 'faint', style: 'display:block' }, [
                           count
                             ? el('a', {
-                                href: `${href('ctfl-v4/practice.html')}?start=1`,
+                                href: `${href(certPaths(activeCert()).practice)}?start=1`,
                                 text: `${count} official question${count === 1 ? '' : 's'}`,
                               })
                             : 'no questions in the sample papers',

@@ -49,19 +49,27 @@ actively harm the people using it. If a check fails, the data is wrong.
 
 ## Adding a new certification
 
-1. Add `data/<cert>/manifest.json` in the same shape as `data/ctfl-v4/manifest.json`,
-   with a `source` block recording where the content came from.
-2. Add the pages under `<cert>/`, reusing `src/core/*` — the engine, renderer and
-   store are certification-agnostic.
-3. Register the certification in `src/pages/home.js`.
-4. Add integrity tests mirroring `tests/data.test.mjs`.
+The engine, renderer, store and all seven page modules are certification-agnostic.
+A page discovers which certification it belongs to from `body[data-cert]`.
+
+1. Add an entry to [`src/core/certs.js`](src/core/certs.js) — the registry is the
+   only place that names a certification.
+2. Add `data/<cert>/` with `manifest.json`, `exam-*.json`, `syllabus.json` and
+   `glossary.json`, in the same shape as the existing ones, each with a `source`
+   block recording where the content came from.
+3. Copy the seven HTML shells into `<cert>/`, changing only `data-cert`.
+4. Add the certification's published exam structure to the `OFFICIAL` table in
+   `tests/data.test.mjs`. Everything else is tested automatically — the suite is
+   driven by the registry.
+
+No changes to `src/core/engine.js`, `src/core/render.js` or the page modules
+should be needed. If they are, the abstraction has a gap worth fixing instead.
 
 Only mark a certification "Available" when it has a real, validated question bank.
 Promising content that does not exist wastes people's study time.
 
 ## Roadmap
 
-- [ ] CTAL-TAE (Advanced Test Automation Engineering)
 - [ ] CTFL-AT (Agile Tester)
 - [ ] Flashcard / spaced-repetition mode over the 64 learning objectives
 - [ ] Exportable/importable progress (currently `localStorage` only)

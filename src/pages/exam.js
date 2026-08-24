@@ -14,6 +14,7 @@
  */
 import { el, mount, byTestId, markReady, markError, params, formatClock } from '../core/dom.js';
 import { renderShell, renderQuestionCard, renderError, href } from '../core/render.js';
+import { activeCert, certPaths } from '../core/certs.js';
 import { TID, tid, STATE } from '../core/testids.js';
 import { getManifest, getExam } from '../core/data.js';
 import { ExamEngine } from '../core/engine.js';
@@ -320,7 +321,7 @@ function renderPaper(exam) {
     if (!window.confirm('Abandon this exam? Your answers will be discarded.')) return;
     stopTimer();
     clearSession();
-    location.assign(href('ctfl-v4/index.html'));
+    location.assign(href(certPaths(activeCert()).hub));
   });
 
   refreshProgress();
@@ -374,13 +375,13 @@ function finish({ expired }) {
     if (notice) notice.hidden = false;
   }
 
-  location.assign(`${href('ctfl-v4/results.html')}?attempt=${encodeURIComponent(attempt.id)}`);
+  location.assign(`${href(certPaths(activeCert()).results)}?attempt=${encodeURIComponent(attempt.id)}`);
 }
 
 // --- bootstrap -------------------------------------------------------------
 
 async function main() {
-  page = renderShell('ctfl');
+  page = renderShell(`cert-${activeCert().id}`);
   manifest = await getManifest();
 
   const wanted = params.get('exam');

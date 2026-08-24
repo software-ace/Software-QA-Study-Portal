@@ -20,7 +20,7 @@ export const VERDICT = {
 
 export class ExamEngine {
   /**
-   * @param {object} exam       parsed exam JSON (data/ctfl-v4/exam-x.json)
+   * @param {object} exam       parsed exam JSON (data/<cert>/exam-x.json)
    * @param {object} opts
    * @param {string} opts.candidateName
    * @param {number} [opts.durationMinutes]

@@ -1,0 +1,51 @@
+{
+  "certification": {
+    "code": "CTAL-TAE",
+    "version": "2.0",
+    "name": "ISTQB Certified Tester Advanced Level Test Automation Engineering",
+    "syllabus": "CTAL-TAE v2.0"
+  },
+  "generatedFrom": "Official ISTQB CTAL-TAE v2.0 sample exam (set A) and syllabus",
+  "rules": {
+    "questionCount": 40,
+    "totalPoints": 66,
+    "passPoints": 43,
+    "passPercent": 65,
+    "durationMinutes": 90,
+    "extendedDurationMinutes": 113
+  },
+  "exams": [
+    {
+      "id": "ctal-tae-v2-set-a",
+      "set": "A",
+      "title": "ISTQB CTAL-TAE v2.0 — Sample Exam Set A",
+      "file": "exam-a.json",
+      "counts": {
+        "exam": 40,
+        "additional": 0
+      },
+      "rules": {
+        "questionCount": 40,
+        "totalPoints": 66,
+        "passPoints": 43,
+        "passPercent": 65,
+        "durationMinutes": 90,
+        "extendedDurationMinutes": 113
+      },
+      "documentVersion": "2.4"
+    }
+  ],
+  "syllabus": {
+    "file": "syllabus.json",
+    "chapters": 8,
+    "learningObjectives": 29
+  },
+  "glossary": {
+    "file": "glossary.json",
+    "terms": 32
+  },
+  "totals": {
+    "examQuestions": 40,
+    "additionalQuestions": 0
+  }
+}

@@ -4,7 +4,8 @@
 import { el, mount, markReady, markError } from '../core/dom.js';
 import { renderShell, href, renderError } from '../core/render.js';
 import { TID, tid } from '../core/testids.js';
-import { getManifest } from '../core/data.js';
+import { getCertManifest } from '../core/data.js';
+import { CERT_LIST, certPaths } from '../core/certs.js';
 
 /**
  * Tracks describe the career paths this portal is being built out for. Only
@@ -22,7 +23,7 @@ const TRACKS = [
     id: 'test-automation',
     name: 'Test Automation',
     blurb: 'Automation architecture, tooling, CI integration and maintainable test suites.',
-    certs: ['ctal-tae'],
+    certs: ['ctal-tae-v2'],
   },
   {
     id: 'agile-testing',
@@ -32,33 +33,33 @@ const TRACKS = [
   },
 ];
 
-const CERTS = [
-  {
-    id: 'ctfl-v4',
-    code: 'CTFL v4.0',
-    name: 'Certified Tester Foundation Level',
-    body: 'ISTQB®',
-    available: true,
-    path: 'ctfl-v4/index.html',
-    blurb: 'The foundation certification for software testing. Built from the official v4.0 syllabus and all four official sample exam papers.',
-  },
-  {
-    id: 'ctal-tae',
-    code: 'CTAL-TAE',
-    name: 'Advanced Level Test Automation Engineering',
-    body: 'ISTQB®',
-    available: false,
-    blurb: 'Automation architecture and implementation. Planned — contributions welcome.',
-  },
+/**
+ * The catalogue is the registry plus certifications that are planned but have no
+ * question bank yet. Only ones with real, validated content are marked
+ * available — promising content that does not exist wastes people's study time.
+ */
+const PLANNED = [
   {
     id: 'ctfl-at',
     code: 'CTFL-AT',
     name: 'Foundation Level Agile Tester',
-    body: 'ISTQB®',
-    available: false,
     blurb: 'Agile testing principles and practices. Planned — contributions welcome.',
   },
 ];
+
+const CATALOGUE = [
+  ...CERT_LIST.map((c) => ({
+    id: c.id,
+    code: `${c.code} v${c.version}`,
+    name: c.name,
+    body: 'ISTQB®',
+    available: c.available,
+    path: certPaths(c).hub,
+    blurb: c.blurb,
+  })),
+  ...PLANNED.map((c) => ({ ...c, body: 'ISTQB®', available: false })),
+];
+
 
 function certCard(cert, stats) {
   const badges = el('div', { class: 'row', style: 'margin-bottom:10px' }, [
@@ -73,7 +74,7 @@ function certCard(cert, stats) {
     el('h3', { text: `${cert.code} — ${cert.name}` }),
     el('p', { class: 'muted', text: cert.blurb }),
     cert.available && stats
-      ? el('p', { class: 'faint', text: `${stats.exams} exam sets · ${stats.questions} official questions · ${stats.los} learning objectives` })
+      ? el('p', { class: 'faint', text: `${stats.exams} exam set${stats.exams === 1 ? '' : 's'} · ${stats.questions} official questions · ${stats.los} learning objectives` })
       : null,
   ];
 
@@ -91,18 +92,23 @@ function certCard(cert, stats) {
 async function main() {
   const page = renderShell('home');
 
-  let stats = null;
-  try {
-    const manifest = await getManifest();
-    stats = {
-      exams: manifest.exams.length,
-      questions: manifest.totals.examQuestions + manifest.totals.additionalQuestions,
-      los: manifest.syllabus?.learningObjectives ?? 0,
-    };
-  } catch (err) {
-    // The catalogue is still useful without live counts.
-    console.warn(err);
-  }
+  // Counts are per certification. A failure to load one must not blank the whole
+  // catalogue, so each is settled independently and simply omits its numbers.
+  const stats = new Map();
+  await Promise.all(
+    CERT_LIST.filter((c) => c.available).map(async (c) => {
+      try {
+        const m = await getCertManifest(c.id);
+        stats.set(c.id, {
+          exams: m.exams.length,
+          questions: m.totals.examQuestions + m.totals.additionalQuestions,
+          los: m.syllabus?.learningObjectives ?? 0,
+        });
+      } catch (err) {
+        console.warn(`Could not load counts for ${c.id}`, err);
+      }
+    }),
+  );
 
   mount(
     page,
@@ -112,7 +118,7 @@ async function main() {
     ]),
 
     el('h2', { text: 'Certifications' }),
-    el('div', { class: 'grid', testid: TID.certificationList }, CERTS.map((c) => certCard(c, stats))),
+    el('div', { class: 'grid', testid: TID.certificationList }, CATALOGUE.map((c) => certCard(c, stats.get(c.id)))),
 
     el('h2', { text: 'Role tracks' }),
     el(
@@ -122,7 +128,7 @@ async function main() {
         el('div', { class: 'card', testid: tid.track(track.id), dataset: { trackId: track.id } }, [
           el('h3', { text: track.name }),
           el('p', { class: 'muted', text: track.blurb }),
-          el('p', { class: 'faint', text: track.certs.map((id) => CERTS.find((c) => c.id === id)?.code ?? id).join(' · ') }),
+          el('p', { class: 'faint', text: track.certs.map((id) => CATALOGUE.find((c) => c.id === id)?.code ?? id).join(' · ') }),
         ]),
       ),
     ),

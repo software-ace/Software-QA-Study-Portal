@@ -7,6 +7,7 @@
  */
 import { el, mount, markReady, markError, formatClock } from '../core/dom.js';
 import { renderShell, renderError, href } from '../core/render.js';
+import { activeCert, certPaths } from '../core/certs.js';
 import { TID, tid } from '../core/testids.js';
 import { listAttempts, clearAttempts, weakAreas, storageAvailable } from '../core/store.js';
 import { getSyllabus } from '../core/data.js';
@@ -32,7 +33,7 @@ async function main() {
         el('p', { text: storageAvailable
           ? 'No attempts recorded yet. Sit a timed exam and your score, per-chapter breakdown and weak areas will appear here.'
           : 'Your browser is blocking local storage, so attempts cannot be recorded.' }),
-        el('a', { class: 'btn', 'data-variant': 'primary', href: href('ctfl-v4/index.html'), text: 'Choose an exam' }),
+        el('a', { class: 'btn', 'data-variant': 'primary', href: href(certPaths(activeCert()).hub), text: 'Choose an exam' }),
       ]),
     );
     markReady({ page: 'progress', attempts: '0' });
@@ -68,7 +69,7 @@ async function main() {
             el('td', { class: 'num', text: `${a.percent}%` }),
             el('td', {}, [el('span', { class: 'badge', 'data-tone': a.passed ? 'ok' : 'bad', text: a.passed ? 'Passed' : 'Failed' })]),
             el('td', { class: 'num', text: formatClock(a.elapsedSeconds) }),
-            el('td', {}, [el('a', { href: `${href('ctfl-v4/results.html')}?attempt=${encodeURIComponent(a.id)}`, text: 'Review' })]),
+            el('td', {}, [el('a', { href: `${href(certPaths(activeCert()).results)}?attempt=${encodeURIComponent(a.id)}`, text: 'Review' })]),
           ]),
         ),
       ),

@@ -7,19 +7,37 @@
  */
 import { el, params } from './dom.js';
 import { TID, tid, STATE } from './testids.js';
+import { activeCert, certPaths, CERT_LIST } from './certs.js';
 
 /** Root-relative prefix so nested pages link correctly with no build step. */
 export const ROOT = new URL('../../', import.meta.url).pathname;
 export const href = (p) => `${ROOT}${p}`.replace(/\/{2,}/g, '/');
 
-const NAV = [
-  { label: 'Portal', path: 'index.html', key: 'home' },
-  { label: 'CTFL v4.0', path: 'ctfl-v4/index.html', key: 'ctfl' },
-  { label: 'Study', path: 'ctfl-v4/study.html', key: 'study', testid: TID.studyLink },
-  { label: 'Practice', path: 'ctfl-v4/practice.html', key: 'practice', testid: TID.practiceLink },
-  { label: 'Glossary', path: 'ctfl-v4/glossary.html', key: 'glossary', testid: TID.glossaryLink },
-  { label: 'Progress', path: 'ctfl-v4/progress.html', key: 'progress', testid: TID.progressLink },
-];
+/**
+ * Navigation for the certification the current page belongs to.
+ *
+ * The study/practice/glossary/progress links are certification-scoped, so a
+ * learner working through one certification never lands on another's content by
+ * accident. Every available certification also gets a top-level link, so
+ * switching is one click from anywhere.
+ */
+function navItems() {
+  const cert = activeCert();
+  const paths = certPaths(cert);
+  return [
+    { label: 'Portal', path: 'index.html', key: 'home' },
+    ...CERT_LIST.filter((c) => c.available).map((c) => ({
+      label: c.navLabel,
+      path: certPaths(c).hub,
+      key: `cert-${c.id}`,
+      current: c.id === cert.id && document.body.dataset.page === 'cert',
+    })),
+    { label: 'Study', path: paths.study, key: 'study', testid: TID.studyLink },
+    { label: 'Practice', path: paths.practice, key: 'practice', testid: TID.practiceLink },
+    { label: 'Glossary', path: paths.glossary, key: 'glossary', testid: TID.glossaryLink },
+    { label: 'Progress', path: paths.progress, key: 'progress', testid: TID.progressLink },
+  ];
+}
 
 export function renderHeader(activeKey) {
   return el('header', { class: 'site-header', testid: TID.siteHeader }, [
@@ -30,12 +48,12 @@ export function renderHeader(activeKey) {
       el(
         'nav',
         { class: 'site-nav', testid: TID.siteNav, 'aria-label': 'Main navigation' },
-        NAV.map((item) =>
+        navItems().map((item) =>
           el('a', {
             href: href(item.path),
             text: item.label,
             testid: item.testid ?? tid.navLink(item.key),
-            'aria-current': item.key === activeKey ? 'page' : null,
+            'aria-current': item.current || item.key === activeKey ? 'page' : null,
           }),
         ),
       ),
@@ -61,7 +79,7 @@ export function renderFooter() {
           rel: 'noopener',
           target: '_blank',
         }),
-        ', reproduced from the official CTFL v4.0 sample exams and syllabus for non-commercial study use with acknowledgement of the source. ISTQB® is a registered trademark. This portal is not affiliated with, endorsed by, or accredited by the ISTQB.',
+        `, reproduced from the official ${activeCert().code} v${activeCert().version} sample exams and syllabus for non-commercial study use with acknowledgement of the source. ISTQB® is a registered trademark. This portal is not affiliated with, endorsed by, or accredited by the ISTQB.`,
       ]),
       el('p', {}, [
         'Open source under the MIT licence (portal code only). ',

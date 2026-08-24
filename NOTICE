@@ -5,7 +5,7 @@ This project contains material derived from official ISTQB® publications.
 
 Source
 ------
-The content in `data/ctfl-v4/` was derived from the following official ISTQB
+The content in `data/` was derived from the following official ISTQB
 documents, published by the ISTQB at https://istqb.org/ :
 
   * ISTQB® Certified Tester Foundation Level Syllabus, v4.0.1
@@ -27,13 +27,18 @@ documents, published by the ISTQB at https://istqb.org/ :
     https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-d-questions_v1-4/
     https://istqb.org/sdm_downloads/istqb_ctfl_v4-0_sample-exam-d-answers_v1-4/
 
+  * ISTQB® Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)
+    Syllabus v2.0, and CTAL-TAE v2.0 Sample Exam Set A — Questions and Answers,
+    v2.4 (2026-05-12)
+    https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/
+
 The exact document name, version and release date behind each file is recorded in
 the `source` block of every JSON file under `data/ctfl-v4/`, so the provenance of
 the content travels with the data itself.
 
 What is contained here
 ----------------------
-The files under `data/ctfl-v4/` contain extracts of ISTQB copyrighted material,
+The files under `data/` contain extracts of ISTQB copyrighted material,
 including question text, answer options, answer keys, per-option rationales,
 learning objectives and syllabus keywords.
 

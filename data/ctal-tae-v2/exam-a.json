@@ -1,0 +1,2172 @@
+{
+  "id": "ctal-tae-v2-set-a",
+  "set": "A",
+  "title": "ISTQB CTAL-TAE v2.0 — Sample Exam Set A",
+  "certification": {
+    "code": "CTAL-TAE",
+    "version": "2.0",
+    "name": "ISTQB Certified Tester Advanced Level Test Automation Engineering"
+  },
+  "source": {
+    "publisher": "International Software Testing Qualifications Board (ISTQB®)",
+    "questionsDocument": "ISTQB_CTAL-TAE_v2.0_Sample-Exam-A-Questions",
+    "answersDocument": "ISTQB_CTAL-TAE_v2.0_Sample-Exam-A-Answers",
+    "documentVersion": "2.4",
+    "release": "May 12, 2026",
+    "syllabusVersion": "2.0",
+    "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/",
+    "copyright": "© International Software Testing Qualifications Board (ISTQB®). Reproduced for non-commercial study use with acknowledgement of the source."
+  },
+  "rules": {
+    "questionCount": 40,
+    "totalPoints": 66,
+    "passPoints": 43,
+    "passPercent": 65,
+    "durationMinutes": 90,
+    "extendedDurationMinutes": 113
+  },
+  "counts": {
+    "exam": 40,
+    "additional": 0
+  },
+  "questions": [
+    {
+      "id": "ctal-tae-v2-a-1",
+      "ref": "1",
+      "label": "#1",
+      "number": 1,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-1.1.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is a limitation of test automation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Only usability tests can be automated effectively",
+          "correct": false,
+          "rationale": "Is not correct. Test automation can be performed before and after system testing."
+        },
+        {
+          "key": "b",
+          "text": "Test automation can be executed only after system testing is done",
+          "correct": false,
+          "rationale": "Is not correct. It refers to non-existing limitation."
+        },
+        {
+          "key": "c",
+          "text": "Test automation can only check results that can be verified visually",
+          "correct": false,
+          "rationale": "Is not correct. Test automation is not limited to check only the results that can be verified visually."
+        },
+        {
+          "key": "d",
+          "text": "Test automation can only check results that can be verified by code",
+          "correct": true,
+          "rationale": "Is correct. As in syllabus: \"Test automation can only check test results that can be verified by an automated test oracle\". This is a limitation and means that results of the automated scripts are verified by the machine which is programmed to do so (code)."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-2",
+      "ref": "2",
+      "label": "#2",
+      "number": 2,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-1.2.1",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which of the following is true about test automation and the SDLC?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "In Agile software development automated tests focus more on acceptance tests than on component tests",
+          "correct": false,
+          "rationale": "Is not correct. In Agile software development, automated component tests are higher in volume compared to automated acceptance tests."
+        },
+        {
+          "key": "b",
+          "text": "In Agile software development automated tests focus more on component tests than on acceptance tests",
+          "correct": true,
+          "rationale": "Is correct. In Agile software development, automated component tests are higher in volume compared to automated acceptance tests."
+        },
+        {
+          "key": "c",
+          "text": "In the V-model automated test execution must be performed after manual test execution",
+          "correct": false,
+          "rationale": "Is not correct. There is no such rule in the V-model."
+        },
+        {
+          "key": "d",
+          "text": "In the V-model implementation of test automation is performed throughout the whole software development cycle",
+          "correct": false,
+          "rationale": "Is not correct. V-model test planning, including planning of test automation, is performed in the early phase of the software development lifecycle."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-3",
+      "ref": "3",
+      "label": "#3",
+      "number": 3,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-1.2.2",
+      "kLevel": "K2",
+      "chapter": 1,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which one of the following factors is NOT necessary to consider when selecting suitable test tools?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "SUT architecture",
+          "correct": false,
+          "rationale": "Is not correct. The SUT architecture should be considered."
+        },
+        {
+          "key": "b",
+          "text": "Actual composition and experience of the test team",
+          "correct": false,
+          "rationale": "Is not correct. The actual composition and experience of the test team needs to be evaluated."
+        },
+        {
+          "key": "c",
+          "text": "Licensing and support of the test tool",
+          "correct": false,
+          "rationale": "Is not correct. It is necessary to have knowledge about the licensing and support of the tool."
+        },
+        {
+          "key": "d",
+          "text": "Quality of the SUT requirements",
+          "correct": true,
+          "rationale": "Is correct. The quality of the SUT requirements is not directly related to selecting the tool itself."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-4",
+      "ref": "4",
+      "label": "#4",
+      "number": 4,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-2.1.1",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "When a system is designed for testability, one of the characteristics is that the test automation framework (TAF) can access interfaces to perform actions on the system. What is this characteristic called?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Observability",
+          "correct": false,
+          "rationale": "Is not correct. Observability means to give insight into the system."
+        },
+        {
+          "key": "b",
+          "text": "Controllability",
+          "correct": true,
+          "rationale": "Is correct. See Chapter 2.1.1 of the syllabus."
+        },
+        {
+          "key": "c",
+          "text": "Maintainability",
+          "correct": false,
+          "rationale": "Is not correct. Maintainability is a quality characteristic."
+        },
+        {
+          "key": "d",
+          "text": "Interoperability",
+          "correct": false,
+          "rationale": "Is not correct. Interoperability is also a quality characteristic."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-5",
+      "ref": "5",
+      "label": "#5",
+      "number": 5,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-2.1.2",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "What type of test automation is mainly performed in the Preproduction environment?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Component testing",
+          "correct": false,
+          "rationale": "Is not correct. Component testing is performed in a build and development environment."
+        },
+        {
+          "key": "b",
+          "text": "Performance efficiency testing and user acceptance testing",
+          "correct": true,
+          "rationale": "Is correct. It is necessary to perform performance efficiency testing and user acceptance testing in a preproduction environment to test real world scenarios."
+        },
+        {
+          "key": "c",
+          "text": "Static analysis",
+          "correct": false,
+          "rationale": "Is not correct. Static analysis is usually done at the development environment."
+        },
+        {
+          "key": "d",
+          "text": "Component Integration testing",
+          "correct": false,
+          "rationale": "Is not correct. Component integration testing is done at the development environment."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-6",
+      "ref": "6",
+      "label": "#6",
+      "number": 6,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-2.1.2",
+      "kLevel": "K2",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "In which environment is a fully automated test suite typically executed against a release candidate for the first time?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Preproduction/staging environment",
+          "correct": false,
+          "rationale": "Is not correct. Preproduction or staging environment testing has less focus on functional aspects."
+        },
+        {
+          "key": "b",
+          "text": "Build environment",
+          "correct": false,
+          "rationale": "Is not correct. A build environment is not ready for more robust test execution."
+        },
+        {
+          "key": "c",
+          "text": "Production/operational environment",
+          "correct": false,
+          "rationale": "Is not correct. Full functional test suites are not typically executed against products in production."
+        },
+        {
+          "key": "d",
+          "text": "Integration/test environment",
+          "correct": true,
+          "rationale": "Is correct. Robust user interface (UI), and application programming interface (API) test suites are typically executed against fully integrated systems."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-7",
+      "ref": "7",
+      "label": "#7",
+      "number": 7,
+      "additional": false,
+      "points": 3,
+      "selectCount": 2,
+      "learningObjective": "TAE-2.2.1",
+      "kLevel": "K4",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working for an IT company which is developing a built-in Android-based car multimedia system. The software contains several components working together. Developers are following the test-driven development approach. After the development of the software, it is delivered to another IT company which integrates the software with the hardware elements and sells them together to car manufacturers."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following should be considered during capturing the test automation requirements by the IT company you are working for?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Is it important for the test automation approach to support component testing?",
+          "correct": true,
+          "rationale": "Is correct. Component testing is performed by the developing IT company."
+        },
+        {
+          "key": "b",
+          "text": "Should the test automation approach support beta testing?",
+          "correct": false,
+          "rationale": "Is not correct. Beta testing is not performed."
+        },
+        {
+          "key": "c",
+          "text": "Is it important for the test automation approach to support the testing of the software in as many different types of cars as possible?",
+          "correct": false,
+          "rationale": "Is not correct. The testing of as many different types of cars as possible is performed by the integrator IT company."
+        },
+        {
+          "key": "d",
+          "text": "Which tester roles should be supported by the test automation approach?",
+          "correct": true,
+          "rationale": "Is correct. Automated component tests are designed and executed by the developers."
+        },
+        {
+          "key": "e",
+          "text": "Is it important for the test automation approach to support the mobile application store approval?",
+          "correct": false,
+          "rationale": "Is not correct. The test automation approach to support the mobile application store approval is not performed."
+        }
+      ],
+      "correct": [
+        "a",
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-8",
+      "ref": "8",
+      "label": "#8",
+      "number": 8,
+      "additional": false,
+      "points": 3,
+      "selectCount": 1,
+      "learningObjective": "TAE-2.2.2",
+      "kLevel": "K4",
+      "chapter": 2,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are evaluating test automation tools. The following is a list of findings for one of the tools that were evaluated against the selection requirements:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The tool has a very informative dashboard which shows all the relevant test information about the SUT.",
+            "The tool includes a test logging component which logs all the necessary information that follows test execution and to troubleshoot problems found during the tests.",
+            "The tool includes a customizable test reporting component.",
+            "During the proof of concept, the tool performed very slowly against the SUT, compared to the other tools that were evaluated.",
+            "The current test environment is valid according to the release notes of the tool which means it fulfills the hardware and software requirements."
+          ]
+        },
+        {
+          "type": "para",
+          "text": "What should be your next step regarding the selection of this tool?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Acquire more hardware resources for the SUT to decrease the performance degradation",
+          "correct": false,
+          "rationale": "Is not correct. The test environment is valid according to the release notes."
+        },
+        {
+          "key": "b",
+          "text": "Turn off test logging to improve performance of the tool",
+          "correct": false,
+          "rationale": "Is not correct. The test logging component is essential for troubleshooting."
+        },
+        {
+          "key": "c",
+          "text": "Recommend not selecting this tool",
+          "correct": true,
+          "rationale": "Is correct. The tool does not meet selection requirements."
+        },
+        {
+          "key": "d",
+          "text": "Plan to migrate the SUT to another hardware/software environment where there is a possibility for the elimination of the tool overhead",
+          "correct": false,
+          "rationale": "Is not correct. It is completely wrong to migrate the SUT."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-9",
+      "ref": "9",
+      "label": "#9",
+      "number": 9,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.1",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Match the list of tasks in the Test Automation Architecture Capabilities below with its correct role name below."
+        },
+        {
+          "type": "table",
+          "lines": [
+            "1.     Mapping the abstract test cases to concrete test cases suitable for execution.",
+            "2.     Implementation of test cases and/or test suites.",
+            "3.     Test logging with detailed information about the test steps and actions.",
+            "4.     Mechanism for connecting to the SUT via protocols, and services."
+          ]
+        },
+        {
+          "type": "para",
+          "text": "A. Test Definition B. Test Adaptation C. Test Generation D. Test Execution"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "1D, 2A, 3C, 4B",
+          "correct": false,
+          "rationale": "1D, 2A, 3C, 4B INCORRECT"
+        },
+        {
+          "key": "b",
+          "text": "1C, 2A, 3B, 4D",
+          "correct": false,
+          "rationale": "1C, 2A, 3B, 4D INCORRECT"
+        },
+        {
+          "key": "c",
+          "text": "1A, 2B, 3D, 4C",
+          "correct": false,
+          "rationale": "1A, 2B, 3D, 4C INCORRECT"
+        },
+        {
+          "key": "d",
+          "text": "1C, 2A, 3D, 4B",
+          "correct": true,
+          "rationale": "1C, 2A, 3D, 4B CORRECT"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "1-C. Test Generation. mapping the abstract test cases to concrete test cases suitable for execution. This is where model based testing tools support the automated design of test cases based on a test model. 2-A. Test Definition. Implementation of test cases and/or test suites. This layer supports the definition and implementation of test cases and/or test suites. 3-D. Test Execution. Test logging with detailed information about the test steps and actions. This layer provides a test execution tool to run the selected tests automatically, and a test logging and test reporting component. 4-B. Test Adaptation. Mechanism for connecting to the SUT via protocols, and services. This layer provides functionality to adapt the automated tests for the various components or interfaces of the SUT. It provides different adaptors for integration mechanism."
+    },
+    {
+      "id": "ctal-tae-v2-a-10",
+      "ref": "10",
+      "label": "#10",
+      "number": 10,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.2",
+      "kLevel": "K2",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "As a Test Automation engineer You have encountered a problem during initial implementation of the test automation solution (TAS). The output from the system tests could not be translated back to the automated test cases to determine the test results."
+        },
+        {
+          "type": "para",
+          "text": "Which option may have MOST LIKELY been a cause of the problem?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "The test tool libraries were NOT designed to be updated upon each SUT version release.",
+          "correct": false,
+          "rationale": "a) Is not correct. The problem was found in the initial implementation and no updates were introduced yet."
+        },
+        {
+          "key": "b",
+          "text": "The integration to the SUT system under test was NOT setup via APIs.",
+          "correct": false,
+          "rationale": "Is not correct. The integration method used does not matter whether it is via APIs or other mechanism."
+        },
+        {
+          "key": "c",
+          "text": "The SUT-Specific adaptors for the selected tool were NOT implemented.",
+          "correct": true,
+          "rationale": "Is correct. The adaptors are necessary for the translation of the test results."
+        },
+        {
+          "key": "d",
+          "text": "The SUT and the test management tool were NOT compatible.",
+          "correct": false,
+          "rationale": "Is not correct. The question does not mention test management tool incompatibility."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-11",
+      "ref": "11",
+      "label": "#11",
+      "number": 11,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.3",
+      "kLevel": "K3",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working in an Android development team and have been maintaining a test automation framework. An additional development team has formed to build a new application. Your project manager asks you to build a test automation framework for this newly formed team. At first, you identify the components that could be reused in building that new framework, then start implementing the additional libraries based on the new application."
+        },
+        {
+          "type": "para",
+          "text": "In which layer do you configure the connection to the new app?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Core libraries layer",
+          "correct": false,
+          "rationale": "Is not correct. Core libraries should be application independent and generic."
+        },
+        {
+          "key": "b",
+          "text": "Test scripts layer",
+          "correct": false,
+          "rationale": "Is not correct. Test scripts should only contain test scripts and no configuration."
+        },
+        {
+          "key": "c",
+          "text": "Feature files layer",
+          "correct": false,
+          "rationale": "Is not correct. Feature files contain scenarios written in the Gherkin language."
+        },
+        {
+          "key": "d",
+          "text": "Business logic layer",
+          "correct": true,
+          "rationale": "Is correct. The business logic layer is used to set up the TAF to run against the SUT."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-12",
+      "ref": "12",
+      "label": "#12",
+      "number": 12,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.4",
+      "kLevel": "K3",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a test automation project that is used to automate GUI testing of a web-based public transport service. The project has a limited timescale. There are manual test cases which can be automated first. One of the goals is to implement test cases directly into the automated test scripts."
+        },
+        {
+          "type": "para",
+          "text": "Which technique or approach should be used for automating test cases to meet the goals?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Using the keyword-driven test technique",
+          "correct": false,
+          "rationale": "Is not correct. Keyword-driven testing is too complex for this solution."
+        },
+        {
+          "key": "b",
+          "text": "Using the behavior-driven development approach",
+          "correct": false,
+          "rationale": "Is not correct. Behavior-driven development is too complex and is not necessary."
+        },
+        {
+          "key": "c",
+          "text": "Using the capture/playback test automation approach",
+          "correct": true,
+          "rationale": "Is correct. Capture/playback test automation is easy to set up."
+        },
+        {
+          "key": "d",
+          "text": "Using the data-driven test automation technique",
+          "correct": false,
+          "rationale": "Is not correct. Data-driven test automation is too complex and is not necessary."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-13",
+      "ref": "13",
+      "label": "#13",
+      "number": 13,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.4",
+      "kLevel": "K3",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You join a company where manual testing is mature, but test automation has been abandoned for a while now. The testers have generated a massive amount of test data and are typically using 10 to 20 variations per scenario. After your initial review, you see that the TAF (Test Automation Framework) can easily be fixed, but the test cases need to be completely revamped."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following test automation approaches should you choose to achieve great results quickly?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Data-driven testing",
+          "correct": true,
+          "rationale": "Is correct. The test data is already available and can be reused to increase the test case count."
+        },
+        {
+          "key": "b",
+          "text": "Behavior-driven development",
+          "correct": false,
+          "rationale": "Is not correct. Behavior-driven development requires involvement from business representatives, and in this case, there is no specific mention whether the business is involved."
+        },
+        {
+          "key": "c",
+          "text": "Capture/playback",
+          "correct": false,
+          "rationale": "Is not correct. Capture/playback would be a slow and costly solution, while the test data is already present."
+        },
+        {
+          "key": "d",
+          "text": "Acceptance test-driven development",
+          "correct": false,
+          "rationale": "Is not correct. Acceptance test-driven development is not an automation approach."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-14",
+      "ref": "14",
+      "label": "#14",
+      "number": 14,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-3.1.5",
+      "kLevel": "K3",
+      "chapter": 3,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a test automation project that is used to automate GUI testing of an e-commerce site. The site contains a digital assistant which helps users to set up their accounts, their name, billing address, shipping address, and security credentials. Currently, the development of the software is in a phase where usability testers check the digital assistant and give recommendations on necessary changes. This is done iteratively; the developers modify the graphical user interface (GUI), and the usability testers check the modifications, and do usability testing again."
+        },
+        {
+          "type": "para",
+          "text": "Which design pattern is the best implemented in this case?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Implement the page object pattern and store all the user actions associated with the GUI elements in the relevant page models",
+          "correct": false,
+          "rationale": "Is not correct. Storing the user actions in the page model class files will not allow easy reuse and maintainability of complex user flows."
+        },
+        {
+          "key": "b",
+          "text": "Implement the flow model pattern, store all the web elements in the relevant page models, and store all the user actions associated with the GUI elements in the relevant flow models",
+          "correct": true,
+          "rationale": "Is correct. The flow model pattern combines usage of page models and flow models, storing the structure and logic of the application in class files with different purposes, and is typically used when the SUT’s structure changes frequently."
+        },
+        {
+          "key": "c",
+          "text": "Implement the facade design pattern and provide interfaces for the GUI elements to hide the used internal locator mechanism",
+          "correct": false,
+          "rationale": "Is not correct. Facades provide a simplified interface to a larger body of code."
+        },
+        {
+          "key": "d",
+          "text": "Implement the singleton design pattern and create a single piece of code to handle the locating of elements",
+          "correct": false,
+          "rationale": "Is not correct. The singleton design pattern does not solve the problem in this case."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-15",
+      "ref": "15",
+      "label": "#15",
+      "number": 15,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-4.1.1",
+      "kLevel": "K3",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "The senior management wants to implement a TAS in your organization and asks you to lead this initiative. You have been given directions to start a pilot project."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following statements best describes the objective of this pilot project?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            " i.       Document the SUT parts which have not been documented during the development",
+            "ii.       Identify the metrics and the measurement methods to monitor the SUT in the"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "production environment"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "iii.       Analyze defects found during the testing of the TAS",
+            "iv.        Evaluate licensing options and corporation rules",
+            " v.        Select the most suitable commercial off-the-shelf or open-source tool"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, ii and iii are valid objectives of the pilot project",
+          "correct": false,
+          "rationale": "Is not correct. i, ii and iii are not valid objectives of the pilot project."
+        },
+        {
+          "key": "b",
+          "text": "ii and iv are valid objectives of the pilot project",
+          "correct": false,
+          "rationale": "Is not correct. ii is not a valid objective of the pilot project."
+        },
+        {
+          "key": "c",
+          "text": "i, ii and v are valid objectives of the pilot project",
+          "correct": false,
+          "rationale": "Is not correct. i and ii are not valid objectives of the pilot project."
+        },
+        {
+          "key": "d",
+          "text": "iv and v are valid objectives of the pilot project",
+          "correct": true,
+          "rationale": "Is correct. iv and v are valid objectives of the pilot project."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-16",
+      "ref": "16",
+      "label": "#16",
+      "number": 16,
+      "additional": false,
+      "points": 3,
+      "selectCount": 1,
+      "learningObjective": "TAE-4.2.1",
+      "kLevel": "K4",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are tasked with implementing a Test Automation Solution (TAS) for functional suitability tests that must be executed automatically after each daily build. The TAS needs to integrate seamlessly with the existing CI/CD pipeline and provide quick feedback on the software's quality. However, you've identified several potential risks that could impact the successful deployment and operation of the TAS."
+        },
+        {
+          "type": "para",
+          "text": "As the test automation engineer, you need to analyze the deployment risks associated with implementing the TAS and determine the BEST mitigation strategies for each risk. Your goal is to ensure a smooth integration of the TAS into the existing development process while maintaining the quality and reliability of the testing process."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following BEST matches the deployment risks with their appropriate mitigation strategies?"
+        },
+        {
+          "type": "para",
+          "text": "1. Test execution not triggered by the build"
+        },
+        {
+          "type": "para",
+          "text": "2. Only the full test suite can be executed"
+        },
+        {
+          "type": "para",
+          "text": "3. Test data unavailable when starting the test"
+        },
+        {
+          "type": "para",
+          "text": "4. Difficulty in troubleshooting failed tests"
+        },
+        {
+          "type": "para",
+          "text": "A. Log detailed information during test execution"
+        },
+        {
+          "type": "para",
+          "text": "B. Integrate test automation into the CI/CD pipeline"
+        },
+        {
+          "type": "para",
+          "text": "C. Use third-party tools to generate test data"
+        },
+        {
+          "type": "para",
+          "text": "D. Utilize test harnesses and test fixtures"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "1-B, 2-A, 3-D, 4-C",
+          "correct": false,
+          "rationale": "1-B: Integrating test automation into the CI/CD pipeline ensures test execution is triggered by the build."
+        },
+        {
+          "key": "b",
+          "text": "1-A, 2-B, 3-C, 4-D",
+          "correct": false,
+          "rationale": "2-D: Test harnesses and fixtures allow for more flexible test execution, not limited to full suite runs."
+        },
+        {
+          "key": "c",
+          "text": "1-B, 2-D, 3-C, 4-A",
+          "correct": true,
+          "rationale": "3-C: Third-party tools can help generate test data when it's not readily available."
+        },
+        {
+          "key": "d",
+          "text": "1-D, 2-B, 3-C, 4-A",
+          "correct": false,
+          "rationale": "4-A: Detailed logging during test execution aids in troubleshooting failed tests. Correct answer is c)"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-17",
+      "ref": "17",
+      "label": "#17",
+      "number": 17,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-4.3.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which one of the following is an important factor to improve code maintainability?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Define generic functions with all the necessary parameters",
+          "correct": false,
+          "rationale": "Is not correct. This answer does not improve code maintainability."
+        },
+        {
+          "key": "b",
+          "text": "Let developers uniquely name code variables",
+          "correct": false,
+          "rationale": "Is not correct. Uniquely naming code variables does not improve code maintainability."
+        },
+        {
+          "key": "c",
+          "text": "Use static analyzers to keep the code clean",
+          "correct": true,
+          "rationale": "Is correct. Using static analyzers improves code maintainability."
+        },
+        {
+          "key": "d",
+          "text": "Hardcode values to easily understand their meaning",
+          "correct": false,
+          "rationale": "Is not correct. Hard coding values does not improve code maintainability."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-18",
+      "ref": "18",
+      "label": "#18",
+      "number": 18,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-4.3.1",
+      "kLevel": "K2",
+      "chapter": 4,
+      "stem": [
+        {
+          "type": "para",
+          "text": "What is the most effective way to reduce the maintenance time for test automation code?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Keep the code outside of a version control system",
+          "correct": false,
+          "rationale": "Is not correct. Storing the code outside of a version control system makes it more difficult for test automation engineers (TAEs) to manage, track, and collaborate on code effectively."
+        },
+        {
+          "key": "b",
+          "text": "Embed static data directly within the test scripts for easier access",
+          "correct": false,
+          "rationale": "Is not correct. Hardcoding data in test scripts is not recommended, as it makes the scripts inflexible and difficult to maintain when changes are required."
+        },
+        {
+          "key": "c",
+          "text": "Apply design patterns in your test automation framework",
+          "correct": true,
+          "rationale": "Is correct. Structuring the test automation code using design patterns improves reusability and scalability, reducing the time needed for maintenance."
+        },
+        {
+          "key": "d",
+          "text": "Regularly rewrite test scripts from scratch instead of reusing existing components",
+          "correct": false,
+          "rationale": "Is not correct. Regularly rewriting test scripts from scratch is inefficient and leads to unnecessary work. Reusing existing components is more effective in reducing maintenance time."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-19",
+      "ref": "19",
+      "label": "#19",
+      "number": 19,
+      "additional": false,
+      "points": 2,
+      "selectCount": 2,
+      "learningObjective": "TAE-5.1.1",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "There is an IT company which develops an often-changing financial software product using the Agile software development model. The development, the integration and the deployment processes are highly automated. There is a CI/CD pipeline currently established. You are working on a TAS. The goal is to create a TAS which can be used for as many test automation purposes as possible."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following options are valid purposes for test automation in this case?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Run a regression test suite every night",
+          "correct": true,
+          "rationale": "Is correct. Regression testing is necessary, and it can be incorporated into the CI/CD pipeline."
+        },
+        {
+          "key": "b",
+          "text": "Execute a build of a component",
+          "correct": false,
+          "rationale": "Is not correct. Executing a build is not a test automation task."
+        },
+        {
+          "key": "c",
+          "text": "Run a static code analysis",
+          "correct": false,
+          "rationale": "Is not correct. Static code analysis is not a test automation task."
+        },
+        {
+          "key": "d",
+          "text": "Execute an automated performance efficiency test in the CI/CD pipeline",
+          "correct": true,
+          "rationale": "Is correct. Performance efficiency tests can be automated."
+        },
+        {
+          "key": "e",
+          "text": "Package and deploy the application as part of the deployment phase",
+          "correct": false,
+          "rationale": "Is not correct. Packaging and deployment are not test automation tasks."
+        }
+      ],
+      "correct": [
+        "a",
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-20",
+      "ref": "20",
+      "label": "#20",
+      "number": 20,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-5.1.1",
+      "kLevel": "K3",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which statement is correct?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Tests are not executed as part of the deployment phase",
+          "correct": false,
+          "rationale": "Is not correct. Tests are executed during deployment."
+        },
+        {
+          "key": "b",
+          "text": "Tests are not executed as a separate pipeline, triggered by the successful deployment",
+          "correct": false,
+          "rationale": "Is not correct. Tests are triggered to execute after successful deployment."
+        },
+        {
+          "key": "c",
+          "text": "Test cases do not act as a quality gate when different automated test suites will run on each deployment",
+          "correct": true,
+          "rationale": "Is correct. It is not a correct statement since tests do not act as quality gates for deployment."
+        },
+        {
+          "key": "d",
+          "text": "Pipelines are not recommended for regression testing due to the extensive scope and size of these tests",
+          "correct": false,
+          "rationale": "Is not correct. Pipelines are an excellent solution for periodic testing, such as regression tests, and the size of these tests does not impact their effectiveness."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-21",
+      "ref": "21",
+      "label": "#21",
+      "number": 21,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-5.1.2",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "How is configuration management used in test automation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "It enables the management of test data and test environment configurations",
+          "correct": true,
+          "rationale": "Is correct. Test data and test environment configurations can be under configuration management."
+        },
+        {
+          "key": "b",
+          "text": "The SUT configuration can be stored and easily removed",
+          "correct": false,
+          "rationale": "Is not correct. The SUT configuration can be under configuration management, but it is not related to test automation."
+        },
+        {
+          "key": "c",
+          "text": "It enables management of user rights for accessing test automation",
+          "correct": false,
+          "rationale": "Is not correct. User rights management is not related to configuration management."
+        },
+        {
+          "key": "d",
+          "text": "Test automation results can easily be analyzed",
+          "correct": false,
+          "rationale": "Is not correct. Configuration management does not support test automation results analysis."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-22",
+      "ref": "22",
+      "label": "#22",
+      "number": 22,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-5.1.2",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Which item below is NOT part of the test environment configuration?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Uniform resource locators (URLs)",
+          "correct": false,
+          "rationale": "Is not correct. URLs are part of the test environment configuration."
+        },
+        {
+          "key": "b",
+          "text": "Credentials",
+          "correct": false,
+          "rationale": "Is not correct. Credentials are part of the test environment configuration."
+        },
+        {
+          "key": "c",
+          "text": "Test data",
+          "correct": false,
+          "rationale": "Is not correct. Test data is part of the test environment configuration."
+        },
+        {
+          "key": "d",
+          "text": "Common core library",
+          "correct": true,
+          "rationale": "Is correct. The test environment configuration is a part of the common core library, not vice versa."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-23",
+      "ref": "23",
+      "label": "#23",
+      "number": 23,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-5.1.3",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "How does contract testing NOT contribute to API test automation dependencies in an infrastructure?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Ensures that APIs adhere to predefined contracts for communication",
+          "correct": false,
+          "rationale": "Is not correct. Contract testing ensures APIs follow predefined communication agreements, helping manage API dependencies."
+        },
+        {
+          "key": "b",
+          "text": "Can be used to test the communication of microservices",
+          "correct": false,
+          "rationale": "Is not correct. Contract testing can be used to test communication between microservices."
+        },
+        {
+          "key": "c",
+          "text": "Validates the compatibility of two separate systems",
+          "correct": false,
+          "rationale": "Is not correct. Contract testing can validate the compatibility of two separate systems."
+        },
+        {
+          "key": "d",
+          "text": "Verifies whether a system satisfies its contractual requirements",
+          "correct": true,
+          "rationale": "Is correct. Contract testing has no relation to the contractual requirements."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-24",
+      "ref": "24",
+      "label": "#24",
+      "number": 24,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-5.1.3",
+      "kLevel": "K2",
+      "chapter": 5,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are on a project where the teams are working on breaking down an old monolithic web service into several microservices. Which of the following documents can assist you in identifying dependencies and developing your Test Automation Solution (TAS) for API testing?"
+        },
+        {
+          "type": "table",
+          "lines": [
+            "  i.       Application programming interface (API) specification",
+            " ii.       System architecture diagram",
+            "iii.       Test strategy",
+            "iv.        Release notes"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "i, ii, and iv",
+          "correct": false,
+          "rationale": "Is not correct. Release notes do not help to learn the API connections and details."
+        },
+        {
+          "key": "b",
+          "text": "i and ii",
+          "correct": true,
+          "rationale": "Is correct - API specification provides details about endpoints, and the system architecture diagram shows the relationships between different components."
+        },
+        {
+          "key": "c",
+          "text": "ii, iii, and iv",
+          "correct": false,
+          "rationale": "Is not correct - The test strategy and release notes don't provide specific information about API dependencies needed for building a TAS."
+        },
+        {
+          "key": "d",
+          "text": "i",
+          "correct": false,
+          "rationale": "Is not correct - The API specification alone is not sufficient; the system architecture diagram is also needed to understand the relationships between different services."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-25",
+      "ref": "25",
+      "label": "#25",
+      "number": 25,
+      "additional": false,
+      "points": 2,
+      "selectCount": 2,
+      "learningObjective": "TAE-6.1.1",
+      "kLevel": "K3",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a test automation project that is used to automate GUI testing of an online web shop. The web shop contains a wizard which helps users to set up their accounts, their name, billing address, shipping address, and security credentials. During the test automation, the steps of the wizard are recorded first. Screenshots are taken and stored during these steps. We consider these as the baseline. The baseline was then rerun with no change to the SUT and all tests passed."
+        },
+        {
+          "type": "para",
+          "text": "After the developers submit a change to the wizard, the recorded test scripts are played back, and the screenshots of each step are compared with the baseline screenshots. During a playback, all test cases failed, even though the visible content seems unchanged."
+        },
+        {
+          "type": "para",
+          "text": "What could be the cause?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "An internally used technical session ID is also recorded, which changes during the playback. This should be substituted with variables to avoid failures.",
+          "correct": true,
+          "rationale": "Is correct. Session IDs change with each session, causing screenshot differences even when content looks the same."
+        },
+        {
+          "key": "b",
+          "text": "Screenshots are not correctly associated with the test steps, leading to comparisons being made in the wrong order.",
+          "correct": false,
+          "rationale": "Is not correct. Order isn’t relevant, as all screenshots fail, which wouldn’t happen if only order was the issue."
+        },
+        {
+          "key": "c",
+          "text": "The failure occurred because relying solely on screenshot comparisons led to inaccurate results.",
+          "correct": false,
+          "rationale": "Is not correct. This doesn’t explain why all comparisons fail when content appears unchanged."
+        },
+        {
+          "key": "d",
+          "text": "The date in the GUI header is different from the date when it was recorded. This date field should be excluded from the comparison",
+          "correct": true,
+          "rationale": "Is correct. Dynamic elements like dates in GUI can cause false negatives and should be excluded from comparisons."
+        },
+        {
+          "key": "e",
+          "text": "Screenshots were captured in low resolution, causing details to be blurred, making the comparison unreliable.",
+          "correct": false,
+          "rationale": "Is not correct. Browser zoom changes are unlikely to cause all failures if content appears identical to the human eye."
+        }
+      ],
+      "correct": [
+        "a",
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-26",
+      "ref": "26",
+      "label": "#26",
+      "number": 26,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-6.1.1",
+      "kLevel": "K3",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a project where you are responsible to extend the current TAF that is used for web service testing, with additional test logging capabilities. The TAF uses a third-party tool to create file logs and an HTML report to quickly visualize the test results. In the test implementation, various dynamic values are used to generate the actual test data, and the SUT, a web service without a UI, connects to multiple legacy test systems. Unfortunately, the tests are very unstable, and you need to add meaningful information to the test logging to better analyze the reasons for the failures."
+        },
+        {
+          "type": "para",
+          "text": "What additional information should not be included in the test logging to make it more useful and why?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Timestamps should be included in the test logs to see if the failure connects to a given legacy system outage",
+          "correct": false,
+          "rationale": "Is not correct. The timestamps can help see when there are problems and if they are connected to a legacy service outage that affects the functionality of the SUT."
+        },
+        {
+          "key": "b",
+          "text": "Screenshots should be included to see actual request-response pairs",
+          "correct": true,
+          "rationale": "Is correct. The SUT is a web service without a UI, so screenshots are irrelevant. Logging request and response data is more useful for analyzing web service interactions."
+        },
+        {
+          "key": "c",
+          "text": "Randomly generated values should be logged to allow for analysis of the actual results occured during test executions",
+          "correct": false,
+          "rationale": "Is not correct. The randomly generated values will not be visible for later investigation."
+        },
+        {
+          "key": "d",
+          "text": "In case of assertion failures meaningful information like actual results versus expected results should be logged instead of stack traces",
+          "correct": false,
+          "rationale": "Is not correct. Focused assertion messages can aid the investigation of the failures."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-27",
+      "ref": "27",
+      "label": "#27",
+      "number": 27,
+      "additional": false,
+      "points": 3,
+      "selectCount": 1,
+      "learningObjective": "TAE-6.1.2",
+      "kLevel": "K4",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "During the design phase of a performance critical software product, management decides to create a TAS to do load testing on the software to measure its performance. The product contains different architectural components, including a browser-based front end, microservices implemented in the back end, and a relational database. It is important to measure all individual transactions in the entire architectural stack."
+        },
+        {
+          "type": "para",
+          "text": "How can you automatically provide this information from the test automation software?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "You cannot. This information has to be gathered manually at the end of every transaction",
+          "correct": false,
+          "rationale": "Is not correct. Manual data collection is too time-consuming and error- prone; automation is essential."
+        },
+        {
+          "key": "b",
+          "text": "The test automation engineer (TAE) can record the timing information during the execution of all transactions",
+          "correct": false,
+          "rationale": "Is not correct. This doesn’t explain how data can be correlated across different components."
+        },
+        {
+          "key": "c",
+          "text": "Trace IDs should be populated across the software components and measured time values should be associated with these IDs to correlate the performance data.",
+          "correct": true,
+          "rationale": "Is correct. Trace ID is the appropriate way to associate the performance data across the different architectural components, enabling system- wide performance analysis."
+        },
+        {
+          "key": "d",
+          "text": "Third-party tools should be inserted into the different layers of the architecture and these agents should log the collected data into a database",
+          "correct": false,
+          "rationale": "Is not correct. Third-party tools can collect data but don’t provide necessary correlation for complete analysis."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-28",
+      "ref": "28",
+      "label": "#28",
+      "number": 28,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-6.1.3",
+      "kLevel": "K2",
+      "chapter": 6,
+      "stem": [
+        {
+          "type": "para",
+          "text": "As a test automation engineer, you are tasked with demonstrating to management whether the test success rate is improving over a series of test runs."
+        },
+        {
+          "type": "para",
+          "text": "What is the right approach to fulfill this requirement?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Compare the test results with the expected results",
+          "correct": false,
+          "rationale": "Is not correct. The comparison of the test results and the expected results only gives us the pass/fail rate for one test run only."
+        },
+        {
+          "key": "b",
+          "text": "Use traffic light indicators to show test execution progress",
+          "correct": false,
+          "rationale": "Is not correct. The traffic lights are only for showing the summary of progress of test cases execution and completion within one test run cycle only."
+        },
+        {
+          "key": "c",
+          "text": "Detailed test reports with percentages of test completion",
+          "correct": false,
+          "rationale": "Is not correct. Detailed reports with Percentages of test completion are only for showing the outcome of test cases execution and completion within one test run cycle only."
+        },
+        {
+          "key": "d",
+          "text": "Implement an analysis feature that compares previous test results and highlights trends",
+          "correct": true,
+          "rationale": "Is correct. This is the correct implementation whereby the analysis feature is able to compare pass rate of previous test run cycles and compare with latest and plot in a trend analysis display"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-29",
+      "ref": "29",
+      "label": "#29",
+      "number": 29,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-7.1.1",
+      "kLevel": "K3",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your team has developed a Test Automation Solution (TAS) for a computer-aided design (CAD) software program. This software has several different versions in production and has been ported to different languages and platforms. Manual testers have been using the TAS on their local computers with different language settings, versions, and platforms. Before proceeding with further automated testing, you need to verify the test automation environment. What is an important consideration when verifying the environment for this TAS?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Establish a central repository to verify that all testers are using the same version of the capture/playback tool and can access it correctly",
+          "correct": true,
+          "rationale": "Correct - This option focuses on verifying that all testers can access and use the same version of the capture/playback tool, which is crucial for ensuring consistency in the test automation environment."
+        },
+        {
+          "key": "b",
+          "text": "Create and document a procedure to verify the proper installation of the CAD software on each tester's machine",
+          "correct": false,
+          "rationale": "Incorrect - While documenting installation procedures is important, it's not specifically about verifying the test automation environment."
+        },
+        {
+          "key": "c",
+          "text": "Set up a central test environment where the CAD software is installed and verify that automation scripts can interact with it from each local computer",
+          "correct": false,
+          "rationale": "Incorrect - This approach doesn't address the need for different environments as specified in the scenario."
+        },
+        {
+          "key": "d",
+          "text": "Use configuration management to verify the consistency of test data and scripts across different environments",
+          "correct": false,
+          "rationale": "Incorrect - While configuration management is important, this option doesn't specifically address verifying the test automation environment."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-30",
+      "ref": "30",
+      "label": "#30",
+      "number": 30,
+      "additional": false,
+      "points": 2,
+      "selectCount": 2,
+      "learningObjective": "TAE-7.1.1",
+      "kLevel": "K3",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You work in a software development team that requires testing to occur in many different test environments. Your manager has expressed that the team is spending a significant amount of time overcoming false-positive results because the test automation solution (TAS) is not configured correctly when using it in a new test environment. Additionally, there appear to be version differences when comparing the TAS in each test environment. Even new test environments sometimes are set up with very old TAS components."
+        },
+        {
+          "type": "para",
+          "text": "Which TWO options would help address this situation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Create an automated installation script for the tools and configurations that make up the TAS",
+          "correct": true,
+          "rationale": "Is correct. Automated installation and configuration scripts ensure consistency and repeatability during TAS setup."
+        },
+        {
+          "key": "b",
+          "text": "Limit the TAS to only be used in the most important test environments",
+          "correct": false,
+          "rationale": "Is not correct. The TAS should be designed for portability in multiple test environments."
+        },
+        {
+          "key": "c",
+          "text": "Utilize a repository to store the TAS that is accessible to all test environments",
+          "correct": true,
+          "rationale": "Is correct. Repositories can be used to verify consistent TAS versions across all test environments."
+        },
+        {
+          "key": "d",
+          "text": "Leverage manual testing to verify that the TAS has been configured properly in all test environments",
+          "correct": false,
+          "rationale": "Is not correct. Manual testing is not a scalable solution."
+        },
+        {
+          "key": "e",
+          "text": "Due to time constraints skip the implementation of components tests for the TAS",
+          "correct": false,
+          "rationale": "Is not correct. By omitting component tests, potential issues could go undetected"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-31",
+      "ref": "31",
+      "label": "#31",
+      "number": 31,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-7.1.2",
+      "kLevel": "K2",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are about to verify an automated test suite. During the verification process you have found that some test scripts pass one time and fail at another, therefore not providing reliable test results."
+        },
+        {
+          "type": "para",
+          "text": "What should you do to verify the validity of your test scripts?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "This is due to the parallel execution of the test scripts; synchronization would solve the problem",
+          "correct": false,
+          "rationale": "Is not correct. The issue should be analyzed closely since the root cause is not yet known."
+        },
+        {
+          "key": "b",
+          "text": "Re-execute the automated test suite and analyze the test results again",
+          "correct": false,
+          "rationale": "Is not correct. This answer does not suggest any solution."
+        },
+        {
+          "key": "c",
+          "text": "Remove the test scripts from the automated test suite and analyze them separately",
+          "correct": true,
+          "rationale": "Is correct. This should be the first task in this case."
+        },
+        {
+          "key": "d",
+          "text": "This happens because several test scripts are using the same test data, so the separation of test data for each test script would resolve the problem",
+          "correct": false,
+          "rationale": "Is not correct. The issue should be analyzed closely since the root cause is not yet known."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-32",
+      "ref": "32",
+      "label": "#32",
+      "number": 32,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-7.1.2",
+      "kLevel": "K2",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You have a test suite containing 25 automated tests that verify the login functionality of an application’s home page. The test suite is executed at the end of each two-week sprint cycle for regression test purposes. You notice that two test cases out of the 25 may sometimes cause a race condition in the application or receive a random error."
+        },
+        {
+          "type": "para",
+          "text": "What action should you take for these two test cases?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Take no action because sometimes they execute successfully",
+          "correct": false,
+          "rationale": "Is not correct. The goal is to have repeatable tests that give consistent test results."
+        },
+        {
+          "key": "b",
+          "text": "Reduce the amount of test cases in the test suite from 25 to 15 and see if the test suite passes with the smaller amount",
+          "correct": false,
+          "rationale": "Is not correct. Eliminating coverage is not a good response to the situation."
+        },
+        {
+          "key": "c",
+          "text": "Remove the two test cases from the active test suite and analyze them separately to find the root cause",
+          "correct": true,
+          "rationale": "Is correct. This allows the test suite to continue to be used for repeatable test results while providing time to triage problem test cases. They will be re-added to the test suite once corrected."
+        },
+        {
+          "key": "d",
+          "text": "Replace the two test cases with ones that pass repeatedly so that the test suite still has 25 automated test cases",
+          "correct": false,
+          "rationale": "Is not correct. This does not address the random errors that the application is experiencing."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-33",
+      "ref": "33",
+      "label": "#33",
+      "number": 33,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-7.1.3",
+      "kLevel": "K2",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a project to automate a regression test suite. When the regression test suite was executed manually last time, all the tests passed. But when you execute them via the test automation solution (TAS), you find there are some failed tests."
+        },
+        {
+          "type": "para",
+          "text": "What should you do to handle this situation?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Analyze log files to identify the root cause of the problem",
+          "correct": true,
+          "rationale": "Is correct. Log file analysis can identify the root cause of the problem."
+        },
+        {
+          "key": "b",
+          "text": "Eliminate these test cases from the automated test suite, so the remaining tests can pass",
+          "correct": false,
+          "rationale": "Is not correct. This process will not help solve the original issue."
+        },
+        {
+          "key": "c",
+          "text": "Open a defect for the SUT as the failed tests are indicating an SUT problem",
+          "correct": false,
+          "rationale": "Is not correct. These tests do not directly indicate a problem in the SUT; they should be analyzed first."
+        },
+        {
+          "key": "d",
+          "text": "This is normal because automated tests behave differently than manual tests",
+          "correct": false,
+          "rationale": "Is not correct. The statement is false."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-34",
+      "ref": "34",
+      "label": "#34",
+      "number": 34,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-7.1.4",
+      "kLevel": "K2",
+      "chapter": 7,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are preparing to execute a test automation suite for a security-critical application which has to fulfill the highest security requirements."
+        },
+        {
+          "type": "para",
+          "text": "Which approach should you follow to verify the test automation code?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Search the test logs for possible credential data",
+          "correct": false,
+          "rationale": "Is not correct. Test logs may not contain credential data present in the automation code."
+        },
+        {
+          "key": "b",
+          "text": "Eliminate test cases using sensitive test data",
+          "correct": false,
+          "rationale": "Is not correct. It does not make sense to eliminate test cases as it will affect code coverage."
+        },
+        {
+          "key": "c",
+          "text": "Execute the test suite slowly and methodically to check if there are any security vulnerabilities",
+          "correct": false,
+          "rationale": "Is not correct. Slower test execution does not necessarily reveal security vulnerabilities."
+        },
+        {
+          "key": "d",
+          "text": "Use a static analysis tool to identify security vulnerabilities",
+          "correct": true,
+          "rationale": "Is correct. Static analysis tools support identification of security vulnerabilities."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-35",
+      "ref": "35",
+      "label": "#35",
+      "number": 35,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-8.1.1",
+      "kLevel": "K3",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on a test automation project that is used to automate graphical user interface (GUI) testing of an online web shop. The web shop contains a wizard which helps users set up their accounts: their names, billing address, shipping address and security credentials. Currently, the development of the software is in a phase when usability testers check the wizard and give recommendations about the necessary changes. This is done iteratively; the developers modify the GUI, the usability testers check the modifications and repeat the usability testing. The test automation is mainly focusing on maintenance testing. In these UI-based test cases, data also includes UI locator values. An existing problem is that developers often change the internal identifiers of UI elements, so maintaining tests requires a lot of effort."
+        },
+        {
+          "type": "para",
+          "text": "Which of the following could be an important opportunity for improvement?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Apply schema validation, which checks if mandatory response elements are present on the GUI",
+          "correct": false,
+          "rationale": "Is not correct. Schema validation can be applied in API testing, not GUI testing."
+        },
+        {
+          "key": "b",
+          "text": "Improve test logging to include information about UI elements and their locators to easily identify the broken test cases",
+          "correct": false,
+          "rationale": "Is not correct. This is a manual and slow process."
+        },
+        {
+          "key": "c",
+          "text": "Create a test histogram, which enables the TAEs to identify and select test cases that are fragile",
+          "correct": false,
+          "rationale": "Is not correct. A test histogram enables identification of fragile test cases, but it does not solve the underlying problem."
+        },
+        {
+          "key": "d",
+          "text": "Use an artificial intelligence (AI) algorithm - which is based on machine learning and image recognition - to identify the new selectors and use self-healing to fix the test cases",
+          "correct": true,
+          "rationale": "Is correct. Using an AI based algorithm supports identification of broken locators and self-healing of the test cases."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-36",
+      "ref": "36",
+      "label": "#36",
+      "number": 36,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-8.1.1",
+      "kLevel": "K3",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "Your organization maintains a regression test suite of over 1000 automated test cases that has been extremely reliable over the years. Recently the development team has decided to modernize their technology stack and are currently refactoring how their front end operates. You notice that the application is far more API-driven than the previous version and this has an impact on how UI elements render. You anticipate this is going to impact the success rate of 75% of your automated test cases."
+        },
+        {
+          "type": "para",
+          "text": "What data analysis approaches should you use to determine how to fix your impacted automated test cases?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Run the test cases several times in a CI/CD pipeline, perform visual report analysis, and draw conclusions from a test histogram",
+          "correct": false,
+          "rationale": "Is not correct. Analyzing test histograms for 1000 test cases will be time consuming. Plus, we can already anticipate the impact on test cases without generating histogram data."
+        },
+        {
+          "key": "b",
+          "text": "Use AI algorithms and API schema validation tools",
+          "correct": true,
+          "rationale": "Is correct. AI algorithms can be used to self-heal the test cases against UI locator value changes, and schema validation tools can be used to quickly assess API schema updates."
+        },
+        {
+          "key": "c",
+          "text": "Recreate automated test cases to replace the ones that are not working properly and will execute on the new application",
+          "correct": false,
+          "rationale": "Is not correct. Recreating 75% of the test harness is not feasible when other options are available."
+        },
+        {
+          "key": "d",
+          "text": "Avoid automating certain test cases after analyzing exception logs, screenshots, and error messages",
+          "correct": false,
+          "rationale": "Is not correct. Although logs, screenshots, and error messages are valid data sources to verify, eliminating test cases is not a viable strategy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-37",
+      "ref": "37",
+      "label": "#37",
+      "number": 37,
+      "additional": false,
+      "points": 3,
+      "selectCount": 2,
+      "learningObjective": "TAE-8.1.2",
+      "kLevel": "K4",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You are working on an automated regression test suite that takes too long a time to execute, and its execution does not finish overnight. The test environment is only available for regression testing during the night. Running multiple suites in parallel is not an option, as the target system is expensive and exists only as a single instance. What should be your next steps to ensure the test suite execution finishes overnight?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Split the test suite into multiple parts, executing the parts on different nights of the week",
+          "correct": true,
+          "rationale": "Is correct. Splitting up the test suite helps to ensure that the test execution is finished overnight."
+        },
+        {
+          "key": "b",
+          "text": "Isolate test result verification from the test execution and start the verification process after the test execution during morning hours",
+          "correct": false,
+          "rationale": "Is not correct. Test result verification cannot be isolated from the test execution process."
+        },
+        {
+          "key": "c",
+          "text": "Rewrite the tests using the keyword-driven technique as that will be executed faster",
+          "correct": false,
+          "rationale": "Is not correct. It is not stated generally that the keyword-driven technique executes faster."
+        },
+        {
+          "key": "d",
+          "text": "Remove some tests from the test suite to reduce overall execution time",
+          "correct": false,
+          "rationale": "Is not correct. It would reduce the scope to a high-level regression, which in the long term, could potentially result in defects propagating into production."
+        },
+        {
+          "key": "e",
+          "text": "Remove any duplicate tests from the test suite",
+          "correct": true,
+          "rationale": "Is correct. Removing duplications can reduce test execution time."
+        }
+      ],
+      "correct": [
+        "a",
+        "e"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-38",
+      "ref": "38",
+      "label": "#38",
+      "number": 38,
+      "additional": false,
+      "points": 3,
+      "selectCount": 1,
+      "learningObjective": "TAE-8.1.2",
+      "kLevel": "K4",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "As a TAE, you are evaluating new versions of core libraries."
+        },
+        {
+          "type": "para",
+          "text": "Which is the correct order that can help you achieve these results?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Create adoption plan; determine impact; update dependencies; perform pilot",
+          "correct": false,
+          "rationale": "Is not correct. The adoption plan needs to occur after impact is determined."
+        },
+        {
+          "key": "b",
+          "text": "Perform pilot; determine impact; create adoption plan; update dependencies",
+          "correct": true,
+          "rationale": "Is correct. This is the correct order of the activities."
+        },
+        {
+          "key": "c",
+          "text": "Update dependencies; determine impact; perform pilot; create adoption plan",
+          "correct": false,
+          "rationale": "Is not correct. Updating of dependencies needs to occur after the creation of the adoption plan."
+        },
+        {
+          "key": "d",
+          "text": "Determine impact; update dependencies; create adoption plan; perform pilot",
+          "correct": false,
+          "rationale": "Is not correct. Determining impact needs to occur after performing a pilot."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-39",
+      "ref": "39",
+      "label": "#39",
+      "number": 39,
+      "additional": false,
+      "points": 2,
+      "selectCount": 1,
+      "learningObjective": "TAE-8.1.3",
+      "kLevel": "K3",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "You have been performing a quality review of a TAS to optimize the interaction of controls within the GUI. The GUI includes several types of controls (e.g., dropdown list, checkbox, text field). There are also separate functions in the test scripts which act upon the different types of GUI controls to gather information and to set them (e.g., visible/not visible, enabled/not enabled). Which of the following steps should you consider to increase the efficiency of the TAS?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Separate the testing of the controls based on their types into different test suites",
+          "correct": false,
+          "rationale": "Is not correct. Separating the testing of controls should be implemented within the core libraries."
+        },
+        {
+          "key": "b",
+          "text": "Research if there is a test automation tool which can replace the current solution",
+          "correct": false,
+          "rationale": "Is not correct. It is not a direct improvement."
+        },
+        {
+          "key": "c",
+          "text": "Check if there are any functions that can work with several types of controls, and consolidate the test scripts using these functions",
+          "correct": true,
+          "rationale": "Is correct. It is an improvement to consolidate test scripts in this case."
+        },
+        {
+          "key": "d",
+          "text": "Use the new operating system functions in the test scripts to handle the GUI controls",
+          "correct": false,
+          "rationale": "Is not correct. It is not a direct improvement."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": null
+    },
+    {
+      "id": "ctal-tae-v2-a-40",
+      "ref": "40",
+      "label": "#40",
+      "number": 40,
+      "additional": false,
+      "points": 1,
+      "selectCount": 1,
+      "learningObjective": "TAE-8.1.4",
+      "kLevel": "K2",
+      "chapter": 8,
+      "stem": [
+        {
+          "type": "para",
+          "text": "As a test automation engineer, you have automated the performance test of a customer management system. In order to effectively test the performance of this system, you need to create diverse test data that includes customers with varying profiles based on different input criteria."
+        },
+        {
+          "type": "para",
+          "text": "What is the best way to implement such a solution?"
+        }
+      ],
+      "options": [
+        {
+          "key": "a",
+          "text": "Employ a test automation tool to invoke a web service API that creates new user accounts and populates their profiles with the specified data.",
+          "correct": true,
+          "rationale": "Is correct. It offers an automated and quick solution to the problem."
+        },
+        {
+          "key": "b",
+          "text": "Register these users manually via the GUI, so the GUI functionality can also be tested",
+          "correct": false,
+          "rationale": "Is not correct. This is not a TAS."
+        },
+        {
+          "key": "c",
+          "text": "Use the production database during the test as it has the real volume and type of data",
+          "correct": false,
+          "rationale": "Is not correct. Using a production database directly as the source of the test data holds high risk."
+        },
+        {
+          "key": "d",
+          "text": "Implement a test automation script to anonymize customer data before using it during the performance test",
+          "correct": false,
+          "rationale": "Is not correct. Anonymization of test data is important, but it is out of the scope of this solution."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": null
+    }
+  ]
+}

@@ -1,28 +1,32 @@
 /**
- * data.js — Loads the generated JSON data set.
+ * data.js — Loads the generated JSON data set for the active certification.
  *
  * Paths are resolved relative to this module so every page (root or nested)
- * gets the same URLs without hard-coding `../`.
+ * gets the same URLs without hard-coding `../`, and the certification directory
+ * comes from the registry so one set of page modules serves them all.
  */
-const DATA_ROOT = new URL('../../data/ctfl-v4/', import.meta.url);
+import { activeCert } from './certs.js';
+
+const dataRoot = () => new URL(`../../data/${activeCert().dir}/`, import.meta.url);
 
 const cache = new Map();
 
 async function loadJson(name) {
-  if (cache.has(name)) return cache.get(name);
-  const promise = fetch(new URL(name, DATA_ROOT))
+  const key = `${activeCert().dir}/${name}`;
+  if (cache.has(key)) return cache.get(key);
+  const promise = fetch(new URL(name, dataRoot()))
     .then((res) => {
       if (!res.ok) throw new Error(`Failed to load ${name}: HTTP ${res.status}`);
       return res.json();
     })
     .catch((err) => {
-      cache.delete(name);
+      cache.delete(key);
       throw new Error(
         `${err.message}. Data files are fetched over HTTP, so the portal must be served ` +
           `(node scripts/serve.mjs) rather than opened from the filesystem.`,
       );
     });
-  cache.set(name, promise);
+  cache.set(key, promise);
   return promise;
 }
 
@@ -46,4 +50,25 @@ export async function getQuestionPool() {
     for (const q of set.questions) pool.push({ ...q, set: set.set, examId: set.id });
   }
   return { manifest, pool };
+}
+
+/**
+ * Load another certification's manifest by id.
+ *
+ * The portal home page lists every certification at once, so it cannot rely on
+ * the active-certification scoping the rest of this module uses.
+ */
+export async function getCertManifest(certId) {
+  const key = `${certId}/manifest.json`;
+  if (cache.has(key)) return cache.get(key);
+  const url = new URL(`../../data/${certId}/manifest.json`, import.meta.url);
+  const promise = fetch(url).then((res) => {
+    if (!res.ok) throw new Error(`Failed to load ${certId} manifest: HTTP ${res.status}`);
+    return res.json();
+  }).catch((err) => {
+    cache.delete(key);
+    throw err;
+  });
+  cache.set(key, promise);
+  return promise;
 }

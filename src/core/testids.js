@@ -12,9 +12,11 @@
  *      never its position on screen -- question order can be shuffled.
  *   3. State is exposed via `data-*` attributes, never via CSS classes, so
  *      assertions never depend on styling.
- *   4. A container's id is never a prefix of the ids it contains, so a
- *      `[data-testid^="question-"]` sweep cannot accidentally match the list
- *      wrapper. Containers are named `*-panel` / `*-table`; items are not.
+ *   4. A container's id never shares a naming prefix with the ids it contains,
+ *      so a `[data-testid^="question-"]` sweep cannot accidentally match the
+ *      list wrapper. Containers are named `*-panel` / `*-table`; items are not.
+ *      (`certification-list` alongside `certification-{id}` was exactly this
+ *      bug: the sweep matched the container too.)
  */
 
 /** Static, page-level locators. */
@@ -29,8 +31,8 @@ export const TID = {
   credit: 'developed-by',
 
   // Home / catalog ----------------------------------------------------------
-  trackList: 'track-list',
-  certificationList: 'certification-list',
+  trackList: 'tracks-panel',
+  certificationList: 'certifications-panel',
 
   // Certification hub -------------------------------------------------------
   examList: 'exams-panel',
@@ -59,7 +61,7 @@ export const TID = {
   progressText: 'exam-progress',
   answeredCount: 'answered-count',
   questionList: 'questions-panel',
-  navigator: 'question-navigator',
+  navigator: 'paper-navigator',
   submitButton: 'submit-exam-button',
   submitDialog: 'submit-confirm-dialog',
   submitConfirm: 'submit-confirm-button',
@@ -82,9 +84,9 @@ export const TID = {
   resultUnansweredCount: 'result-unanswered-count',
   resultExpiredNote: 'result-expired-note',
   resultsEmpty: 'results-empty',
-  chapterBreakdown: 'chapter-breakdown',
+  chapterBreakdown: 'chapters-breakdown',
   reviewList: 'reviews-panel',
-  reviewFilter: 'review-filter',
+  reviewFilter: 'reviews-filter',
   retakeButton: 'retake-button',
   exportButton: 'export-results-button',
 
@@ -118,7 +120,7 @@ export const TID = {
   // Progress ----------------------------------------------------------------
   progressRoot: 'progress-root',
   attemptList: 'attempts-table',
-  attemptEmpty: 'attempt-empty',
+  attemptEmpty: 'attempts-empty',
   clearHistoryButton: 'clear-history-button',
   weakAreaList: 'weak-areas-table',
 };

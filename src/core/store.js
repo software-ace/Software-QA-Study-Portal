@@ -8,9 +8,16 @@
  * Every access is guarded: localStorage throws in some privacy modes, and a
  * study tool must degrade to "works but forgets" rather than crash.
  */
-const NS = 'software-qa-study-portal:ctfl-v4';
-const KEY_SESSION = `${NS}:session`;
-const KEY_ATTEMPTS = `${NS}:attempts`;
+import { activeCert } from './certs.js';
+
+// Attempts and in-flight sessions are namespaced per certification so progress
+// in one never mixes into another. The candidate's name is shared: it is the
+// same person either way, and re-typing it for each certification is friction
+// with no benefit.
+const NS = 'software-qa-study-portal';
+const ns = () => `${NS}:${activeCert().id}`;
+const KEY_SESSION = () => `${ns()}:session`;
+const KEY_ATTEMPTS = () => `${ns()}:attempts`;
 const KEY_NAME = `${NS}:candidate-name`;
 const MAX_ATTEMPTS = 200;
 
@@ -65,26 +72,26 @@ export const recallName = () => safeGet(KEY_NAME) ?? '';
 
 // --- in-flight session ----------------------------------------------------
 
-export const saveSession = (session) => safeSet(KEY_SESSION, JSON.stringify(session));
-export const loadSession = () => readJson(KEY_SESSION, null);
-export const clearSession = () => safeRemove(KEY_SESSION);
+export const saveSession = (session) => safeSet(KEY_SESSION(), JSON.stringify(session));
+export const loadSession = () => readJson(KEY_SESSION(), null);
+export const clearSession = () => safeRemove(KEY_SESSION());
 
 // --- attempt history ------------------------------------------------------
 
 export function listAttempts() {
-  const all = readJson(KEY_ATTEMPTS, []);
+  const all = readJson(KEY_ATTEMPTS(), []);
   return Array.isArray(all) ? all : [];
 }
 
 export function saveAttempt(attempt) {
   const all = listAttempts();
   all.unshift(attempt);
-  safeSet(KEY_ATTEMPTS, JSON.stringify(all.slice(0, MAX_ATTEMPTS)));
+  safeSet(KEY_ATTEMPTS(), JSON.stringify(all.slice(0, MAX_ATTEMPTS)));
   return attempt;
 }
 
 export const getAttempt = (id) => listAttempts().find((a) => a.id === id) ?? null;
-export const clearAttempts = () => safeRemove(KEY_ATTEMPTS);
+export const clearAttempts = () => safeRemove(KEY_ATTEMPTS());
 
 /** Aggregate per-chapter accuracy across every stored attempt. */
 export function weakAreas() {

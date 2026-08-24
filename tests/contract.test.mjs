@@ -38,23 +38,24 @@ test('every locator builder is used by the app', () => {
   assert.deepEqual(dead, [], `unused locator builders: ${dead.join(', ')}`);
 });
 
-test('no container locator is a prefix of an item locator', () => {
-  const containers = Object.values(TID);
-  const items = [
-    tid.question('12'), tid.questionStem('12'), tid.questionOptions('12'),
-    tid.option('12', 'a'), tid.optionInput('12', 'a'), tid.optionLabel('12', 'a'),
-    tid.navItem('12'), tid.review('12'), tid.reviewVerdict('12'),
-    tid.reviewChosen('12'), tid.reviewCorrect('12'), tid.reviewRationale('12', 'a'),
-    tid.chapter(3), tid.chapterToggle(3), tid.section('4.2'), tid.lo('FL-4.2.1'),
-    tid.term('test-case'), tid.attempt('abc123'), tid.weakArea(3),
-    tid.cert('ctfl-v4'), tid.examCard('ctfl-v4-set-a'), tid.examStart('ctfl-v4-set-a'),
-  ];
+test('no item sweep matches a container locator', () => {
+  // Each builder's literal prefix is what an automation author would sweep with:
+  // tid.question('12') -> "question-12", so the sweep is `[data-testid^="question-"]`.
+  // A container matched by such a sweep is a bug -- it silently inflates counts.
+  const SENTINEL = '\u00a7';
+  const sweeps = new Map();
+  for (const [name, build] of Object.entries(tid)) {
+    const produced = build(SENTINEL);
+    const at = produced.indexOf(SENTINEL);
+    if (at <= 0) continue;
+    sweeps.set(name, produced.slice(0, at));
+  }
 
   const collisions = [];
-  for (const container of containers) {
-    for (const item of items) {
-      if (item !== container && item.startsWith(container)) {
-        collisions.push(`container "${container}" shadows item "${item}"`);
+  for (const [name, sweep] of sweeps) {
+    for (const container of Object.values(TID)) {
+      if (container.startsWith(sweep)) {
+        collisions.push(`sweep "[data-testid^="${sweep}"]" (tid.${name}) also matches container "${container}"`);
       }
     }
   }

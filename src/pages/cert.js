@@ -1,8 +1,12 @@
 /**
- * cert.js — CTFL v4.0 hub: pick an exam set or jump into study/practice.
+ * cert.js — Certification hub: pick an exam set or jump into study/practice.
+ *
+ * Shared by every certification. All copy comes from the registry entry and
+ * the certification's own manifest, so nothing here names one in particular.
  */
 import { el, mount, markReady, markError } from '../core/dom.js';
 import { renderShell, href, renderError } from '../core/render.js';
+import { activeCert, certPaths } from '../core/certs.js';
 import { TID, tid } from '../core/testids.js';
 import { getManifest } from '../core/data.js';
 import { loadSession, listAttempts } from '../core/store.js';
@@ -25,7 +29,7 @@ function examCard(exam, rules) {
       el('a', {
         class: 'btn',
         'data-variant': 'primary',
-        href: `${href('ctfl-v4/exam.html')}?exam=${encodeURIComponent(exam.id)}`,
+        href: `${href(certPaths(activeCert()).exam)}?exam=${encodeURIComponent(exam.id)}`,
         testid: tid.examStart(exam.id),
         text: `Start Set ${exam.set}`,
       }),
@@ -34,7 +38,8 @@ function examCard(exam, rules) {
 }
 
 async function main() {
-  const page = renderShell('ctfl');
+  const page = renderShell(`cert-${activeCert().id}`);
+  const cert = activeCert();
   const manifest = await getManifest();
   const { rules } = manifest;
 
@@ -46,16 +51,16 @@ async function main() {
       ? el('div', { class: 'notice', 'data-tone': 'warn', testid: TID.resumeNotice }, [
           el('strong', { text: 'You have an exam in progress. ' }),
           `${session.candidateName || 'Unnamed candidate'} — ${session.examId}. `,
-          el('a', { href: `${href('ctfl-v4/exam.html')}?resume=1`, text: 'Resume it' }),
+          el('a', { href: `${href(certPaths(activeCert()).exam)}?resume=1`, text: 'Resume it' }),
           ' (the clock has kept running).',
         ])
       : null;
 
   mount(
     page,
-    el('h1', { text: 'ISTQB CTFL v4.0' }),
+    el('h1', { text: cert.shortName }),
     el('p', { class: 'lede' }, [
-      'Certified Tester Foundation Level, syllabus version 4.0. Everything here is generated from the official ISTQB syllabus and the four official sample exam papers — ',
+      `${cert.name}, syllabus version ${cert.version}. Everything here is generated from the official ISTQB syllabus and sample exam ${manifest.exams.length === 1 ? 'paper' : 'papers'} — `,
       el('strong', { text: `${manifest.totals.examQuestions} exam questions` }),
       ` plus ${manifest.totals.additionalQuestions} appendix questions, each with the official answer key and per-option rationale.`,
     ]),
@@ -74,19 +79,19 @@ async function main() {
 
     el('h2', { text: 'Study tools' }),
     el('div', { class: 'grid' }, [
-      el('a', { class: 'card', href: href('ctfl-v4/study.html'), testid: tid.hubCard('study') }, [
+      el('a', { class: 'card', href: href(certPaths(activeCert()).study), testid: tid.hubCard('study') }, [
         el('h3', { text: 'Syllabus & learning objectives' }),
         el('p', { class: 'muted', text: `All 6 chapters and ${manifest.syllabus?.learningObjectives ?? 64} learning objectives with cognitive levels.` }),
       ]),
-      el('a', { class: 'card', href: href('ctfl-v4/practice.html'), testid: tid.hubCard('practice') }, [
+      el('a', { class: 'card', href: href(certPaths(activeCert()).practice), testid: tid.hubCard('practice') }, [
         el('h3', { text: 'Practice mode' }),
         el('p', { class: 'muted', text: 'Untimed drilling with instant feedback. Filter by chapter, K-level or exam set.' }),
       ]),
-      el('a', { class: 'card', href: href('ctfl-v4/glossary.html'), testid: tid.hubCard('glossary') }, [
+      el('a', { class: 'card', href: href(certPaths(activeCert()).glossary), testid: tid.hubCard('glossary') }, [
         el('h3', { text: 'Glossary' }),
         el('p', { class: 'muted', text: `${manifest.glossary?.terms ?? 0} syllabus keywords with context and official definitions.` }),
       ]),
-      el('a', { class: 'card', href: href('ctfl-v4/progress.html'), testid: tid.hubCard('progress') }, [
+      el('a', { class: 'card', href: href(certPaths(activeCert()).progress), testid: tid.hubCard('progress') }, [
         el('h3', { text: 'Progress' }),
         el('p', { class: 'muted', text: attempts.length ? `${attempts.length} recorded attempt${attempts.length === 1 ? '' : 's'}.` : 'No attempts yet — sit an exam to start tracking.' }),
       ]),

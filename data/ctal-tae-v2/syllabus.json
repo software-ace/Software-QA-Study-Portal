@@ -1,0 +1,576 @@
+{
+  "certification": {
+    "code": "CTAL-TAE",
+    "version": "2.0",
+    "name": "ISTQB Certified Tester Advanced Level Test Automation Engineering"
+  },
+  "source": {
+    "publisher": "International Software Testing Qualifications Board (ISTQB®)",
+    "document": "ISTQB_CTAL-TAE_Syllabus_v2.0",
+    "documentVersion": "2.0",
+    "url": "https://istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/",
+    "copyright": "© International Software Testing Qualifications Board (ISTQB®). Reproduced for non-commercial study use with acknowledgement of the source."
+  },
+  "totals": {
+    "chapters": 8,
+    "learningObjectives": 29
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Introduction and Objectives for Test Automation",
+      "minutes": 45,
+      "keywords": [
+        "system under test",
+        "test automation",
+        "test automation engineer"
+      ],
+      "sections": [
+        {
+          "number": "1.1",
+          "title": "Purpose of Test Automation",
+          "learningObjectives": [
+            {
+              "id": "TAE-1.1.1",
+              "kLevel": "K2",
+              "text": "Explain the advantages and disadvantages of test automation"
+            }
+          ]
+        },
+        {
+          "number": "1.2",
+          "title": "Test Automation in the Software Development Lifecycle",
+          "learningObjectives": [
+            {
+              "id": "TAE-1.2.1",
+              "kLevel": "K2",
+              "text": "Explain how test automation is applied across different software development lifecycle"
+            },
+            {
+              "id": "TAE-1.2.2",
+              "kLevel": "K2",
+              "text": "Select suitable test automation tools for a given system under test"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Preparing for Test Automation",
+      "minutes": 180,
+      "keywords": [
+        "API testing",
+        "GUI testing",
+        "testability"
+      ],
+      "sections": [
+        {
+          "number": "2.1",
+          "title": "Understand the Configuration of an Infrastructure to Enable Test Automation",
+          "learningObjectives": [
+            {
+              "id": "TAE-2.1.1",
+              "kLevel": "K2",
+              "text": "Describe the configuration needs of an infrastructure that enable implementation of test"
+            },
+            {
+              "id": "TAE-2.1.2",
+              "kLevel": "K2",
+              "text": "Explain how test automation is leveraged within different environments"
+            }
+          ]
+        },
+        {
+          "number": "2.2",
+          "title": "Evaluation Process for Selecting the Right Tools and Strategies",
+          "learningObjectives": [
+            {
+              "id": "TAE-2.2.1",
+              "kLevel": "K4",
+              "text": "Analyze a system under test to determine the appropriate test automation solution"
+            },
+            {
+              "id": "TAE-2.2.2",
+              "kLevel": "K4",
+              "text": "Illustrate the technical findings of a tool evaluation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Test Automation Architecture",
+      "minutes": 210,
+      "keywords": [
+        "behavior-driven development",
+        "capture/playback",
+        "data-driven testing",
+        "generic test automation architecture",
+        "keyword-driven testing",
+        "linear scripting",
+        "model-based testing",
+        "structured scripting",
+        "test adaptation layer",
+        "test automation framework",
+        "test automation solution",
+        "test harness",
+        "test script",
+        "testware",
+        "test step",
+        "test- driven development"
+      ],
+      "sections": [
+        {
+          "number": "3.1",
+          "title": "Design Concepts Leveraged in Test Automation",
+          "learningObjectives": [
+            {
+              "id": "TAE-3.1.1",
+              "kLevel": "K2",
+              "text": "Explain the major capabilities in a test automation architecture"
+            },
+            {
+              "id": "TAE-3.1.2",
+              "kLevel": "K2",
+              "text": "Explain how to design a test automation solution"
+            },
+            {
+              "id": "TAE-3.1.3",
+              "kLevel": "K3",
+              "text": "Apply layering of test automation frameworks"
+            },
+            {
+              "id": "TAE-3.1.4",
+              "kLevel": "K3",
+              "text": "Apply different approaches for automating test cases"
+            },
+            {
+              "id": "TAE-3.1.5",
+              "kLevel": "K3",
+              "text": "Apply design principles and design patterns in test automation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Implementing Test Automation",
+      "minutes": 150,
+      "keywords": [
+        "risk",
+        "test fixture"
+      ],
+      "sections": [
+        {
+          "number": "4.1",
+          "title": "Test Automation Development",
+          "learningObjectives": [
+            {
+              "id": "TAE-4.1.1",
+              "kLevel": "K3",
+              "text": "Apply guidelines that support effective test automation pilot and deployment activities"
+            }
+          ]
+        },
+        {
+          "number": "4.2",
+          "title": "Risks Associated with Test Automation Development",
+          "learningObjectives": [
+            {
+              "id": "TAE-4.2.1",
+              "kLevel": "K4",
+              "text": "Analyze deployment risks and plan mitigation strategies for test automation"
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "Test Automation Solution Maintainability",
+          "learningObjectives": [
+            {
+              "id": "TAE-4.3.1",
+              "kLevel": "K2",
+              "text": "Explain which factors support and affect test automation solution maintainability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Implementation and Deployment Strategies for Test Automation",
+      "minutes": 90,
+      "keywords": [
+        "contract testing"
+      ],
+      "sections": [
+        {
+          "number": "5.1",
+          "title": "Integration to CI/CD Pipelines",
+          "learningObjectives": [
+            {
+              "id": "TAE-5.1.1",
+              "kLevel": "K3",
+              "text": "Apply test automation at different test levels within pipelines"
+            },
+            {
+              "id": "TAE-5.1.2",
+              "kLevel": "K2",
+              "text": "Explain configuration management for testware"
+            },
+            {
+              "id": "TAE-5.1.3",
+              "kLevel": "K2",
+              "text": "Explain test automation dependencies for an API infrastructure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Test Automation Reporting and Metrics",
+      "minutes": 150,
+      "keywords": [
+        "measurement",
+        "metric",
+        "test log",
+        "test progress report",
+        "test step"
+      ],
+      "sections": [
+        {
+          "number": "6.1",
+          "title": "Collection, Analysis and Reporting of Test Automation Data",
+          "learningObjectives": [
+            {
+              "id": "TAE-6.1.1",
+              "kLevel": "K3",
+              "text": "Apply data collection methods from the test automation solution and the system under"
+            },
+            {
+              "id": "TAE-6.1.2",
+              "kLevel": "K4",
+              "text": "Analyze data from the test automation solution and the system under test to better"
+            },
+            {
+              "id": "TAE-6.1.3",
+              "kLevel": "K2",
+              "text": "Explain how a test progress report is constructed and published"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Verifying the Test Automation Solution",
+      "minutes": 135,
+      "keywords": [
+        "static analysis"
+      ],
+      "sections": [
+        {
+          "number": "7.1",
+          "title": "Verification of the Test Automation Infrastructure",
+          "learningObjectives": [
+            {
+              "id": "TAE-7.1.1",
+              "kLevel": "K3",
+              "text": "Plan to verify the test automation environment including test tool setup"
+            },
+            {
+              "id": "TAE-7.1.2",
+              "kLevel": "K2",
+              "text": "Explain the correct behavior for a given automated test script and/or test suite"
+            },
+            {
+              "id": "TAE-7.1.3",
+              "kLevel": "K2",
+              "text": "Identify where test automation produces unexpected results"
+            },
+            {
+              "id": "TAE-7.1.4",
+              "kLevel": "K2",
+              "text": "Explain how static analysis can aid test automation code quality"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Continuous Improvement",
+      "minutes": 210,
+      "keywords": [
+        "schema validation",
+        "test histogram"
+      ],
+      "sections": [
+        {
+          "number": "8.1",
+          "title": "Continuous Improvement Opportunities for Test Automation",
+          "learningObjectives": [
+            {
+              "id": "TAE-8.1.1",
+              "kLevel": "K3",
+              "text": "Discover opportunities for improving test cases through data collection and analysis"
+            },
+            {
+              "id": "TAE-8.1.2",
+              "kLevel": "K4",
+              "text": "Analyze the technical aspects of a deployed test automation solution and provide"
+            },
+            {
+              "id": "TAE-8.1.3",
+              "kLevel": "K3",
+              "text": "Restructure the automated testware to align with SUT updates"
+            },
+            {
+              "id": "TAE-8.1.4",
+              "kLevel": "K2",
+              "text": "Summarize opportunities for use of test automation tools"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "learningObjectives": [
+    {
+      "id": "TAE-1.1.1",
+      "number": "1.1.1",
+      "chapter": 1,
+      "section": "1.1",
+      "kLevel": "K2",
+      "text": "Explain the advantages and disadvantages of test automation"
+    },
+    {
+      "id": "TAE-1.2.1",
+      "number": "1.2.1",
+      "chapter": 1,
+      "section": "1.2",
+      "kLevel": "K2",
+      "text": "Explain how test automation is applied across different software development lifecycle"
+    },
+    {
+      "id": "TAE-1.2.2",
+      "number": "1.2.2",
+      "chapter": 1,
+      "section": "1.2",
+      "kLevel": "K2",
+      "text": "Select suitable test automation tools for a given system under test"
+    },
+    {
+      "id": "TAE-2.1.1",
+      "number": "2.1.1",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Describe the configuration needs of an infrastructure that enable implementation of test"
+    },
+    {
+      "id": "TAE-2.1.2",
+      "number": "2.1.2",
+      "chapter": 2,
+      "section": "2.1",
+      "kLevel": "K2",
+      "text": "Explain how test automation is leveraged within different environments"
+    },
+    {
+      "id": "TAE-2.2.1",
+      "number": "2.2.1",
+      "chapter": 2,
+      "section": "2.2",
+      "kLevel": "K4",
+      "text": "Analyze a system under test to determine the appropriate test automation solution"
+    },
+    {
+      "id": "TAE-2.2.2",
+      "number": "2.2.2",
+      "chapter": 2,
+      "section": "2.2",
+      "kLevel": "K4",
+      "text": "Illustrate the technical findings of a tool evaluation"
+    },
+    {
+      "id": "TAE-3.1.1",
+      "number": "3.1.1",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K2",
+      "text": "Explain the major capabilities in a test automation architecture"
+    },
+    {
+      "id": "TAE-3.1.2",
+      "number": "3.1.2",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K2",
+      "text": "Explain how to design a test automation solution"
+    },
+    {
+      "id": "TAE-3.1.3",
+      "number": "3.1.3",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K3",
+      "text": "Apply layering of test automation frameworks"
+    },
+    {
+      "id": "TAE-3.1.4",
+      "number": "3.1.4",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K3",
+      "text": "Apply different approaches for automating test cases"
+    },
+    {
+      "id": "TAE-3.1.5",
+      "number": "3.1.5",
+      "chapter": 3,
+      "section": "3.1",
+      "kLevel": "K3",
+      "text": "Apply design principles and design patterns in test automation"
+    },
+    {
+      "id": "TAE-4.1.1",
+      "number": "4.1.1",
+      "chapter": 4,
+      "section": "4.1",
+      "kLevel": "K3",
+      "text": "Apply guidelines that support effective test automation pilot and deployment activities"
+    },
+    {
+      "id": "TAE-4.2.1",
+      "number": "4.2.1",
+      "chapter": 4,
+      "section": "4.2",
+      "kLevel": "K4",
+      "text": "Analyze deployment risks and plan mitigation strategies for test automation"
+    },
+    {
+      "id": "TAE-4.3.1",
+      "number": "4.3.1",
+      "chapter": 4,
+      "section": "4.3",
+      "kLevel": "K2",
+      "text": "Explain which factors support and affect test automation solution maintainability"
+    },
+    {
+      "id": "TAE-5.1.1",
+      "number": "5.1.1",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K3",
+      "text": "Apply test automation at different test levels within pipelines"
+    },
+    {
+      "id": "TAE-5.1.2",
+      "number": "5.1.2",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K2",
+      "text": "Explain configuration management for testware"
+    },
+    {
+      "id": "TAE-5.1.3",
+      "number": "5.1.3",
+      "chapter": 5,
+      "section": "5.1",
+      "kLevel": "K2",
+      "text": "Explain test automation dependencies for an API infrastructure"
+    },
+    {
+      "id": "TAE-6.1.1",
+      "number": "6.1.1",
+      "chapter": 6,
+      "section": "6.1",
+      "kLevel": "K3",
+      "text": "Apply data collection methods from the test automation solution and the system under"
+    },
+    {
+      "id": "TAE-6.1.2",
+      "number": "6.1.2",
+      "chapter": 6,
+      "section": "6.1",
+      "kLevel": "K4",
+      "text": "Analyze data from the test automation solution and the system under test to better"
+    },
+    {
+      "id": "TAE-6.1.3",
+      "number": "6.1.3",
+      "chapter": 6,
+      "section": "6.1",
+      "kLevel": "K2",
+      "text": "Explain how a test progress report is constructed and published"
+    },
+    {
+      "id": "TAE-7.1.1",
+      "number": "7.1.1",
+      "chapter": 7,
+      "section": "7.1",
+      "kLevel": "K3",
+      "text": "Plan to verify the test automation environment including test tool setup"
+    },
+    {
+      "id": "TAE-7.1.2",
+      "number": "7.1.2",
+      "chapter": 7,
+      "section": "7.1",
+      "kLevel": "K2",
+      "text": "Explain the correct behavior for a given automated test script and/or test suite"
+    },
+    {
+      "id": "TAE-7.1.3",
+      "number": "7.1.3",
+      "chapter": 7,
+      "section": "7.1",
+      "kLevel": "K2",
+      "text": "Identify where test automation produces unexpected results"
+    },
+    {
+      "id": "TAE-7.1.4",
+      "number": "7.1.4",
+      "chapter": 7,
+      "section": "7.1",
+      "kLevel": "K2",
+      "text": "Explain how static analysis can aid test automation code quality"
+    },
+    {
+      "id": "TAE-8.1.1",
+      "number": "8.1.1",
+      "chapter": 8,
+      "section": "8.1",
+      "kLevel": "K3",
+      "text": "Discover opportunities for improving test cases through data collection and analysis"
+    },
+    {
+      "id": "TAE-8.1.2",
+      "number": "8.1.2",
+      "chapter": 8,
+      "section": "8.1",
+      "kLevel": "K4",
+      "text": "Analyze the technical aspects of a deployed test automation solution and provide"
+    },
+    {
+      "id": "TAE-8.1.3",
+      "number": "8.1.3",
+      "chapter": 8,
+      "section": "8.1",
+      "kLevel": "K3",
+      "text": "Restructure the automated testware to align with SUT updates"
+    },
+    {
+      "id": "TAE-8.1.4",
+      "number": "8.1.4",
+      "chapter": 8,
+      "section": "8.1",
+      "kLevel": "K2",
+      "text": "Summarize opportunities for use of test automation tools"
+    }
+  ]
+}

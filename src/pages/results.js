@@ -7,8 +7,9 @@
  */
 import { el, mount, markReady, markError, params, byTestId, formatClock } from '../core/dom.js';
 import { renderShell, renderStem, renderOptions, renderMeta, renderError, href } from '../core/render.js';
+import { activeCert, certPaths } from '../core/certs.js';
 import { TID, tid, STATE } from '../core/testids.js';
-import { getManifest, getExam } from '../core/data.js';
+import { getManifest, getExam, getSyllabus } from '../core/data.js';
 import { getAttempt, listAttempts } from '../core/store.js';
 
 const VERDICT_LABEL = {
@@ -104,7 +105,7 @@ function reviewItem(result, question) {
 }
 
 async function main() {
-  const page = renderShell('ctfl');
+  const page = renderShell(`cert-${activeCert().id}`);
 
   const attemptId = params.get('attempt');
   const attempt = attemptId ? getAttempt(attemptId) : listAttempts()[0];
@@ -115,7 +116,7 @@ async function main() {
       el('h1', { text: 'No results to show' }),
       el('div', { class: 'empty', testid: TID.resultsEmpty }, [
         el('p', { text: 'That attempt could not be found in this browser. Results are stored locally, so they are not available on another device or after clearing site data.' }),
-        el('a', { class: 'btn', 'data-variant': 'primary', href: href('ctfl-v4/index.html'), text: 'Back to CTFL v4.0' }),
+        el('a', { class: 'btn', 'data-variant': 'primary', href: href(certPaths(activeCert()).hub), text: `Back to ${activeCert().shortName}` }),
       ]),
     );
     // Scoping root so automation can narrow queries to this page's content.
@@ -132,7 +133,7 @@ async function main() {
 
   let syllabusTitles = new Map();
   try {
-    const syllabus = await (await fetch(new URL('../../data/ctfl-v4/syllabus.json', import.meta.url))).json();
+    const syllabus = await getSyllabus();
     syllabusTitles = new Map(syllabus.chapters.map((c) => [c.number, c.title]));
   } catch {
     /* chapter names are a nicety, not a requirement */
@@ -198,7 +199,7 @@ async function main() {
   exportButton.addEventListener('click', () => {
     const blob = new Blob([JSON.stringify(attempt, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
-    const a = el('a', { href: url, download: `ctfl-v4-${attempt.examSet}-${attempt.id}.json` });
+    const a = el('a', { href: url, download: `${activeCert().id}-${attempt.examSet}-${attempt.id}.json` });
     document.body.append(a);
     a.click();
     a.remove();
@@ -214,10 +215,10 @@ async function main() {
         class: 'btn',
         'data-variant': 'primary',
         testid: TID.retakeButton,
-        href: `${href('ctfl-v4/exam.html')}?exam=${encodeURIComponent(attempt.examId)}`,
+        href: `${href(certPaths(activeCert()).exam)}?exam=${encodeURIComponent(attempt.examId)}`,
         text: 'Retake this set',
       }),
-      el('a', { class: 'btn', href: href('ctfl-v4/progress.html'), text: 'View progress' }),
+      el('a', { class: 'btn', href: href(certPaths(activeCert()).progress), text: 'View progress' }),
       exportButton,
     ]),
     el('h2', { text: 'Performance by syllabus chapter' }),

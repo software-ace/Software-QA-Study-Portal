@@ -6,13 +6,15 @@
 **▶ [Open the portal](https://software-ace.github.io/Software-QA-Study-Portal/)** — no install, runs entirely in your browser.
 
 An open-source, offline-friendly study portal for **software QA and test
-automation certifications**, starting with **ISTQB® CTFL v4.0** (Certified Tester
-Foundation Level).
+automation certifications**.
 
-Built from the official ISTQB syllabus and all four official sample exam papers:
-**186 questions**, every one with the official answer key, learning objective,
-cognitive level, and a per-option rationale explaining *why* each answer is right
-or wrong.
+| Certification | Content |
+| --- | --- |
+| **ISTQB® CTFL v4.0** — Certified Tester Foundation Level | 4 sample exam sets, **186 questions**, 6 chapters, 64 learning objectives |
+| **ISTQB® CTAL-TAE v2.0** — Advanced Level Test Automation Engineering | 1 sample exam set, **40 questions**, 8 chapters, 29 learning objectives |
+
+Every question carries the official answer key, learning objective, cognitive
+level, and a per-option rationale explaining *why* each answer is right or wrong.
 
 ---
 
@@ -20,16 +22,16 @@ or wrong.
 
 | Feature | Detail |
 | --- | --- |
-| **Timed exams** | All 4 official sample sets (A–D). 40 questions, 60 minutes (or 75 for non-native speakers), pass mark 26/40 — the real ISTQB exam structure. |
+| **Timed exams** | The official sample sets, under the real ISTQB structure for each certification — CTFL: 40 questions, 40 points, 60 min, pass 26. CTAL-TAE: 40 questions, **66 points** (weighted 1–3 by cognitive level), 90 min, pass 43. |
 | **Full-name gate** | One field, filled in before the clock starts; the name appears on the result. |
 | **Live clock** | Deadline-based, so a backgrounded tab cannot win you extra time. Auto-submits at zero. |
 | **Crash-safe** | Answers are saved continuously. Refresh or reopen and resume with the real remaining time. |
 | **Scoring** | All-or-nothing on `Select TWO` questions, exactly as ISTQB scores them. |
 | **Answer review** | Every question shows **the answer you chose**, the official answer, and the official rationale for all options. Filter by correct/incorrect/unanswered. |
-| **Practice mode** | Untimed drilling over all 186 questions (including the 26 appendix questions), filtered by chapter, K-level, exam set or pool. |
-| **Syllabus browser** | 6 chapters, 64 learning objectives, with how many official questions test each one. |
-| **Glossary** | 97 syllabus keywords with syllabus context and links to the official ISTQB glossary. |
-| **Progress** | Attempt history and weakest chapters, aggregated across attempts. |
+| **Practice mode** | Untimed drilling over the whole question bank (including CTFL's 26 appendix questions), filtered by chapter, K-level, exam set or pool. |
+| **Syllabus browser** | Every chapter and learning objective, with how many official questions test each one. |
+| **Glossary** | Syllabus keywords with context and links to the official ISTQB glossary. |
+| **Progress** | Attempt history and weakest chapters, tracked separately per certification. |
 | **Private by design** | No backend, no accounts, no telemetry. Everything is `localStorage`. |
 
 ---
@@ -64,10 +66,10 @@ manager is needed — there are no dependencies to install.
 
 ## The question bank
 
-`data/ctfl-v4/` holds the question bank as JSON, derived from the official ISTQB
-CTFL v4.0 syllabus and sample exam papers, which were the source for all content
-in this repository. Every file records its provenance in a `source` block — the
-exact document name, version and release date it came from, plus a link to it:
+`data/<cert>/` holds each question bank as JSON, derived from the official ISTQB
+syllabi and sample exam papers, which were the source for all content in this
+repository. Every file records its provenance in a `source` block — the exact
+document name, version and release date it came from, plus a link to it:
 
 ```json
 "source": {
@@ -84,7 +86,15 @@ The full list of source documents is in [NOTICE](NOTICE).
 The test suite guards the integrity of this data: it checks that every question's
 correct-answer flags agree with its answer key, that `selectCount` matches the
 number of official answers, that each set totals 40 points across 40 questions,
-and that every learning objective a question references exists in the syllabus.
+that every learning objective a question references exists in the syllabus, and
+that each certification's rules match its published ISTQB exam structure.
+
+**A note on the CTAL-TAE source.** The official answer document contains two
+errata: questions 4 and 28 label their per-option rationales with the wrong
+letters (`a,b,c,e` and `a,f,g,h` for four-option questions). The rationale text
+is correct; only the labels are wrong. The generated data remaps them
+positionally, and that remap is verified — the rationale reading "is correct"
+must land on the option the answer key marks correct, or it is not applied.
 
 If ISTQB publishes a revision, update the affected JSON and its `source` block,
 then re-run the tests.
@@ -95,16 +105,18 @@ then re-run the tests.
 
 ```
 index.html                 Portal home — certifications and role tracks
-ctfl-v4/
-  index.html               CTFL v4.0 hub
+ctfl-v4/                   One directory of page shells per certification
+  index.html               Certification hub
   exam.html                Timed exam runner (name gate -> paper -> submit)
   results.html             Score, chapter breakdown, full answer review
   practice.html            Untimed practice with instant feedback
   study.html               Syllabus + learning-objective browser
   glossary.html            Searchable keyword index
   progress.html            Attempt history and weak areas
+ctal-tae-v2/               Same seven shells, same page modules
 src/
   core/
+    certs.js               Certification registry — add a certification here
     testids.js             Locator contract — single source of truth
     engine.js              Exam state + scoring (pure logic, unit-tested)
     render.js              Shared UI building blocks
@@ -113,7 +125,7 @@ src/
     rng.js                 Seedable shuffle for reproducible runs
     dom.js                 Tiny DOM helpers
   pages/                   One module per page
-data/ctfl-v4/              The question bank, syllabus and glossary (JSON)
+data/<cert>/               The question bank, syllabus and glossary (JSON)
 scripts/serve.mjs          Zero-dependency static server
 tests/
   engine.test.mjs          Scoring logic
@@ -190,7 +202,7 @@ Developed by [software-ace](https://github.com/software-ace) with :3
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). The most valuable contributions right now:
 
-- **CTAL-TAE** (Test Automation Engineering) and **CTFL-AT** (Agile Tester) content
+- **CTFL-AT** (Agile Tester) content
 - Accessibility and i18n improvements
 
 Roadmap and known limitations are in [CONTRIBUTING.md](CONTRIBUTING.md#roadmap).

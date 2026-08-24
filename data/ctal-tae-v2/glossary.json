@@ -1,0 +1,302 @@
+{
+  "source": {
+    "publisher": "International Software Testing Qualifications Board (ISTQB®)",
+    "note": "Terms are the keyword lists published in the CTAL-TAE v2.0 syllabus. \"context\" is a verbatim excerpt from the syllabus showing the term in use -- it is not an official definition. Official definitions live in the ISTQB Glossary.",
+    "officialGlossary": "https://glossary.istqb.org/"
+  },
+  "totals": {
+    "terms": 32,
+    "withContext": 26
+  },
+  "terms": [
+    {
+      "term": "API testing",
+      "chapters": [
+        2
+      ],
+      "section": "3.1",
+      "context": "● User stories that are not verified using GUI testing and API testing can quickly achieve exit criteria by following TDD v2.0 Page 26 2024/05/03",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=API%20testing"
+    },
+    {
+      "term": "behavior-driven development",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Although test-driven development (TDD) and behavior-driven development (BDD) are development methodologies, if followed correctly, they result in automated test case development.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=behavior-driven%20development"
+    },
+    {
+      "term": "capture/playback",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Capture/playback Capture/playback is an approach that captures interactions with the SUT while a sequence of actions is performed manually.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=capture%2Fplayback"
+    },
+    {
+      "term": "contract testing",
+      "chapters": [
+        5
+      ],
+      "section": null,
+      "context": "o A tester will learn about dependencies applied to API and contract testing",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=contract%20testing"
+    },
+    {
+      "term": "data-driven testing",
+      "chapters": [
+        3
+      ],
+      "section": "4.3",
+      "context": "It can be avoided by using data-driven testing, so the test data comes from a common source that can be maintained more easily.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=data-driven%20testing"
+    },
+    {
+      "term": "generic test automation architecture",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Generic Test Automation Architecture (gTAA) The gTAA is a high-level design concept that provides an abstract view of the communication between test automation and the systems that test automation is",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=generic%20test%20automation%20architecture"
+    },
+    {
+      "term": "GUI testing",
+      "chapters": [
+        2
+      ],
+      "section": "3.1",
+      "context": "● User stories that are not verified using GUI testing and API testing can quickly achieve exit criteria by following TDD v2.0 Page 26 2024/05/03",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=GUI%20testing"
+    },
+    {
+      "term": "keyword-driven testing",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Keyword-driven testing Keyword-driven testing (KDT) test cases are a list or table of test steps derived from keywords and the test data which the keywords operate on.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=keyword-driven%20testing"
+    },
+    {
+      "term": "linear scripting",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Linear scripting Linear scripting is a programming activity that does not require custom test libraries made by a TAE and is used for writing and executing the test scripts.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=linear%20scripting"
+    },
+    {
+      "term": "measurement",
+      "chapters": [
+        6
+      ],
+      "section": "6.1",
+      "context": "Features of test automation that support measurement and test report generation The scripting languages of many test tools support measurement and reporting through facilities that can be used to record and log information before, during, and after test execution of individual tests, and entire test suites.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=measurement"
+    },
+    {
+      "term": "metric",
+      "chapters": [
+        6
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=metric"
+    },
+    {
+      "term": "model-based testing",
+      "chapters": [
+        3
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=model-based%20testing"
+    },
+    {
+      "term": "risk",
+      "chapters": [
+        4
+      ],
+      "section": "7.1",
+      "context": "As test automation tools use programming languages there is a risk that inadequate test automation code can be introduced to the SDLC.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=risk"
+    },
+    {
+      "term": "schema validation",
+      "chapters": [
+        8
+      ],
+      "section": "8.1",
+      "context": "Schema validation Schema validation can be applied in API data analysis (e.g., properties derived from target endpoints) and database analysis (e.g., validation rules for software fields, such as allowed data types and value ranges).",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=schema%20validation"
+    },
+    {
+      "term": "static analysis",
+      "chapters": [
+        7
+      ],
+      "section": "2.1",
+      "context": "integration tests) and static analysis can be performed without actual deployment to any other environments.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=static%20analysis"
+    },
+    {
+      "term": "structured scripting",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "Structured scripting Test libraries are introduced with reusable elements, test steps and/or user journeys.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=structured%20scripting"
+    },
+    {
+      "term": "system under test",
+      "chapters": [
+        1
+      ],
+      "section": "1.1",
+      "context": "Test automation provides significant features and capabilities that can interact with a system under test (SUT).",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=system%20under%20test"
+    },
+    {
+      "term": "test adaptation layer",
+      "chapters": [
+        3
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20adaptation%20layer"
+    },
+    {
+      "term": "test automation",
+      "chapters": [
+        1
+      ],
+      "section": null,
+      "context": "1.2.1 Explain How Test Automation is Applied Across Different Software Development Lifecycle 2.1.1 Describe the Configuration Needs of an Infrastructure that Enable Implementation of Test v2.0 Page 4 2024/05/03",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20automation"
+    },
+    {
+      "term": "test automation engineer",
+      "chapters": [
+        1
+      ],
+      "section": null,
+      "context": "However, a test automation engineer is expected to have skills, experience, and expertise in software engineering.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20automation%20engineer"
+    },
+    {
+      "term": "test automation framework",
+      "chapters": [
+        3
+      ],
+      "section": null,
+      "context": "o A tester will learn about layers and their application in a test automation framework o Multiple approaches to using test automation tools will be covered o A tester will learn how design principles and design patterns can be applied to test automation",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20automation%20framework"
+    },
+    {
+      "term": "test automation solution",
+      "chapters": [
+        3
+      ],
+      "section": null,
+      "context": "practices can increase maintainability, reliability, and security of the test automation solution.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20automation%20solution"
+    },
+    {
+      "term": "test fixture",
+      "chapters": [
+        4
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20fixture"
+    },
+    {
+      "term": "test harness",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "often includes a test harness, also known as test runner, and test libraries, test scripts and test suites.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20harness"
+    },
+    {
+      "term": "test histogram",
+      "chapters": [
+        8
+      ],
+      "section": "8.1",
+      "context": "Test histogram A visual report of test data represented as a test histogram provides potential improvement areas regarding test case data trends.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20histogram"
+    },
+    {
+      "term": "test log",
+      "chapters": [
+        6
+      ],
+      "section": "6.1",
+      "context": "● Low-level details of the test log (e.g., logging significant test steps) including timing information ● Dynamic information about the SUT (e.g., memory leaks) that the test case was able to identify with the help of third-party tools.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20log"
+    },
+    {
+      "term": "test progress report",
+      "chapters": [
+        6
+      ],
+      "section": "6.1",
+      "context": "6.1.3 Explain How a Test Progress Report is Constructed and Published The test logs give detailed information about the test steps, actions to take, and expected responses of a test case and/or test suite.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20progress%20report"
+    },
+    {
+      "term": "test script",
+      "chapters": [
+        3
+      ],
+      "section": "7.1",
+      "context": "clearly potential vulnerabilities if the password was discovered in an accompanying automation test script (see the ISTQB CT-SEC Syllabus).",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20script"
+    },
+    {
+      "term": "test step",
+      "chapters": [
+        3,
+        6
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test%20step"
+    },
+    {
+      "term": "test- driven development",
+      "chapters": [
+        3
+      ],
+      "section": null,
+      "context": null,
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=test-%20driven%20development"
+    },
+    {
+      "term": "testability",
+      "chapters": [
+        2
+      ],
+      "section": null,
+      "context": "o Design for SUT testability through observability, controllability, and a clearly defined architecture, are covered. o A tester learns about test automation across different environments o Factors required to assess an appropriate test automation solution are covered",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=testability"
+    },
+    {
+      "term": "testware",
+      "chapters": [
+        3
+      ],
+      "section": "3.1",
+      "context": "● Initial investment into TAF development and defining the testware is time consuming Test-driven development Test cases are defined as part of the development process before a new feature of the SUT is implemented.",
+      "glossaryUrl": "https://glossary.istqb.org/en_US/search?term=testware"
+    }
+  ]
+}
