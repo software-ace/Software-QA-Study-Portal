@@ -1,5 +1,5 @@
 /**
- * study.js — Syllabus and learning-objective browser.
+ * study.js — Syllabus and learning-objective browser for the active certification.
  *
  * Each learning objective shows how many official questions exercise it, which
  * turns the syllabus into a study plan rather than a list.
@@ -89,7 +89,7 @@ async function main() {
 
   mount(
     page,
-    el('h1', { text: 'CTFL v4.0 syllabus' }),
+    el('h1', { text: `${activeCert().shortName} syllabus` }),
     el('p', { class: 'lede' }, [
       `All ${syllabus.chapters.length} chapters and ${syllabus.totals.learningObjectives} learning objectives from the official syllabus (v${syllabus.source.documentVersion}). `,
       'Each objective shows how many official sample questions test it — the ones with the most questions are the ones the exam leans on.',

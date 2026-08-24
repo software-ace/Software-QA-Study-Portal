@@ -1,5 +1,5 @@
 /**
- * glossary.js — Searchable index of CTFL v4.0 syllabus keywords.
+ * glossary.js — Searchable index of the active certification's syllabus keywords.
  *
  * Honesty note: the syllabus publishes keyword LISTS, not definitions. Each
  * entry therefore shows a verbatim excerpt from the syllabus that uses the term
@@ -9,6 +9,7 @@
  */
 import { el, mount, markReady, markError, byTestId, slug } from '../core/dom.js';
 import { renderShell, renderError } from '../core/render.js';
+import { activeCert } from '../core/certs.js';
 import { TID, tid } from '../core/testids.js';
 import { getGlossary } from '../core/data.js';
 
@@ -45,7 +46,7 @@ async function main() {
 
   mount(
     page,
-    el('h1', { text: 'CTFL v4.0 glossary' }),
+    el('h1', { text: `${activeCert().shortName} glossary` }),
     el('p', { class: 'lede' }, [
       `${glossary.totals.terms} keywords listed across the six syllabus chapters. `,
       el('strong', { text: 'The excerpts below are syllabus context, not official definitions' }),
