@@ -68,7 +68,7 @@ export function renderFooter() {
         // Points at the repository rather than the local README: a static host
         // serves a .md file as raw markdown, which is not a readable page.
         el('a', {
-          href: 'https://github.com/software-ace/software-qa-study-portal',
+          href: 'https://github.com/software-ace/Software-QA-Study-Portal',
           rel: 'noopener',
           target: '_blank',
           text: 'Source and documentation',

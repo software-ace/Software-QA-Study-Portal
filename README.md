@@ -1,5 +1,8 @@
 # Software QA Study Portal
 
+[![CI](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/ci.yml)
+[![Deploy static content to Pages](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/software-ace/Software-QA-Study-Portal/actions/workflows/pages.yml)
+
 An open-source, offline-friendly study portal for **software QA and test
 automation certifications**, starting with **ISTQB® CTFL v4.0** (Certified Tester
 Foundation Level).
@@ -35,7 +38,7 @@ Requires **Node.js 20+**. The portal has **no dependencies at all** — no bundl
 no framework, nothing to install.
 
 ```bash
-git clone https://github.com/software-ace/software-qa-study-portal.git
+git clone https://github.com/software-ace/Software-QA-Study-Portal.git
 cd software-qa-study-portal
 
 node scripts/serve.mjs
