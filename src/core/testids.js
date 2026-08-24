@@ -34,6 +34,10 @@ export const TID = {
   trackList: 'tracks-panel',
   certificationList: 'certifications-panel',
 
+  // Certification chooser ---------------------------------------------------
+  chooser: 'chooser-panel',
+  chooserHeading: 'chooser-heading',
+
   // Certification hub -------------------------------------------------------
   examList: 'exams-panel',
   practiceLink: 'practice-link',
@@ -131,6 +135,7 @@ export const TID = {
  */
 export const tid = {
   cert: (id) => `certification-${id}`,
+  chooserCard: (id) => `choose-${id}`,
   track: (id) => `track-${id}`,
   navLink: (key) => `nav-${key}`,
   hubCard: (key) => `card-${key}`,

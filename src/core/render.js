@@ -7,7 +7,7 @@
  */
 import { el, params } from './dom.js';
 import { TID, tid, STATE } from './testids.js';
-import { activeCert, certPaths, CERT_LIST } from './certs.js';
+import { activeCert, certPaths, CERT_LIST, SECTIONS, isCertScoped } from './certs.js';
 
 /** Root-relative prefix so nested pages link correctly with no build step. */
 export const ROOT = new URL('../../', import.meta.url).pathname;
@@ -23,7 +23,12 @@ export const href = (p) => `${ROOT}${p}`.replace(/\/{2,}/g, '/');
  */
 function navItems() {
   const cert = activeCert();
-  const paths = certPaths(cert);
+  const testids = {
+    study: TID.studyLink,
+    practice: TID.practiceLink,
+    glossary: TID.glossaryLink,
+    progress: TID.progressLink,
+  };
   return [
     { label: 'Portal', path: 'index.html', key: 'home' },
     ...CERT_LIST.filter((c) => c.available).map((c) => ({
@@ -32,10 +37,14 @@ function navItems() {
       key: `cert-${c.id}`,
       current: c.id === cert.id && document.body.dataset.page === 'cert',
     })),
-    { label: 'Study', path: paths.study, key: 'study', testid: TID.studyLink },
-    { label: 'Practice', path: paths.practice, key: 'practice', testid: TID.practiceLink },
-    { label: 'Glossary', path: paths.glossary, key: 'glossary', testid: TID.glossaryLink },
-    { label: 'Progress', path: paths.progress, key: 'progress', testid: TID.progressLink },
+    // These point at the root chooser, not at a certification's page. The nav
+    // must never decide which certification the learner meant.
+    ...Object.values(SECTIONS).map((sec) => ({
+      label: sec.label,
+      path: sec.page,
+      key: sec.key,
+      testid: testids[sec.key],
+    })),
   ];
 }
 
@@ -79,7 +88,11 @@ export function renderFooter() {
           rel: 'noopener',
           target: '_blank',
         }),
-        `, reproduced from the official ${activeCert().code} v${activeCert().version} sample exams and syllabus for non-commercial study use with acknowledgement of the source. ISTQB® is a registered trademark. This portal is not affiliated with, endorsed by, or accredited by the ISTQB.`,
+        `, reproduced from the official ${
+          isCertScoped()
+            ? `${activeCert().code} v${activeCert().version} sample exams and syllabus`
+            : 'ISTQB syllabi and sample exams'
+        } for non-commercial study use with acknowledgement of the source. ISTQB® is a registered trademark. This portal is not affiliated with, endorsed by, or accredited by the ISTQB.`,
       ]),
       el('p', {}, [
         'Open source under the MIT licence (portal code only). ',

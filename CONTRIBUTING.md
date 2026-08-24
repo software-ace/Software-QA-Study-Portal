@@ -57,7 +57,8 @@ A page discovers which certification it belongs to from `body[data-cert]`.
 2. Add `data/<cert>/` with `manifest.json`, `exam-*.json`, `syllabus.json` and
    `glossary.json`, in the same shape as the existing ones, each with a `source`
    block recording where the content came from.
-3. Copy the seven HTML shells into `<cert>/`, changing only `data-cert`.
+3. Copy the seven HTML shells into `<cert>/`, changing only `data-cert`. The
+   root-level choosers pick it up automatically from the registry.
 4. Add the certification's published exam structure to the `OFFICIAL` table in
    `tests/data.test.mjs`. Everything else is tested automatically — the suite is
    driven by the registry.

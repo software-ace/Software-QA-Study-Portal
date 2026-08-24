@@ -15,9 +15,9 @@ import { activeCert } from './certs.js';
 // same person either way, and re-typing it for each certification is friction
 // with no benefit.
 const NS = 'software-qa-study-portal';
-const ns = () => `${NS}:${activeCert().id}`;
+const ns = (certId) => `${NS}:${certId ?? activeCert().id}`;
 const KEY_SESSION = () => `${ns()}:session`;
-const KEY_ATTEMPTS = () => `${ns()}:attempts`;
+const KEY_ATTEMPTS = (certId) => `${ns(certId)}:attempts`;
 const KEY_NAME = `${NS}:candidate-name`;
 const MAX_ATTEMPTS = 200;
 
@@ -78,8 +78,15 @@ export const clearSession = () => safeRemove(KEY_SESSION());
 
 // --- attempt history ------------------------------------------------------
 
-export function listAttempts() {
-  const all = readJson(KEY_ATTEMPTS(), []);
+/**
+ * Attempts for a certification.
+ *
+ * `certId` defaults to the page's own certification. The chooser page passes it
+ * explicitly because it is not scoped to one, and would otherwise report the
+ * default certification's history for every card.
+ */
+export function listAttempts(certId) {
+  const all = readJson(KEY_ATTEMPTS(certId), []);
   return Array.isArray(all) ? all : [];
 }
 

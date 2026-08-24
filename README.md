@@ -105,6 +105,10 @@ then re-run the tests.
 
 ```
 index.html                 Portal home — certifications and role tracks
+study.html                 Certification choosers: the nav asks which
+practice.html                certification you mean before showing any
+glossary.html                certification-specific content
+progress.html
 ctfl-v4/                   One directory of page shells per certification
   index.html               Certification hub
   exam.html                Timed exam runner (name gate -> paper -> submit)
@@ -116,7 +120,7 @@ ctfl-v4/                   One directory of page shells per certification
 ctal-tae-v2/               Same seven shells, same page modules
 src/
   core/
-    certs.js               Certification registry — add a certification here
+    certs.js               Certification registry + the choosable sections
     testids.js             Locator contract — single source of truth
     engine.js              Exam state + scoring (pure logic, unit-tested)
     render.js              Shared UI building blocks
@@ -124,7 +128,7 @@ src/
     data.js                Data loading
     rng.js                 Seedable shuffle for reproducible runs
     dom.js                 Tiny DOM helpers
-  pages/                   One module per page
+  pages/                   One module per page (choose.js backs all four choosers)
 data/<cert>/               The question bank, syllabus and glossary (JSON)
 scripts/serve.mjs          Zero-dependency static server
 tests/

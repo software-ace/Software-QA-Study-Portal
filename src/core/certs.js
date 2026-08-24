@@ -67,3 +67,51 @@ export function certPaths(cert) {
     progress: `${d}/progress.html`,
   };
 }
+
+/**
+ * The certification-scoped sections reachable from the main navigation.
+ *
+ * Each has a chooser page at the site root that asks which certification the
+ * learner means, then hands off to that certification's own page. Without it a
+ * nav click would silently pick one, which is how the portal used to show CTFL
+ * content to someone who never asked for it.
+ */
+export const SECTIONS = {
+  study: {
+    key: 'study',
+    label: 'Study',
+    heading: 'Study a syllabus',
+    lede: 'Browse chapters and learning objectives, and see how many official questions test each one. Which certification?',
+    page: 'study.html',
+  },
+  practice: {
+    key: 'practice',
+    label: 'Practice',
+    heading: 'Practice questions',
+    lede: 'Untimed drilling with instant feedback and the official rationale for every option. Which certification?',
+    page: 'practice.html',
+  },
+  glossary: {
+    key: 'glossary',
+    label: 'Glossary',
+    heading: 'Glossary',
+    lede: 'Syllabus keywords with context and links to the official ISTQB glossary. Which certification?',
+    page: 'glossary.html',
+  },
+  progress: {
+    key: 'progress',
+    label: 'Progress',
+    heading: 'Your progress',
+    lede: 'Attempt history and weakest chapters. Progress is tracked separately for each certification. Which one?',
+    page: 'progress.html',
+  },
+};
+
+/** Resolve the section a chooser page represents, from `body[data-section]`. */
+export function activeSection() {
+  const key = document.body?.dataset?.section;
+  return SECTIONS[key] ?? null;
+}
+
+/** True when the current page is not scoped to a single certification. */
+export const isCertScoped = () => Boolean(document.body?.dataset?.cert);

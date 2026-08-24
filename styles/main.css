@@ -69,7 +69,15 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
+  /* Keep the footer at the bottom on short pages (the choosers, empty states)
+     instead of leaving a band of dead space beneath it. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main { flex: 1 0 auto; }
+.site-footer { flex-shrink: 0; }
 
 /* --- layout ------------------------------------------------------------- */
 
